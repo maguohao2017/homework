@@ -23,7 +23,7 @@ public interface MenuMapper extends BaseMapper<Menu> {
      * 根据条件查询菜单
      *
      * @return
-     * @date 2018年2月12日 下午9:14:34
+     * @date 2018年12月12日 下午9:14:34
      */
     List<Map<String, Object>> selectMenus(@Param("condition") String condition, @Param("level") String level);
 
@@ -31,7 +31,7 @@ public interface MenuMapper extends BaseMapper<Menu> {
      * 根据条件查询菜单
      *
      * @return
-     * @date 2018年2月12日 下午9:14:34
+     * @date 2018年12月12日 下午9:14:34
      */
     List<Long> getMenuIdsByRoleId(@Param("roleId") Integer roleId);
 
@@ -39,7 +39,7 @@ public interface MenuMapper extends BaseMapper<Menu> {
      * 获取菜单列表树
      *
      * @return
-     * @date 2018年2月19日 下午1:33:51
+     * @date 2018年12月19日 下午1:33:51
      */
     List<ZTreeNode> menuTreeList();
 
@@ -47,7 +47,7 @@ public interface MenuMapper extends BaseMapper<Menu> {
      * 获取菜单列表树
      *
      * @return
-     * @date 2018年2月19日 下午1:33:51
+     * @date 2018年12月19日 下午1:33:51
      */
     List<ZTreeNode> menuTreeListByMenuIds(List<Long> menuIds);
 
@@ -56,7 +56,7 @@ public interface MenuMapper extends BaseMapper<Menu> {
      *
      * @param menuId
      * @return
-     * @date 2018年2月19日 下午4:10:59
+     * @date 2018年12月19日 下午4:10:59
      */
     int deleteRelationByMenu(Long menuId);
 
@@ -65,7 +65,7 @@ public interface MenuMapper extends BaseMapper<Menu> {
      *
      * @param roleId
      * @return
-     * @date 2018年2月19日 下午7:12:38
+     * @date 2018年12月1日 下午7:12:38
      */
     List<String> getResUrlsByRoleId(Integer roleId);
 

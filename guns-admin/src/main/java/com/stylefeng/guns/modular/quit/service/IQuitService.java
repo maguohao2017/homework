@@ -9,7 +9,7 @@ import java.util.Map;
 /**
  * 离职
  * @author maguohao
- * @Date 2018年8月10日 下午1:11:57
+ * @Date 2018年11月10日 下午1:11:57
  */
 public interface IQuitService{
 

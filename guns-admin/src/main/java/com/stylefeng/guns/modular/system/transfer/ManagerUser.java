@@ -6,7 +6,7 @@ import java.util.Date;
  * 管理员的信息封装
  *
  * @author maguohao
- * @Date 2018年1月11日 下午7:46:53
+ * @Date 2018年11月1日 下午7:46:53
  */
 public class ManagerUser {
 

@@ -4,7 +4,7 @@ package com.stylefeng.guns.core.common.constant.state;
  * 业务日志类型
  *
  * @author maguohao
- * @Date 2018年1月22日 下午12:14:59
+ * @Date 2018年11月1日 下午12:14:59
  */
 public enum BizLogType {
 

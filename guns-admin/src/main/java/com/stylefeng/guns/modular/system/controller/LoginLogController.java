@@ -23,7 +23,7 @@ import java.util.Map;
  * 日志管理的控制器
  *
  * @author maguohao
- * @Date 2018年4月5日 19:45:36
+ * @Date 2018年11月1日 19:45:36
  */
 @Controller
 @RequestMapping("/loginLog")

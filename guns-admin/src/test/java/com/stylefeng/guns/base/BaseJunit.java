@@ -16,7 +16,7 @@ import org.springframework.web.context.WebApplicationContext;
  * 基础测试类
  *
  * @author stylefeng
- * @Date 2018/5/21 16:10
+ * @Date 2018/11/21 16:10
  */
 @RunWith(SpringRunner.class)
 @SpringBootTest(classes = GunsApplication.class)

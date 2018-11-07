@@ -12,7 +12,7 @@ import java.util.Map;
  * 角色相关业务
  *
  * @author ma
- * @Date 2018年1月10日 下午9:11:57
+ * @Date 2018年11月10日 下午9:11:57
  */
 public interface IRoleService extends IService<Role> {
 
@@ -21,7 +21,7 @@ public interface IRoleService extends IService<Role> {
      *
      * @param roleId 角色id
      * @param ids    权限的id
-     * @date 2018年2月13日 下午8:26:53
+     * @date 2018年12月13日 下午8:26:53
      */
     void setAuthority(Integer roleId, String ids);
 
@@ -37,7 +37,7 @@ public interface IRoleService extends IService<Role> {
      * 根据条件查询角色列表
      *
      * @return
-     * @date 2018年2月12日 下午9:14:34
+     * @date 2018年12月12日 下午9:14:34
      */
     List<Map<String, Object>> selectRoles(@Param("condition") String condition);
 
@@ -46,7 +46,7 @@ public interface IRoleService extends IService<Role> {
      *
      * @param roleId 角色id
      * @return
-     * @date 2018年2月13日 下午7:57:51
+     * @date 2018年12月13日 下午7:57:51
      */
     int deleteRolesById(@Param("roleId") Integer roleId);
 
@@ -54,7 +54,7 @@ public interface IRoleService extends IService<Role> {
      * 获取角色列表树
      *
      * @return
-     * @date 2018年2月18日 上午10:32:04
+     * @date 2018年12月1日 上午10:32:04
      */
     List<ZTreeNode> roleTreeList();
 

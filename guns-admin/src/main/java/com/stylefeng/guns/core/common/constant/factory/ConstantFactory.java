@@ -24,7 +24,7 @@ import java.util.List;
  * 常量的生产工厂
  *
  * @author maguohao
- * @date 2018年2月13日 下午10:55:21
+ * @date 2018年12月13日 下午10:55:21
  */
 @Component
 @DependsOn("springContextHolder")
@@ -61,7 +61,7 @@ public class ConstantFactory implements IConstantFactory {
      * 根据用户id获取用户账号
      *
      * @author stylefeng
-     * @date 2018年5月16日21:55:371
+     * @date 2018年11月16日21:55:371
      */
     @Override
     public String getUserAccountById(Integer userId) {

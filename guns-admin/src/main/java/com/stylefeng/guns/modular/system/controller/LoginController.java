@@ -30,7 +30,7 @@ import static com.stylefeng.guns.core.support.HttpKit.getIp;
  * 登录控制器
  *
  * @author maguohao
- * @Date 2018年1月10日 下午8:25:24
+ * @Date 2018年11月1日 下午8:25:24
  */
 @Controller
 public class LoginController extends BaseController {

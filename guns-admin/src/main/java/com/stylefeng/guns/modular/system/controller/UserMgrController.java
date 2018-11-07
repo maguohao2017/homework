@@ -42,7 +42,7 @@ import java.util.UUID;
  * 系统管理员控制器
  *
  * @author maguohao
- * @Date 2018年1月11日 下午1:08:17
+ * @Date 2018年11月1日 下午1:08:17
  */
 @Controller
 @RequestMapping("/mgr")

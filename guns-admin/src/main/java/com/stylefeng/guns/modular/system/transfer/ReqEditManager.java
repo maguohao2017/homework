@@ -8,7 +8,7 @@ import javax.validation.constraints.NotNull;
  * 编辑管理员的请求
  *
  * @author maguohao
- * @Date 2018年1月15日 下午10:29:16
+ * @Date 2018年11月1日 下午10:29:16
  */
 public class ReqEditManager {
 

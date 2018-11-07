@@ -4,7 +4,7 @@ package com.stylefeng.guns.core.common.constant.state;
  * 管理员的状态
  *
  * @author maguohao
- * @Date 2018年1月10日 下午9:54:13
+ * @Date 2018年11月10日 下午9:54:13
  */
 public enum ManagerStatus {
 

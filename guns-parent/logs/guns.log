@@ -1,4 +1,4 @@
-2018-11-06 00:26:40,946 [INFO] [restartedMain] com.stylefeng.guns.GunsApplication [StartupInfoLogger.java : 48] Starting GunsApplication on DESKTOP-B88S3I8 with PID 16992 (started by dell in E:\毕业设计\锦州天宇公司考勤管理系统的设计与实现  范广\软件\码云\mgh\guns-parent)
+2018-11-06 00:26:40,946 [INFO] [restartedMain] com.stylefeng.guns.GunsApplication [StartupInfoLogger.java : 48] Starting GunsApplication on DESKTOP-B88S3I8 with PID 16992 (started by dell in E:\毕业设计\中小学大家来作业网的设计与实现  杨萌萌\软件\码云\mgh\guns-parent)
 2018-11-06 00:26:40,954 [DEBUG] [restartedMain] com.stylefeng.guns.GunsApplication [StartupInfoLogger.java : 51] Running with Spring Boot v1.5.9.RELEASE, Spring v4.3.13.RELEASE
 2018-11-06 00:26:40,954 [INFO] [restartedMain] com.stylefeng.guns.GunsApplication [SpringApplication.java : 597] The following profiles are active: dev
 2018-11-06 00:26:41,019 [INFO] [restartedMain] o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext [AbstractApplicationContext.java : 583] Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@34859d9: startup date [Tue Nov 06 00:26:41 CST 2018]; root of context hierarchy

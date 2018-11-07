@@ -8,7 +8,7 @@ import javax.validation.constraints.NotNull;
  * 添加管理员的请求bean
  *
  * @author maguohao
- * @Date 2018年1月12日 下午6:46:24
+ * @Date 2018年11月1日 下午6:46:24
  */
 public class ReqAddManager {
 

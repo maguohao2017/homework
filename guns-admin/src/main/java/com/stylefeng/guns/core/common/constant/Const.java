@@ -4,7 +4,7 @@ package com.stylefeng.guns.core.common.constant;
  * 系统常量
  *
  * @author maguohao
- * @date 2018年2月12日 下午9:42:53
+ * @date 2018年11月1日 下午9:42:53
  */
 public interface Const {
 

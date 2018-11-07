@@ -10,7 +10,7 @@ import java.util.Map;
  * 角色列表的包装类
  *
  * @author maguohao
- * @date 2018年2月19日10:59:02
+ * @date 2018年12月19日10:59:02
  */
 public class RoleWarpper extends BaseControllerWarpper {
 

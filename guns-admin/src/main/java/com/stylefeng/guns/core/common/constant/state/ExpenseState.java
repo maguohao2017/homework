@@ -4,7 +4,7 @@ package com.stylefeng.guns.core.common.constant.state;
  * 是否是菜单的枚举
  *
  * @author maguohao
- * @date 2018年6月1日22:50:11
+ * @date 2018年11月1日22:50:11
  */
 public enum ExpenseState {
 

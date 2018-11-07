@@ -29,7 +29,7 @@ import java.util.Map;
  * 字典控制器
  *
  * @author maguohao
- * @Date 2018年4月26日 12:55:31
+ * @Date 2018年11月1日 12:55:31
  */
 @Controller
 @RequestMapping("/dict")

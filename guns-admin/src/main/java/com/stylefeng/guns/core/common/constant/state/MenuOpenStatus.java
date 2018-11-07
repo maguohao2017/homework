@@ -4,7 +4,7 @@ package com.stylefeng.guns.core.common.constant.state;
  * 菜单是否打开的状态
  *
  * @author maguohao
- * @Date 2018年4月8日10:12:15
+ * @Date 2018年11月8日10:12:15
  */
 public enum MenuOpenStatus {
 

@@ -37,7 +37,7 @@ public interface IMenuService extends IService<Menu> {
      * 根据条件查询菜单
      *
      * @return
-     * @date 2018年2月12日 下午9:14:34
+     * @date 2018年11月1日 下午9:14:34
      */
     List<Map<String, Object>> selectMenus(@Param("condition") String condition, @Param("level") String level);
 
@@ -45,7 +45,7 @@ public interface IMenuService extends IService<Menu> {
      * 根据条件查询菜单
      *
      * @return
-     * @date 2018年2月12日 下午9:14:34
+     * @date 2018年11月1日 下午9:14:34
      */
     List<Long> getMenuIdsByRoleId(@Param("roleId") Integer roleId);
 
@@ -53,7 +53,7 @@ public interface IMenuService extends IService<Menu> {
      * 获取菜单列表树
      *
      * @return
-     * @date 2018年2月19日 下午1:33:51
+     * @date 2018年11月1日 下午1:33:51
      */
     List<ZTreeNode> menuTreeList();
 
@@ -61,7 +61,7 @@ public interface IMenuService extends IService<Menu> {
      * 获取菜单列表树
      *
      * @return
-     * @date 2018年2月19日 下午1:33:51
+     * @date 2018年11月1日 下午1:33:51
      */
     List<ZTreeNode> menuTreeListByMenuIds(List<Long> menuIds);
 
@@ -70,7 +70,7 @@ public interface IMenuService extends IService<Menu> {
      *
      * @param menuId
      * @return
-     * @date 2018年2月19日 下午4:10:59
+     * @date 2018年11月1日 下午4:10:59
      */
     int deleteRelationByMenu(Long menuId);
 
@@ -79,7 +79,7 @@ public interface IMenuService extends IService<Menu> {
      *
      * @param roleId
      * @return
-     * @date 2018年2月19日 下午7:12:38
+     * @date 2018年11月1日 下午7:12:38
      */
     List<String> getResUrlsByRoleId(Integer roleId);
 

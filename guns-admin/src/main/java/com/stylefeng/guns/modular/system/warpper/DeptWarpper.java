@@ -10,7 +10,7 @@ import java.util.Map;
  * 部门列表的包装
  *
  * @author maguohao
- * @date 2018年4月25日 18:10:31
+ * @date 2018年11月1日 18:10:31
  */
 public class DeptWarpper extends BaseControllerWarpper {
 

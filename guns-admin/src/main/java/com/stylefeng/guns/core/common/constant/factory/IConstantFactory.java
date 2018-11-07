@@ -24,7 +24,7 @@ public interface IConstantFactory {
      * 根据用户id获取用户账号
      *
      * @author stylefeng
-     * @date 2018年5月16日21:55:371
+     * @date 2018年11月16日21:55:371
      */
     String getUserAccountById(Integer userId);
 

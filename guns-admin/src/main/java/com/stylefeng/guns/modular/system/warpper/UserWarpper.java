@@ -10,7 +10,7 @@ import java.util.Map;
  * 用户管理的包装类
  *
  * @author maguohao
- * @date 2018年2月13日 下午10:47:03
+ * @date 2018年11月1日 下午10:47:03
  */
 public class UserWarpper extends BaseControllerWarpper {
 
