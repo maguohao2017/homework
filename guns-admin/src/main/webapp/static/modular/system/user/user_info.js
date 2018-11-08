@@ -21,7 +21,7 @@ var UserInfoDlg = {
         citySel: {
             validators: {
                 notEmpty: {
-                    message: '部门不能为空'
+                    message: '组织不能为空'
                 }
             }
         },
@@ -86,7 +86,7 @@ UserInfoDlg.close = function () {
 };
 
 /**
- * 点击部门input框时
+ * 点击组织input框时
  *
  * @param e
  * @param treeId
@@ -99,7 +99,7 @@ UserInfoDlg.onClickDept = function (e, treeId, treeNode) {
 };
 
 /**
- * 显示部门选择的树
+ * 显示组织选择的树
  *
  * @returns
  */
@@ -115,7 +115,7 @@ UserInfoDlg.showDeptSelectTree = function () {
 };
 
 /**
- * 显示用户详情部门选择的树
+ * 显示用户详情组织选择的树
  *
  * @returns
  */
@@ -131,7 +131,7 @@ UserInfoDlg.showInfoDeptSelectTree = function () {
 };
 
 /**
- * 隐藏部门选择的树
+ * 隐藏组织选择的树
  */
 UserInfoDlg.hideDeptSelectTree = function () {
     $("#menuContent").fadeOut("fast");

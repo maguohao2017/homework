@@ -44,7 +44,7 @@ var travel_add = {
             {title: 'id', field: 'id', visible: false, align: 'center', valign: 'middle'},
             {title: '姓名', field: 'name', align: 'center', valign: 'middle', sortable: true},
             {title: '性别', field: 'sexName', align: 'center', valign: 'middle', sortable: true},
-            {title: '部门', field: 'deptName', align: 'center', valign: 'middle', sortable: true},
+            {title: '组织', field: 'deptName', align: 'center', valign: 'middle', sortable: true},
             {title: '邮箱', field: 'email', align: 'center', valign: 'middle', sortable: true},
             {title: '电话', field: 'phone', align: 'center', valign: 'middle', sortable: true},
             {title: '状态', field: 'statusName', align: 'center', valign: 'middle', sortable: true}];

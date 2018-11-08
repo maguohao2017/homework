@@ -44,7 +44,7 @@ public interface IConstantFactory {
     String getSingleRoleTip(Integer roleId);
 
     /**
-     * 获取部门名称
+     * 获取组织名称
      */
     String getDeptName(Integer deptId);
 
@@ -104,12 +104,12 @@ public interface IConstantFactory {
     String getCacheObject(String para);
 
     /**
-     * 获取子部门id
+     * 获取子组织id
      */
     List<Integer> getSubDeptId(Integer deptid);
 
     /**
-     * 获取所有父部门id
+     * 获取所有父组织id
      */
     List<Integer> getParentDeptIds(Integer deptid);
 

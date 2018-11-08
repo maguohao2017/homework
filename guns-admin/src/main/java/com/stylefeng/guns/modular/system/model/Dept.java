@@ -9,7 +9,7 @@ import java.io.Serializable;
 
 /**
  * <p>
- * 部门表
+ * 组织表
  * </p>
  *
  * @author stylefeng
@@ -30,7 +30,7 @@ public class Dept extends Model<Dept> {
      */
 	private Integer num;
     /**
-     * 父部门id
+     * 父组织id
      */
 	private Integer pid;
     /**

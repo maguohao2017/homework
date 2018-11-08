@@ -21,7 +21,7 @@ public class UserDict extends AbstractDictMap {
         put("email","电子邮件");
         put("phone","电话");
         put("roleid","角色名称");
-        put("deptid","部门名称");
+        put("deptid","组织名称");
         put("roleIds","角色名称集合");
     }
 

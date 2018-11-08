@@ -123,7 +123,7 @@ public class ConstantFactory implements IConstantFactory {
     }
 
     /**
-     * 获取部门名称
+     * 获取组织名称
      */
     @Override
     @Cacheable(value = Cache.CONSTANT, key = "'" + CacheKey.DEPT_NAME + "'+#deptId")
@@ -295,7 +295,7 @@ public class ConstantFactory implements IConstantFactory {
     }
 
     /**
-     * 获取子部门id
+     * 获取子组织id
      */
     @Override
     public List<Integer> getSubDeptId(Integer deptid) {
@@ -315,7 +315,7 @@ public class ConstantFactory implements IConstantFactory {
     }
 
     /**
-     * 获取所有父部门id
+     * 获取所有父组织id
      */
     @Override
     public List<Integer> getParentDeptIds(Integer deptid) {

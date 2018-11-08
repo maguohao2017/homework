@@ -13,7 +13,7 @@ public class DeleteDict extends AbstractDictMap {
     @Override
     public void init() {
         put("roleId","角色名称");
-        put("deptId", "部门名称");
+        put("deptId", "组织名称");
         put("menuId", "菜单名称");
         put("dictId", "字典名称");
         put("noticeId", "标题");

@@ -38,7 +38,7 @@ public class Role extends Model<Role> {
      */
 	private String name;
     /**
-     * 部门名称
+     * 组织名称
      */
 	private Integer deptid;
     /**

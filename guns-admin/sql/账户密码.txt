@@ -3,10 +3,10 @@ localhost:80
 管理员：
 账户  admin
 密码  111111
-经理：
-账户  boss
+老师：
+账户  teacher
 密码  111111
-员工：
-账户  xiaoyu
+学生：
+账户  student
 密码  111111
 

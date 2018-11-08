@@ -1,5 +1,5 @@
 /**
- * 部门管理初始化
+ * 组织管理初始化
  */
 var Dept = {
     id: "DeptTable",	//表格id
@@ -15,8 +15,8 @@ Dept.initColumn = function () {
     return [
         {field: 'selectItem', radio: true},
         {title: 'id', field: 'id', align: 'center', valign: 'middle',width:'50px'},
-        {title: '部门简称', field: 'simplename', align: 'center', valign: 'middle', sortable: true},
-        {title: '部门全称', field: 'fullname', align: 'center', valign: 'middle', sortable: true},
+        {title: '组织简称', field: 'simplename', align: 'center', valign: 'middle', sortable: true},
+        {title: '组织全称', field: 'fullname', align: 'center', valign: 'middle', sortable: true},
         {title: '排序', field: 'num', align: 'center', valign: 'middle', sortable: true},
         {title: '备注', field: 'tips', align: 'center', valign: 'middle', sortable: true}];
 };
@@ -36,12 +36,12 @@ Dept.check = function () {
 };
 
 /**
- * 点击添加部门
+ * 点击添加组织
  */
 Dept.openAddDept = function () {
     var index = layer.open({
         type: 2,
-        title: '添加部门',
+        title: '添加组织',
         area: ['800px', '420px'], //宽高
         fix: false, //不固定
         maxmin: true,
@@ -51,13 +51,13 @@ Dept.openAddDept = function () {
 };
 
 /**
- * 打开查看部门详情
+ * 打开查看组织详情
  */
 Dept.openDeptDetail = function () {
     if (this.check()) {
         var index = layer.open({
             type: 2,
-            title: '部门详情',
+            title: '组织详情',
             area: ['800px', '420px'], //宽高
             fix: false, //不固定
             maxmin: true,
@@ -68,7 +68,7 @@ Dept.openDeptDetail = function () {
 };
 
 /**
- * 删除部门
+ * 删除组织
  */
 Dept.delete = function () {
     if (this.check()) {
@@ -84,12 +84,12 @@ Dept.delete = function () {
             ajax.start();
         };
 
-        Feng.confirm("是否刪除该部门?", operation);
+        Feng.confirm("是否刪除该组织?", operation);
     }
 };
 
 /**
- * 查询部门列表
+ * 查询组织列表
  */
 Dept.search = function () {
     var queryData = {};

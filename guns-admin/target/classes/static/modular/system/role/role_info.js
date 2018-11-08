@@ -66,7 +66,7 @@ RolInfoDlg.close = function () {
 };
 
 /**
- * 点击部门input框时
+ * 点击组织input框时
  *
  * @param e
  * @param treeId
@@ -97,7 +97,7 @@ RolInfoDlg.onClickPName = function (e, treeId, treeNode) {
 };
 
 /**
- * 显示部门选择的树
+ * 显示组织选择的树
  *
  * @returns
  */

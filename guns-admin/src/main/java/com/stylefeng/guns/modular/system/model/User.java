@@ -67,7 +67,7 @@ public class User extends Model<User> {
      */
 	private String roleid;
     /**
-     * 部门id
+     * 组织id
      */
 	private Integer deptid;
     /**

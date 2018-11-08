@@ -1,5 +1,5 @@
 /**
- * 初始化部门详情对话框
+ * 初始化组织详情对话框
  */
 var DeptInfoDlg = {
     deptInfoData : {},
@@ -8,14 +8,14 @@ var DeptInfoDlg = {
         simplename: {
             validators: {
                 notEmpty: {
-                    message: '部门名称不能为空'
+                    message: '组织名称不能为空'
                 }
             }
         },
         fullname: {
             validators: {
                 notEmpty: {
-                    message: '部门全称不能为空'
+                    message: '组织全称不能为空'
                 }
             }
         },
@@ -65,7 +65,7 @@ DeptInfoDlg.close = function() {
 }
 
 /**
- * 点击部门ztree列表的选项时
+ * 点击组织ztree列表的选项时
  *
  * @param e
  * @param treeId
@@ -78,7 +78,7 @@ DeptInfoDlg.onClickDept = function(e, treeId, treeNode) {
 }
 
 /**
- * 显示部门选择的树
+ * 显示组织选择的树
  *
  * @returns
  */
@@ -94,7 +94,7 @@ DeptInfoDlg.showDeptSelectTree = function() {
 }
 
 /**
- * 隐藏部门选择的树
+ * 隐藏组织选择的树
  */
 DeptInfoDlg.hideDeptSelectTree = function() {
     $("#parentDeptMenu").fadeOut("fast");
@@ -118,7 +118,7 @@ DeptInfoDlg.validate = function () {
 }
 
 /**
- * 提交添加部门
+ * 提交添加组织
  */
 DeptInfoDlg.addSubmit = function() {
 

@@ -9,7 +9,7 @@ import java.util.List;
 import java.util.Map;
 
 /**
- * 部门服务
+ * 组织服务
  *
  * @author ma
  * @date 2018-04-27 17:00
@@ -17,7 +17,7 @@ import java.util.Map;
 public interface IDeptService extends IService<Dept> {
 
     /**
-     * 删除部门
+     * 删除组织
      */
     void deleteDept(Integer deptId);
 
@@ -27,7 +27,7 @@ public interface IDeptService extends IService<Dept> {
     List<ZTreeNode> tree();
 
     /**
-     * 获取所有部门列表
+     * 获取所有组织列表
      */
     List<Map<String, Object>> list(@Param("condition") String condition);
 }

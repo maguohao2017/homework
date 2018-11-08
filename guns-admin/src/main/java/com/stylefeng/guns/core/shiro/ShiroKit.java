@@ -264,7 +264,7 @@ public class ShiroKit {
     }
 
     /**
-     * 获取当前用户的部门数据范围的集合
+     * 获取当前用户的组织数据范围的集合
      */
     public static List<Integer> getDeptDataScope() {
         Integer deptId = getUser().getDeptId();

@@ -43,7 +43,7 @@ var check_time = {
             {title: '账号', field: 'account', align: 'center', valign: 'middle', sortable: true},
             {title: '姓名', field: 'userName', align: 'center', valign: 'middle', sortable: true},
             {title: '性别', field: 'sex', align: 'center', valign: 'middle', sortable: true},
-            {title: '部门', field: 'deptName', align: 'center', valign: 'middle', sortable: true},
+            {title: '组织', field: 'deptName', align: 'center', valign: 'middle', sortable: true},
             {title: '邮箱', field: 'email', align: 'center', valign: 'middle', sortable: true},
             {title: '电话', field: 'phone', align: 'center', valign: 'middle', sortable: true},
             {title: '打卡时间', field: 'checktime', align: 'center', valign: 'middle', sortable: true},

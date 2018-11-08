@@ -25,7 +25,7 @@ import java.util.List;
 import java.util.Map;
 
 /**
- * 部门控制器
+ * 组织控制器
  *
  * @author maguohao
  * @Date 2018年12月17日20:27:22
@@ -40,7 +40,7 @@ public class DeptController extends BaseController {
     private IDeptService deptService;
 
     /**
-     * 跳转到部门管理首页
+     * 跳转到组织管理首页
      */
     @RequestMapping("")
     public String index() {
@@ -48,7 +48,7 @@ public class DeptController extends BaseController {
     }
 
     /**
-     * 跳转到添加部门
+     * 跳转到添加组织
      */
     @RequestMapping("/dept_add")
     public String deptAdd() {
@@ -56,7 +56,7 @@ public class DeptController extends BaseController {
     }
 
     /**
-     * 跳转到修改部门
+     * 跳转到修改组织
      */
     @Permission
     @RequestMapping("/dept_update/{deptId}")
@@ -69,7 +69,7 @@ public class DeptController extends BaseController {
     }
 
     /**
-     * 获取部门的tree列表
+     * 获取组织的tree列表
      */
     @RequestMapping(value = "/tree")
     @ResponseBody
@@ -80,9 +80,9 @@ public class DeptController extends BaseController {
     }
 
     /**
-     * 新增部门
+     * 新增组织
      */
-    @BussinessLog(value = "添加部门", key = "simplename", dict = DeptDict.class)
+    @BussinessLog(value = "添加组织", key = "simplename", dict = DeptDict.class)
     @RequestMapping(value = "/add")
     @Permission
     @ResponseBody
@@ -96,7 +96,7 @@ public class DeptController extends BaseController {
     }
 
     /**
-     * 获取所有部门列表
+     * 获取所有组织列表
      */
     @RequestMapping(value = "/list")
     @Permission
@@ -107,7 +107,7 @@ public class DeptController extends BaseController {
     }
 
     /**
-     * 部门详情
+     * 组织详情
      */
     @RequestMapping(value = "/detail/{deptId}")
     @Permission
@@ -117,9 +117,9 @@ public class DeptController extends BaseController {
     }
 
     /**
-     * 修改部门
+     * 修改组织
      */
-    @BussinessLog(value = "修改部门", key = "simplename", dict = DeptDict.class)
+    @BussinessLog(value = "修改组织", key = "simplename", dict = DeptDict.class)
     @RequestMapping(value = "/update")
     @Permission
     @ResponseBody
@@ -133,15 +133,15 @@ public class DeptController extends BaseController {
     }
 
     /**
-     * 删除部门
+     * 删除组织
      */
-    @BussinessLog(value = "删除部门", key = "deptId", dict = DeptDict.class)
+    @BussinessLog(value = "删除组织", key = "deptId", dict = DeptDict.class)
     @RequestMapping(value = "/delete")
     @Permission
     @ResponseBody
     public Object delete(@RequestParam Integer deptId) {
 
-        //缓存被删除的部门名称
+        //缓存被删除的组织名称
         LogObjectHolder.me().set(ConstantFactory.me().getDeptName(deptId));
 
         deptService.deleteDept(deptId);

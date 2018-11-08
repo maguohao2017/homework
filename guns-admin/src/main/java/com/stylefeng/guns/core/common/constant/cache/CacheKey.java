@@ -24,7 +24,7 @@ public interface CacheKey {
     String SINGLE_ROLE_TIP = "single_role_tip_";
 
     /**
-     * 部门名称
+     * 组织名称
      */
     String DEPT_NAME = "dept_name_";
 
