@@ -4,6 +4,7 @@ import com.stylefeng.guns.core.base.controller.BaseController;
 import com.stylefeng.guns.core.shiro.ShiroKit;
 import com.stylefeng.guns.modular.checkTime.service.ICheckTimeService;
 import com.stylefeng.guns.modular.system.model.User;
+import com.stylefeng.guns.modular.system.service.IDeptService;
 import com.stylefeng.guns.modular.system.service.IUserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -24,16 +25,18 @@ import java.util.Map;
 @RequestMapping("/message")
 public class MessageController extends BaseController {
 
-    private static String PREFIX = "/message/";
+    private String PREFIX = "/message/";
 
     @Autowired
     private IUserService userService;
+
+    @Autowired
+    private IDeptService deptService;
 
     @RequestMapping("")
     public String index() {
         return PREFIX + "message.html";
     }
-
     /**
      * 获取个人信息
      */
@@ -47,6 +50,7 @@ public class MessageController extends BaseController {
 
             user = userService.getByAccount(account);
 
+            String deptName = deptService.selectById(user.getDeptid()).getFullname();
 
         }catch (Exception e){
             e.printStackTrace();

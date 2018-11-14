@@ -1,30 +1,35 @@
 @layout("/common/_container.html"){
+<div class="row">
+	<div class="col-sm-12">
 <div class="ibox float-e-margins">
 	<div class="ibox-content">
 		<div class="form-horizontal" >
-42643665534
 			<div class="row">
 				<div class="col-sm-6 b-r">
-					<#input id="account" name="账户" underline="true" disabled/>
+					<!--<div class="form-group">-->
+						<!--<label class="col-sm-3 control-label">账户</label>-->
+						<!--<div class="col-sm-9">-->
+							<!--<input class="form-control" id="account" name="account" disabled="disabled">-->
+						<!--</div>-->
+					<!--</div>-->
 
-					<#input id="sex" name="性别" underline="true" disabled/>
+					<#input id="account" name="账户" underline="true" disabled="disabled"/>
 
-					<#input id="roleid" name="角色" underline="true" disabled="disabled" disabled/>
+					<#input id="sex" name="性别" underline="true" disabled="disabled"/>
 
-					<#input id="email" name="邮箱" type="email" disabled/>
+					<#input id="roleid" name="角色" underline="true" disabled="disabled" />
+
+					<#input id="email" name="邮箱" type="email" disabled="disabled"/>
 				</div>
 				<div class="col-sm-6">
 					<div id="driverInfoContent">
-						<#input id="name" name="姓名" underline="true" disabled/>
+						<#input id="name" name="姓名" underline="true" disabled="disabled"/>
 
-						<#input id="birthday" name="出生日期" underline="true" type="date"
-								clickFun="laydate({istime: false, format: 'YYYY-MM-DD'})" disabled/>
+						<#input id="birthday" name="出生日期" underline="true" disabled="disabled"/>
 
-						<#input id="citySel" name="组织" underline="true" readonly="readonly" hidden="deptid"
-								clickFun="UserInfoDlg.showDeptSelectTree(); return false;"
-								style="background-color: #ffffff !important;" disabled/>
+						<#input id="citySel" name="组织" underline="true" disabled="disabled"/>
 
-						<#input id="phone" name="电话" disabled/>
+						<#input id="phone" name="电话" disabled="disabled"/>
 					</div>
 				</div>
 			</div>
@@ -37,6 +42,8 @@
 
 		</div>
 
+	</div>
+</div>
 	</div>
 </div>
 <script src="${ctxPath}/static/modular/message/message.js"></script>
