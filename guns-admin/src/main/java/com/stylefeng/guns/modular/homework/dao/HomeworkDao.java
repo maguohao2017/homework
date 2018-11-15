@@ -7,34 +7,22 @@ import java.util.Map;
 
 /**
  * <p>
- * 打卡
+ *
  * </p>
  *
  * @author maguohao
- * @since 2018-08-19
+ * @since 2018-11-19
  */
 public interface HomeworkDao {
 
 
-    /**
-     * 获取员工历史打卡信息列表
-     */
-    List<Map<String, Object>> queryStaffCheckTimeList(@Param("userid") Integer userid, @Param("flag") String flag);
+    List<Map<String, Object>> getHomeworkList(Integer folderId);
 
-    /**
-     * 新增员工打卡记录
-     */
-    Integer insertInfo(@Param("userid") Integer userid, @Param("status") Integer status);
+    Integer insertHomework(Map map);
 
-    /**
-     * 获取经理打卡信息列表（获取所有员打卡记录）
-     */
-    List<Map<String, Object>> queryBossCheckTimeList(@Param("userid") Integer userid, @Param("flag") String flag);
+    Integer updateHomework(Map map);
 
-    /**
-     * 经理审批打卡记录
-     */
-    Integer update(@Param("id") Integer id, @Param("status") Integer status);
+    Integer deleteHomework(Integer id);
 
 
 

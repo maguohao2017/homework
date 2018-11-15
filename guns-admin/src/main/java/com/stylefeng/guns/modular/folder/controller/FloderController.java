@@ -28,17 +28,17 @@ public class FloderController extends BaseController {
     private IFolderService iFolderService;
 
     @RequestMapping("")
-    public String check_time_staff() {
+    public String index() {
         return PREFIX + "folder.html";
     }
 
     @RequestMapping("/folder_add")
-    public String check_history_staff() {
+    public String folder_add() {
         return PREFIX + "folder_add.html";
     }
 
     @RequestMapping("/folder_edit")
-    public String check_time_boss() {
+    public String folder_edit() {
         return PREFIX + "folder_edit.html";
     }
 

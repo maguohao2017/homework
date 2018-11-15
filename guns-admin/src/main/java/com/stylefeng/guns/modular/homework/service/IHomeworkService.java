@@ -7,29 +7,17 @@ import java.util.List;
 import java.util.Map;
 
 /**
- * 打卡
+ *
  * @author maguohao
- * @Date 2018年11月1日 下午1:11:57
+ * @Date 2018年11月30日 下午1:11:57
  */
 public interface IHomeworkService {
 
-    /**
-     * 获取员工历史打卡信息列表
-     */
-    List<Map<String, Object>> queryStaffCheckTimeList(@Param("userid") Integer userid, @Param("flag") String flag);
+    List<Map<String, Object>> getHomeworkList(Integer folderId);
 
-    /**
-     * 新增员工打卡记录
-     */
-    Integer insertInfo(@Param("userid") Integer userid, @Param("status") Integer status);
+    Integer insertHomework(Map map);
 
-    /**
-     * 获取经理打卡信息列表（获取所有员打卡记录）
-     */
-    List<Map<String, Object>> queryBossCheckTimeList(@Param("userid") Integer userid, @Param("flag") String flag);
+    Integer updateHomework(Map map);
 
-    /**
-     * 经理审批打卡记录
-     */
-    Integer update(@Param("id") Integer id, @Param("status") Integer status);
+    Integer deleteHomework(Integer id);
 }

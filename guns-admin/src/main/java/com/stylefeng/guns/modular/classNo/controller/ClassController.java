@@ -29,17 +29,17 @@ public class ClassController extends BaseController {
     private IClassNoService iclassNoService;
     
     @RequestMapping("")
-    public String check_time_staff() {
+    public String index() {
         return PREFIX + "class.html";
     }
 
     @RequestMapping("/class_add")
-    public String check_history_staff() {
+    public String class_add() {
         return PREFIX + "class_add.html";
     }
 
     @RequestMapping("/class_edit")
-    public String check_time_boss() {
+    public String class_edit() {
         return PREFIX + "class_edit.html";
     }
 
