@@ -74,7 +74,6 @@ public class ClassController extends BaseController {
 
         List<Map<String, Object>> getClassList = null;
         Integer userId = ShiroKit.getUser().getId();
-        String roleId = ShiroKit.getUser().getRoleNames().get(0);
 
         try {
             getClassList = this.iclassNoService.getClassList(userId);
@@ -93,7 +92,7 @@ public class ClassController extends BaseController {
         Integer userId = null;
         String roleId = ShiroKit.getUser().getRoleNames().get(0);
 
-        if(roleId == "7"){
+        if(roleId == "学生"){
             userId = ShiroKit.getUser().getId();
         }
         try {
