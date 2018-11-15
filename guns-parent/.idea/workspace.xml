@@ -2,101 +2,24 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="38b6237c-c8c4-41c1-ba1a-def69640d0a7" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../guns-admin/src/main/java/com/stylefeng/guns/persistence/controller/ClassController.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../guns-admin/src/main/java/com/stylefeng/guns/persistence/controller/ClassScoreRelaController.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../guns-admin/src/main/java/com/stylefeng/guns/persistence/controller/FolderController.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../guns-admin/src/main/java/com/stylefeng/guns/persistence/controller/HomeworkController.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../guns-admin/src/main/java/com/stylefeng/guns/persistence/controller/ScoreController.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../guns-admin/src/main/java/com/stylefeng/guns/persistence/controller/SysDeptController.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../guns-admin/src/main/java/com/stylefeng/guns/persistence/controller/SysDictController.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../guns-admin/src/main/java/com/stylefeng/guns/persistence/controller/SysExpenseController.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../guns-admin/src/main/java/com/stylefeng/guns/persistence/controller/SysLoginLogController.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../guns-admin/src/main/java/com/stylefeng/guns/persistence/controller/SysMenuController.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../guns-admin/src/main/java/com/stylefeng/guns/persistence/controller/SysNoticeController.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../guns-admin/src/main/java/com/stylefeng/guns/persistence/controller/SysOperationLogController.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../guns-admin/src/main/java/com/stylefeng/guns/persistence/controller/SysRelationController.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../guns-admin/src/main/java/com/stylefeng/guns/persistence/controller/SysRoleController.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../guns-admin/src/main/java/com/stylefeng/guns/persistence/controller/SysUserController.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../guns-admin/src/main/java/com/stylefeng/guns/persistence/dao/ClassMapper.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../guns-admin/src/main/java/com/stylefeng/guns/persistence/dao/ClassScoreRelaMapper.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../guns-admin/src/main/java/com/stylefeng/guns/persistence/dao/FolderMapper.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../guns-admin/src/main/java/com/stylefeng/guns/persistence/dao/HomeworkMapper.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../guns-admin/src/main/java/com/stylefeng/guns/persistence/dao/ScoreMapper.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../guns-admin/src/main/java/com/stylefeng/guns/persistence/dao/SysDeptMapper.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../guns-admin/src/main/java/com/stylefeng/guns/persistence/dao/SysDictMapper.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../guns-admin/src/main/java/com/stylefeng/guns/persistence/dao/SysExpenseMapper.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../guns-admin/src/main/java/com/stylefeng/guns/persistence/dao/SysLoginLogMapper.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../guns-admin/src/main/java/com/stylefeng/guns/persistence/dao/SysMenuMapper.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../guns-admin/src/main/java/com/stylefeng/guns/persistence/dao/SysNoticeMapper.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../guns-admin/src/main/java/com/stylefeng/guns/persistence/dao/SysOperationLogMapper.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../guns-admin/src/main/java/com/stylefeng/guns/persistence/dao/SysRelationMapper.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../guns-admin/src/main/java/com/stylefeng/guns/persistence/dao/SysRoleMapper.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../guns-admin/src/main/java/com/stylefeng/guns/persistence/dao/SysUserMapper.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../guns-admin/src/main/java/com/stylefeng/guns/persistence/dao/mapping/ClassMapper.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../guns-admin/src/main/java/com/stylefeng/guns/persistence/dao/mapping/ClassScoreRelaMapper.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../guns-admin/src/main/java/com/stylefeng/guns/persistence/dao/mapping/FolderMapper.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../guns-admin/src/main/java/com/stylefeng/guns/persistence/dao/mapping/HomeworkMapper.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../guns-admin/src/main/java/com/stylefeng/guns/persistence/dao/mapping/ScoreMapper.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../guns-admin/src/main/java/com/stylefeng/guns/persistence/dao/mapping/SysDeptMapper.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../guns-admin/src/main/java/com/stylefeng/guns/persistence/dao/mapping/SysDictMapper.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../guns-admin/src/main/java/com/stylefeng/guns/persistence/dao/mapping/SysExpenseMapper.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../guns-admin/src/main/java/com/stylefeng/guns/persistence/dao/mapping/SysLoginLogMapper.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../guns-admin/src/main/java/com/stylefeng/guns/persistence/dao/mapping/SysMenuMapper.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../guns-admin/src/main/java/com/stylefeng/guns/persistence/dao/mapping/SysNoticeMapper.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../guns-admin/src/main/java/com/stylefeng/guns/persistence/dao/mapping/SysOperationLogMapper.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../guns-admin/src/main/java/com/stylefeng/guns/persistence/dao/mapping/SysRelationMapper.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../guns-admin/src/main/java/com/stylefeng/guns/persistence/dao/mapping/SysRoleMapper.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../guns-admin/src/main/java/com/stylefeng/guns/persistence/dao/mapping/SysUserMapper.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../guns-admin/src/main/java/com/stylefeng/guns/persistence/model/Class.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../guns-admin/src/main/java/com/stylefeng/guns/persistence/model/ClassScoreRela.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../guns-admin/src/main/java/com/stylefeng/guns/persistence/model/Folder.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../guns-admin/src/main/java/com/stylefeng/guns/persistence/model/Homework.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../guns-admin/src/main/java/com/stylefeng/guns/persistence/model/Score.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../guns-admin/src/main/java/com/stylefeng/guns/persistence/model/SysDept.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../guns-admin/src/main/java/com/stylefeng/guns/persistence/model/SysDict.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../guns-admin/src/main/java/com/stylefeng/guns/persistence/model/SysExpense.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../guns-admin/src/main/java/com/stylefeng/guns/persistence/model/SysLoginLog.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../guns-admin/src/main/java/com/stylefeng/guns/persistence/model/SysMenu.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../guns-admin/src/main/java/com/stylefeng/guns/persistence/model/SysNotice.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../guns-admin/src/main/java/com/stylefeng/guns/persistence/model/SysOperationLog.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../guns-admin/src/main/java/com/stylefeng/guns/persistence/model/SysRelation.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../guns-admin/src/main/java/com/stylefeng/guns/persistence/model/SysRole.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../guns-admin/src/main/java/com/stylefeng/guns/persistence/model/SysUser.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../guns-admin/src/main/java/com/stylefeng/guns/persistence/service/IClassScoreRelaService.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../guns-admin/src/main/java/com/stylefeng/guns/persistence/service/IClassService.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../guns-admin/src/main/java/com/stylefeng/guns/persistence/service/IFolderService.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../guns-admin/src/main/java/com/stylefeng/guns/persistence/service/IHomeworkService.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../guns-admin/src/main/java/com/stylefeng/guns/persistence/service/IScoreService.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../guns-admin/src/main/java/com/stylefeng/guns/persistence/service/ISysDeptService.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../guns-admin/src/main/java/com/stylefeng/guns/persistence/service/ISysDictService.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../guns-admin/src/main/java/com/stylefeng/guns/persistence/service/ISysExpenseService.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../guns-admin/src/main/java/com/stylefeng/guns/persistence/service/ISysLoginLogService.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../guns-admin/src/main/java/com/stylefeng/guns/persistence/service/ISysMenuService.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../guns-admin/src/main/java/com/stylefeng/guns/persistence/service/ISysNoticeService.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../guns-admin/src/main/java/com/stylefeng/guns/persistence/service/ISysOperationLogService.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../guns-admin/src/main/java/com/stylefeng/guns/persistence/service/ISysRelationService.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../guns-admin/src/main/java/com/stylefeng/guns/persistence/service/ISysRoleService.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../guns-admin/src/main/java/com/stylefeng/guns/persistence/service/ISysUserService.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../guns-admin/src/main/java/com/stylefeng/guns/persistence/serviceImpl/ClassScoreRelaServiceImpl.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../guns-admin/src/main/java/com/stylefeng/guns/persistence/serviceImpl/ClassServiceImpl.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../guns-admin/src/main/java/com/stylefeng/guns/persistence/serviceImpl/FolderServiceImpl.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../guns-admin/src/main/java/com/stylefeng/guns/persistence/serviceImpl/HomeworkServiceImpl.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../guns-admin/src/main/java/com/stylefeng/guns/persistence/serviceImpl/ScoreServiceImpl.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../guns-admin/src/main/java/com/stylefeng/guns/persistence/serviceImpl/SysDeptServiceImpl.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../guns-admin/src/main/java/com/stylefeng/guns/persistence/serviceImpl/SysDictServiceImpl.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../guns-admin/src/main/java/com/stylefeng/guns/persistence/serviceImpl/SysExpenseServiceImpl.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../guns-admin/src/main/java/com/stylefeng/guns/persistence/serviceImpl/SysLoginLogServiceImpl.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../guns-admin/src/main/java/com/stylefeng/guns/persistence/serviceImpl/SysMenuServiceImpl.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../guns-admin/src/main/java/com/stylefeng/guns/persistence/serviceImpl/SysNoticeServiceImpl.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../guns-admin/src/main/java/com/stylefeng/guns/persistence/serviceImpl/SysOperationLogServiceImpl.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../guns-admin/src/main/java/com/stylefeng/guns/persistence/serviceImpl/SysRelationServiceImpl.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../guns-admin/src/main/java/com/stylefeng/guns/persistence/serviceImpl/SysRoleServiceImpl.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../guns-admin/src/main/java/com/stylefeng/guns/persistence/serviceImpl/SysUserServiceImpl.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../guns-admin/target/classes/com/stylefeng/guns/modular/checkTime/controller/CheckTimeController.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../guns-admin/target/classes/com/stylefeng/guns/modular/checkTime/dao/CheckTimeDao.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../guns-admin/target/classes/com/stylefeng/guns/modular/checkTime/dao/mapping/CheckTimeDao.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../guns-admin/target/classes/com/stylefeng/guns/modular/checkTime/service/ICheckTimeService.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../guns-admin/target/classes/com/stylefeng/guns/modular/checkTime/service/impl/CheckTimeServiceImpl.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../guns-admin/target/classes/com/stylefeng/guns/modular/travel/controller/TravelController.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../guns-admin/target/classes/com/stylefeng/guns/modular/travel/dao/TravelDao.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../guns-admin/target/classes/com/stylefeng/guns/modular/travel/dao/mapping/TravelDao.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../guns-admin/target/classes/com/stylefeng/guns/modular/travel/service/ITravelService.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../guns-admin/target/classes/com/stylefeng/guns/modular/travel/service/impl/TravelServiceImpl.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../guns-admin/target/classes/com/stylefeng/guns/modular/vacation/controller/VacationController.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../guns-admin/target/classes/com/stylefeng/guns/modular/vacation/dao/VacationDao.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../guns-admin/target/classes/com/stylefeng/guns/modular/vacation/dao/mapping/VacationDao.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../guns-admin/target/classes/com/stylefeng/guns/modular/vacation/service/IVacationservice.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../guns-admin/target/classes/com/stylefeng/guns/modular/vacation/service/impl/VacationServiceImpl.class" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../guns-admin/target/classes/com/stylefeng/guns/modular/message/controller/MessageController.class" afterPath="$PROJECT_DIR$/../guns-admin/target/classes/com/stylefeng/guns/modular/message/controller/MessageController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../guns-admin/src/main/java/com/stylefeng/guns/modular/message/controller/MessageController.java" afterPath="$PROJECT_DIR$/../guns-admin/src/main/java/com/stylefeng/guns/modular/message/controller/MessageController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../guns-admin/src/main/webapp/WEB-INF/view/message/message.html" afterPath="$PROJECT_DIR$/../guns-admin/src/main/webapp/WEB-INF/view/message/message.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../guns-admin/target/classes/WEB-INF/view/message/message.html" afterPath="$PROJECT_DIR$/../guns-admin/target/classes/WEB-INF/view/message/message.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../guns-admin/src/main/java/com/stylefeng/guns/modular/score/service/IScoreService.java" afterPath="$PROJECT_DIR$/../guns-admin/src/main/java/com/stylefeng/guns/modular/score/service/IScoreService.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../guns-admin/src/main/webapp/static/modular/message/message.js" afterPath="$PROJECT_DIR$/../guns-admin/src/main/webapp/static/modular/message/message.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/logs/guns.log" afterPath="$PROJECT_DIR$/logs/guns.log" />
     </list>
@@ -113,111 +36,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="message.html" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/../guns-admin/src/main/webapp/WEB-INF/view/message/message.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="205">
-              <caret line="27" column="74" lean-forward="false" selection-start-line="27" selection-start-column="74" selection-end-line="27" selection-end-column="74" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="check_time_boss.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../guns-admin/src/main/webapp/WEB-INF/view/checkTime/check_time_boss.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="294">
-              <caret line="14" column="36" lean-forward="false" selection-start-line="14" selection-start-column="30" selection-end-line="14" selection-end-column="36" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="button.tag" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../guns-admin/src/main/webapp/WEB-INF/view/common/tags/button.tag">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-57">
-              <caret line="6" column="20" lean-forward="true" selection-start-line="6" selection-start-column="20" selection-end-line="6" selection-end-column="20" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="input.tag" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../guns-admin/src/main/webapp/WEB-INF/view/common/tags/input.tag">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="315">
-              <caret line="45" column="6" lean-forward="true" selection-start-line="10" selection-start-column="0" selection-end-line="45" selection-end-column="6" />
-              <folding>
-                <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="MessageController.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../guns-admin/src/main/java/com/stylefeng/guns/modular/message/controller/MessageController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="163">
-              <caret line="45" column="0" lean-forward="true" selection-start-line="45" selection-start-column="0" selection-end-line="45" selection-end-column="0" />
-              <folding>
-                <element signature="e#1102#1103#0" expanded="true" />
-                <element signature="e#1148#1149#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="IUserService.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../guns-admin/src/main/java/com/stylefeng/guns/modular/system/service/IUserService.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="312">
-              <caret line="43" column="21" lean-forward="false" selection-start-line="43" selection-start-column="9" selection-end-line="43" selection-end-column="21" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="UserServiceImpl.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../guns-admin/src/main/java/com/stylefeng/guns/modular/system/service/impl/UserServiceImpl.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="368">
-              <caret line="45" column="37" lean-forward="false" selection-start-line="45" selection-start-column="37" selection-end-line="45" selection-end-column="37" />
-              <folding>
-                <element signature="e#1328#1329#0" expanded="true" />
-                <element signature="e#1388#1389#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="UserMapper.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../guns-admin/src/main/java/com/stylefeng/guns/modular/system/dao/UserMapper.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="354">
-              <caret line="43" column="21" lean-forward="false" selection-start-line="43" selection-start-column="9" selection-end-line="43" selection-end-column="21" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="UserMapper.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../guns-admin/src/main/java/com/stylefeng/guns/modular/system/dao/mapping/UserMapper.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="218">
-              <caret line="70" column="28" lean-forward="false" selection-start-line="70" selection-start-column="16" selection-end-line="70" selection-end-column="28" />
-              <folding>
-                <marker date="1532838308000" expanded="true" signature="2052:2113" ph="update sys_u... " />
-                <marker date="1532838308000" expanded="true" signature="2153:2213" ph="update sys_u... " />
-                <marker date="1532838308000" expanded="true" signature="2252:2314" ph="update sys_u... " />
-                <marker date="1532838308000" expanded="true" signature="2375:2488" ph="select from sys_user" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf />
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
@@ -243,6 +62,7 @@
       <find>notice</find>
       <find>&lt;#button</find>
       <find>input.tag</find>
+      <find>IScoreService</find>
       <find>getByAccount</find>
     </findStrings>
     <replaceStrings>
@@ -275,6 +95,8 @@
         <option value="$PROJECT_DIR$/../guns-admin/src/main/java/com/stylefeng/guns/persistence/serviceImpl/ClassServiceImpl.java" />
         <option value="$PROJECT_DIR$/../guns-admin/src/main/java/com/stylefeng/guns/modular/message/controller/MessageController.java" />
         <option value="$PROJECT_DIR$/../guns-admin/src/main/webapp/WEB-INF/view/message/message.html" />
+        <option value="$PROJECT_DIR$/../guns-admin/src/main/java/com/stylefeng/guns/modular/score/service/IScoreService.java" />
+        <option value="$PROJECT_DIR$/../guns-admin/src/main/webapp/static/modular/message/message.js" />
       </list>
     </option>
   </component>
@@ -464,6 +286,11 @@
             <path>
               <item name="作业网" type="b2602c69:ProjectViewProjectNode" />
               <item name="guns-admin" type="462c0819:PsiDirectoryNode" />
+              <item name="sql" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="作业网" type="b2602c69:ProjectViewProjectNode" />
+              <item name="guns-admin" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -539,85 +366,7 @@
               <item name="stylefeng" type="462c0819:PsiDirectoryNode" />
               <item name="guns" type="462c0819:PsiDirectoryNode" />
               <item name="modular" type="462c0819:PsiDirectoryNode" />
-              <item name="checkTime" type="462c0819:PsiDirectoryNode" />
-              <item name="controller" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="作业网" type="b2602c69:ProjectViewProjectNode" />
-              <item name="guns-admin" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="stylefeng" type="462c0819:PsiDirectoryNode" />
-              <item name="guns" type="462c0819:PsiDirectoryNode" />
-              <item name="modular" type="462c0819:PsiDirectoryNode" />
-              <item name="message" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="作业网" type="b2602c69:ProjectViewProjectNode" />
-              <item name="guns-admin" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="stylefeng" type="462c0819:PsiDirectoryNode" />
-              <item name="guns" type="462c0819:PsiDirectoryNode" />
-              <item name="modular" type="462c0819:PsiDirectoryNode" />
-              <item name="message" type="462c0819:PsiDirectoryNode" />
-              <item name="controller" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="作业网" type="b2602c69:ProjectViewProjectNode" />
-              <item name="guns-admin" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="stylefeng" type="462c0819:PsiDirectoryNode" />
-              <item name="guns" type="462c0819:PsiDirectoryNode" />
-              <item name="modular" type="462c0819:PsiDirectoryNode" />
-              <item name="system" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="作业网" type="b2602c69:ProjectViewProjectNode" />
-              <item name="guns-admin" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="stylefeng" type="462c0819:PsiDirectoryNode" />
-              <item name="guns" type="462c0819:PsiDirectoryNode" />
-              <item name="modular" type="462c0819:PsiDirectoryNode" />
-              <item name="system" type="462c0819:PsiDirectoryNode" />
-              <item name="dao" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="作业网" type="b2602c69:ProjectViewProjectNode" />
-              <item name="guns-admin" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="stylefeng" type="462c0819:PsiDirectoryNode" />
-              <item name="guns" type="462c0819:PsiDirectoryNode" />
-              <item name="modular" type="462c0819:PsiDirectoryNode" />
-              <item name="system" type="462c0819:PsiDirectoryNode" />
-              <item name="dao" type="462c0819:PsiDirectoryNode" />
-              <item name="mapping" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="作业网" type="b2602c69:ProjectViewProjectNode" />
-              <item name="guns-admin" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="stylefeng" type="462c0819:PsiDirectoryNode" />
-              <item name="guns" type="462c0819:PsiDirectoryNode" />
-              <item name="modular" type="462c0819:PsiDirectoryNode" />
-              <item name="system" type="462c0819:PsiDirectoryNode" />
-              <item name="service" type="462c0819:PsiDirectoryNode" />
+              <item name="score" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="作业网" type="b2602c69:ProjectViewProjectNode" />
@@ -666,16 +415,6 @@
               <item name="webapp" type="462c0819:PsiDirectoryNode" />
               <item name="static" type="462c0819:PsiDirectoryNode" />
               <item name="modular" type="462c0819:PsiDirectoryNode" />
-              <item name="checkTime" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="作业网" type="b2602c69:ProjectViewProjectNode" />
-              <item name="guns-admin" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="webapp" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
-              <item name="modular" type="462c0819:PsiDirectoryNode" />
               <item name="message" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -704,27 +443,6 @@
               <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
               <item name="view" type="462c0819:PsiDirectoryNode" />
               <item name="checkTime" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="作业网" type="b2602c69:ProjectViewProjectNode" />
-              <item name="guns-admin" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="webapp" type="462c0819:PsiDirectoryNode" />
-              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
-              <item name="view" type="462c0819:PsiDirectoryNode" />
-              <item name="common" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="作业网" type="b2602c69:ProjectViewProjectNode" />
-              <item name="guns-admin" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="webapp" type="462c0819:PsiDirectoryNode" />
-              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
-              <item name="view" type="462c0819:PsiDirectoryNode" />
-              <item name="common" type="462c0819:PsiDirectoryNode" />
-              <item name="tags" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="作业网" type="b2602c69:ProjectViewProjectNode" />
@@ -940,10 +658,18 @@
       <updated>1541609429270</updated>
       <workItem from="1541609430626" duration="4230000" />
     </task>
+    <task id="LOCAL-00001" summary="submit">
+      <created>1542216589951</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1542216589952</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="6415000" />
+    <option name="totallyTimeSpent" value="7313000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -974,7 +700,7 @@
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32963374" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.7480577" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3107658" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32963374" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25320512" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -1022,12 +748,16 @@
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="submit" />
+    <option name="LAST_COMMIT_MESSAGE" value="submit" />
+  </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/../guns-admin/src/main/java/com/stylefeng/guns/modular/message/controller/MessageController.java</url>
-          <line>48</line>
+          <line>46</line>
           <properties />
           <option name="timeStamp" value="3" />
         </line-breakpoint>
@@ -1037,22 +767,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/../guns-admin/src/main/resources/ehcache.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../guns-admin/src/main/resources/logback-spring.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="178">
-          <caret line="11" column="17" lean-forward="true" selection-start-line="11" selection-start-column="17" selection-end-line="11" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../guns-admin/src/main/webapp/static/modular/checkTime/check_time_boss.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="378">
@@ -1215,7 +929,7 @@
         <state relative-caret-position="141">
           <caret line="53" column="69" lean-forward="false" selection-start-line="53" selection-start-column="69" selection-end-line="53" selection-end-column="69" />
           <folding>
-            <element signature="n#style#0;n#h2#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#h2#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1247,6 +961,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="252">
           <caret line="18" column="17" lean-forward="false" selection-start-line="18" selection-start-column="17" selection-end-line="18" selection-end-column="17" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1311,8 +1026,8 @@
         <state relative-caret-position="265">
           <caret line="38" column="0" lean-forward="false" selection-start-line="38" selection-start-column="0" selection-end-line="38" selection-end-column="0" />
           <folding>
-            <element signature="e#1576#1810#0" expanded="true" />
-            <element signature="e#1809#1810#0" expanded="true" />
+            <element signature="e#1576#1810#0" expanded="false" />
+            <element signature="e#1809#1810#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1329,14 +1044,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="200">
           <caret line="25" column="18" lean-forward="false" selection-start-line="25" selection-start-column="18" selection-end-line="25" selection-end-column="18" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../guns-admin/src/main/webapp/static/modular/message/message.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="15" column="0" lean-forward="true" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -1376,7 +1083,7 @@
     <entry file="file://$PROJECT_DIR$/../guns-admin/src/main/webapp/WEB-INF/view/common/tags/button.tag">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-57">
-          <caret line="6" column="20" lean-forward="true" selection-start-line="6" selection-start-column="20" selection-end-line="6" selection-end-column="20" />
+          <caret line="6" column="20" lean-forward="false" selection-start-line="6" selection-start-column="20" selection-end-line="6" selection-end-column="20" />
           <folding />
         </state>
       </provider>
@@ -1423,11 +1130,10 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/../guns-admin/src/main/java/com/stylefeng/guns/modular/message/controller/MessageController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="163">
-          <caret line="45" column="0" lean-forward="true" selection-start-line="45" selection-start-column="0" selection-end-line="45" selection-end-column="0" />
+        <state relative-caret-position="436">
+          <caret line="47" column="0" lean-forward="false" selection-start-line="47" selection-start-column="0" selection-end-line="47" selection-end-column="0" />
           <folding>
-            <element signature="e#1102#1103#0" expanded="true" />
-            <element signature="e#1148#1149#0" expanded="true" />
+            <marker date="1542294178937" expanded="true" signature="1850:1857" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -1435,7 +1141,7 @@
     <entry file="file://$PROJECT_DIR$/../guns-admin/src/main/webapp/WEB-INF/view/common/tags/input.tag">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="315">
-          <caret line="45" column="6" lean-forward="true" selection-start-line="10" selection-start-column="0" selection-end-line="45" selection-end-column="6" />
+          <caret line="45" column="6" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="45" selection-end-column="6" />
           <folding>
             <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
           </folding>
@@ -1450,10 +1156,36 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/../guns-admin/src/main/java/com/stylefeng/guns/modular/score/service/IScoreService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="10" column="3" lean-forward="false" selection-start-line="10" selection-start-column="3" selection-end-line="10" selection-end-column="3" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../guns-admin/src/main/java/com/stylefeng/guns/modular/score/controller/ScoreController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="444">
+          <caret line="63" column="0" lean-forward="true" selection-start-line="63" selection-start-column="0" selection-end-line="63" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/../guns-admin/src/main/webapp/WEB-INF/view/message/message.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="205">
-          <caret line="27" column="74" lean-forward="false" selection-start-line="27" selection-start-column="74" selection-end-line="27" selection-end-column="74" />
+        <state relative-caret-position="121">
+          <caret line="17" column="35" lean-forward="false" selection-start-line="17" selection-start-column="32" selection-end-line="17" selection-end-column="35" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../guns-admin/src/main/webapp/static/modular/message/message.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="5" column="26" lean-forward="true" selection-start-line="5" selection-start-column="26" selection-end-line="5" selection-end-column="26" />
           <folding />
         </state>
       </provider>
