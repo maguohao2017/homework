@@ -4,70 +4,69 @@
 
     <sql id="Base_Column_List">
         t.id,
-        (CASE
-        WHEN DATE_FORMAT(t.checktime,'%H') &lt; 9 OR DATE_FORMAT(t.checktime,'%H') &gt; 17 THEN '正常'
-        WHEN DATE_FORMAT(t.checktime,'%H') &lt; 12 AND DATE_FORMAT(t.checktime,'%H') &gt; 9 THEN '迟到'
-        WHEN DATE_FORMAT(t.checktime,'%H') &lt; 18 AND DATE_FORMAT(t.checktime,'%H') &gt; 12 THEN '早退'
-        WHEN t.status = '4' THEN '旷工'
-        WHEN t.status = '5' THEN '异常'
-        WHEN t.status = '10' THEN '已审批'
-        END )AS status,
-        t.checktime AS checktime,
-        t1.account AS account,
-        t1.name AS userName,
-        (CASE
-        WHEN t1.sex = '1' THEN '男'
-        WHEN t1.sex = '2' THEN '女'
-        END) AS sex,
-        t1.birthday AS birthday,
-        t1.email AS email,
-        t1.phone AS phone,
-        t2.fullname AS deptName
+        t.score,
+        t.status,
+        t.create_time as createTime,
+        t.perusal_time as perusalime,
+        t.remark,
+        t.homework_id as homeworkId,
+        t1.homework_name as homeworkName,
+        t3.name
+
+
 
     </sql>
 
-    <select id="queryStaffCheckTimeList" resultType="map">
+    <select id="getScoreList" resultType="map" parameterType="Integer">
         SELECT
-        <include refid="Base_Column_List" />
-        FROM check_time t
-        LEFT JOIN sys_user t1
-        ON t.userid = t1.id
-        LEFT JOIN sys_dept t2
-        ON t1.deptid = t2.id
-        WHERE t1.id = #{userid}
-        <if test="flag != ''">
-         AND  TO_DAYS(t.checktime) = TO_DAYS(NOW());
-        </if>
-
+        <include refid="Base_Column_List"/>
+        FROM score t
+        LEFT JOIN homework t1
+        ON t.homework_id = t1.id
+        LEFT JOIN user_score_rela t2
+        ON t.id = t2.score_id
+        LEFT JOIN sys_user t3
+        ON t2.user_id = t3.id
+        <where>
+            <if test="userId!= null and userId !=  ''">
+                t3.id = #{userId}
+            </if>
+        </where>
+        order by t.perusal_time desc
     </select>
 
-    <insert id="insertInfo">
-        INSERT INTO check_time
-        (userid,createtime,status,checktime,updatetime
+    <insert id="insertScore" parameterType="Map">
+        INSERT INTO score
+        (score,status,create_time,perusal_time,remark,homework_id
         )
         VALUES (
-        #{userid},NOW(),#{status},NOW(),NOW()
+        #{score},#{status},NOW(),NOW(),#{remark},#{homeworkId}
         )
     </insert>
 
-    <select id="queryBossCheckTimeList" resultType="map">
-        SELECT
-        <include refid="Base_Column_List" />
-        FROM check_time t
-        LEFT JOIN sys_user t1
-        ON t.userid = t1.id
-        LEFT JOIN sys_dept t2
-        ON t1.deptid = t2.id
-        AND t.status &lt;&gt; '1'
+    <update id="updateScore" parameterType="Map">
+        UPDATE score
+        <set>
+            t.perusal_time = NOW(),
 
-    </select>
-
-    <update id="update">
-        UPDATE check_time SET
-        status = #{status},
-        updatetime = NOW()
+            <if test="score != null and score !=''">
+                t.score = #{score},
+            </if>
+            <if test="status != null and status !=''">
+                t.status = #{status},
+            </if>
+            <if test="remark != null and remark !=''">
+                t.remark = #{remark},
+            </if>
+        </set>
         WHERE id = #{id}
     </update>
+
+    <delete id="deleteScore" parameterType="Integer">
+        delete from
+        score t
+        where t.id = #{id}
+    </delete>
 
 
 
