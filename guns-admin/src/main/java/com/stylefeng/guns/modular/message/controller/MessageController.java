@@ -2,17 +2,16 @@ package com.stylefeng.guns.modular.message.controller;
 
 import com.stylefeng.guns.core.base.controller.BaseController;
 import com.stylefeng.guns.core.shiro.ShiroKit;
-import com.stylefeng.guns.modular.checkTime.service.ICheckTimeService;
-import com.stylefeng.guns.modular.system.model.User;
+import com.stylefeng.guns.modular.system.model.*;
 import com.stylefeng.guns.modular.system.service.IDeptService;
+import com.stylefeng.guns.modular.system.service.IRoleService;
 import com.stylefeng.guns.modular.system.service.IUserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 
-import javax.annotation.Resource;
-import java.util.List;
+import java.util.HashMap;
 import java.util.Map;
 
 /**
@@ -33,6 +32,9 @@ public class MessageController extends BaseController {
     @Autowired
     private IDeptService deptService;
 
+    @Autowired
+    private IRoleService roleService;
+
     @RequestMapping("")
     public String index() {
         return PREFIX + "message.html";
@@ -44,18 +46,28 @@ public class MessageController extends BaseController {
     @ResponseBody
     public Object map() {
 
+        Map map = new HashMap<>();
         User user = new User();
+        Dept dept = new Dept();
+        Role role = new Role();
+
         try {
             String account = ShiroKit.getUser().account;
 
             user = userService.getByAccount(account);
 
-            String deptName = deptService.selectById(user.getDeptid()).getFullname();
+            dept = deptService.selectById(user.getDeptid());
+
+            role = roleService.selectById(user.getRoleid());
+
+            map.put("user",user);
+            map.put("dept",dept);
+            map.put("role",role);
 
         }catch (Exception e){
             e.printStackTrace();
         }
-        return user;
+        return map;
     }
 
 }
