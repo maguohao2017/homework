@@ -11,7 +11,7 @@ import static com.stylefeng.guns.core.util.ToolUtil.isEmpty;
 /**
  * guns项目配置
  *
- * @author stylefeng
+ * @author mgh
  * @Date 2018/5/23 22:31
  */
 @Component

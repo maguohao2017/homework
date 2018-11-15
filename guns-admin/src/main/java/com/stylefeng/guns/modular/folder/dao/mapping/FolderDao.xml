@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.stylefeng.guns.modular.folder.dao.FolderDao">
+
+    <sql id="Base_Column_List">
+        t.id,
+        t.folder_name as folderName,
+        t.folder_type as folderType,
+        t.remark,
+        t.create_time as createTime,
+        t1.class_no as classNo
+    </sql>
+
+    <select id="getFolderList" resultType="map">
+        SELECT
+        <include refid="Base_Column_List"/>
+        FROM folder t
+        LEFT JOIN class t1
+        ON t.class_id = t1.id
+        WHERE 1=1
+        <if test="id != null and id !=''">
+            t.id = #{id}
+        </if>
+    </select>
+
+    <insert id="insertFolder" parameterType="Map">
+        INSERT INTO folder
+        (folder_name,folder_type,remark,create_time,class_id
+        )
+        VALUES (
+        #{folderName},#{folderType},#{remark},NOW(),#{classId}
+        )
+    </insert>
+
+    <update id="updateFolder" parameterType="Map">
+        UPDATE folder
+        <set>
+            <if test="folderName != null and folderName !=''">
+                t.folder_name = #{folderName},
+            </if>
+            <if test="folderType != null and folderType !=''">
+                t.folder_type = #{folderType},
+            </if>
+            <if test="remark != null and remark !=''">
+                t.remark = #{remark},
+            </if>
+            <if test="classId != null and classId !=''">
+                t.class_id = #{classId}
+            </if>
+        </set>
+        WHERE id = #{id}
+    </update>
+
+    <delete id="deleteFolder" parameterType="Integer">
+        delete from
+        folder t
+        where t.id = #{id}
+    </delete>
+
+
+</mapper>
