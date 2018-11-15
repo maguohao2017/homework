@@ -20,6 +20,8 @@ public interface ClassNoDao {
 
     Map<String, Object> getClass(Integer userId);
 
+    Map<String, Object> getClassEdit(Integer id);
+
     Integer insertClass(Map map);
 
     Integer updateClass(Map map);

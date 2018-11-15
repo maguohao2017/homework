@@ -7,10 +7,10 @@ import com.stylefeng.guns.core.shiro.ShiroKit;
 import com.stylefeng.guns.modular.classNo.service.IClassNoService;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 
+import org.springframework.ui.Model;
 import javax.annotation.Resource;
 import java.util.HashMap;
 import java.util.List;
@@ -50,8 +50,15 @@ public class ClassController extends BaseController {
         return PREFIX + "class_teacher_add.html";
     }
 
-    @RequestMapping("/class_edit")
-    public String class_edit() {
+    @RequestMapping("/class_edit/{id}")
+    public String class_edit(@PathVariable Integer id,Model model) {
+
+
+        Map map = iclassNoService.getClassEdit(id);
+        model.addAttribute("id",map.get("id"));
+        model.addAttribute("classNo",map.get("classNo"));
+        model.addAttribute("classGrade",map.get("classGrade"));
+        model.addAttribute("classYear",map.get("classYear"));
         return PREFIX + "class_teacher_edit.html";
     }
 

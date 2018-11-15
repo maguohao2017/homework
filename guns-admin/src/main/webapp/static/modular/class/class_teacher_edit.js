@@ -2,18 +2,20 @@ var class_edit = {
     init:function(){
         $("input").each(function(){
             var key = $(this).attr("id");
-            $(this).val($("#"+key).text());
+            $(this).val($("#edit_"+key).text());
         });
     },
     editSubmit:function(){
         var params = {};
         $("input").each(function(){
             var key = $(this).attr("id");
-            params.key = $(this).val();
+            params[key] = $(this).val();
         });
+        console.log(params);
         //提交信息
         var ajax = new $ax(Feng.ctxPath + "/class/updateClass/"+JSON.stringify(params), function (data) {
             Feng.success("修改成功!");
+            class_edit.close();
             window.parent.classNo.table.refresh();
         }, function (data) {
             Feng.error("修改失败!");

@@ -2,35 +2,33 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="38b6237c-c8c4-41c1-ba1a-def69640d0a7" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../guns-admin/src/main/webapp/static/modular/class/class_teacher.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../guns-admin/src/main/webapp/static/modular/class/class_teacher_add.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../guns-admin/src/main/webapp/static/modular/class/class_teacher_edit.js" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../guns-admin/src/main/webapp/WEB-INF/view/checkTime/check_history_staff.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../guns-admin/src/main/webapp/WEB-INF/view/checkTime/check_time_boss.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../guns-admin/src/main/webapp/WEB-INF/view/checkTime/check_time_staff.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../guns-admin/src/main/webapp/WEB-INF/view/quit/quit_add_staff.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../guns-admin/src/main/webapp/WEB-INF/view/quit/quit_boss.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../guns-admin/src/main/webapp/WEB-INF/view/quit/quit_edit_staff.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../guns-admin/src/main/webapp/WEB-INF/view/quit/quit_staff.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../guns-admin/src/main/webapp/WEB-INF/view/travel/travel_add_boss.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../guns-admin/src/main/webapp/WEB-INF/view/travel/travel_boss.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../guns-admin/src/main/webapp/WEB-INF/view/travel/travel_edit_boss.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../guns-admin/src/main/webapp/WEB-INF/view/travel/travel_staff.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../guns-admin/src/main/webapp/static/modular/checkTime/check_history_staff.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../guns-admin/src/main/webapp/static/modular/checkTime/check_time_staff.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../guns-admin/target/classes/WEB-INF/view/checkTime/check_history_staff.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../guns-admin/target/classes/WEB-INF/view/checkTime/check_time_boss.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../guns-admin/target/classes/WEB-INF/view/checkTime/check_time_staff.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../guns-admin/target/classes/WEB-INF/view/quit/quit_add_staff.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../guns-admin/target/classes/WEB-INF/view/quit/quit_boss.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../guns-admin/target/classes/WEB-INF/view/quit/quit_edit_staff.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../guns-admin/target/classes/WEB-INF/view/quit/quit_staff.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../guns-admin/target/classes/WEB-INF/view/travel/travel_add_boss.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../guns-admin/target/classes/WEB-INF/view/travel/travel_boss.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../guns-admin/target/classes/WEB-INF/view/travel/travel_edit_boss.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../guns-admin/target/classes/WEB-INF/view/travel/travel_staff.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../guns-admin/target/classes/WEB-INF/view/vacation/vacation_add_staff.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../guns-admin/target/classes/WEB-INF/view/vacation/vacation_boss.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../guns-admin/target/classes/WEB-INF/view/vacation/vacation_edit_staff.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../guns-admin/target/classes/WEB-INF/view/vacation/vacation_staff.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../guns-admin/target/classes/static/modular/checkTime/check_history_staff.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../guns-admin/target/classes/static/modular/checkTime/check_time_boss.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../guns-admin/target/classes/static/modular/checkTime/check_time_staff.js" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../guns-admin/src/main/java/com/stylefeng/guns/modular/classNo/controller/ClassController.java" afterPath="$PROJECT_DIR$/../guns-admin/src/main/java/com/stylefeng/guns/modular/classNo/controller/ClassController.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../guns-admin/src/main/java/com/stylefeng/guns/modular/classNo/dao/ClassNoDao.java" afterPath="$PROJECT_DIR$/../guns-admin/src/main/java/com/stylefeng/guns/modular/classNo/dao/ClassNoDao.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../guns-admin/src/main/java/com/stylefeng/guns/modular/classNo/dao/mapping/ClassNoDao.xml" afterPath="$PROJECT_DIR$/../guns-admin/src/main/java/com/stylefeng/guns/modular/classNo/dao/mapping/ClassNoDao.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../guns-admin/src/main/java/com/stylefeng/guns/modular/classNo/service/IClassNoService.java" afterPath="$PROJECT_DIR$/../guns-admin/src/main/java/com/stylefeng/guns/modular/classNo/service/IClassNoService.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../guns-admin/src/main/java/com/stylefeng/guns/modular/classNo/service/impl/ClassServiceImpl.java" afterPath="$PROJECT_DIR$/../guns-admin/src/main/java/com/stylefeng/guns/modular/classNo/service/impl/ClassServiceImpl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../guns-admin/target/classes/static/modular/message/message.js" afterPath="$PROJECT_DIR$/../guns-admin/target/classes/static/modular/message/message.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../guns-admin/src/main/webapp/WEB-INF/view/class/class_teacher_edit.html" afterPath="$PROJECT_DIR$/../guns-admin/src/main/webapp/WEB-INF/view/class/class_teacher_edit.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../guns-admin/src/main/webapp/static/modular/class/class_teacher_edit.js" afterPath="$PROJECT_DIR$/../guns-admin/src/main/webapp/static/modular/class/class_teacher_edit.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/logs/guns.log" afterPath="$PROJECT_DIR$/logs/guns.log" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/../guns-admin/src/main/webapp/WEB-INF/view/vacation/vacation_add_staff.html" afterPath="$PROJECT_DIR$/../guns-admin/src/main/webapp/WEB-INF/view/class/class_teacher_add.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/../guns-admin/src/main/webapp/WEB-INF/view/vacation/vacation_boss.html" afterPath="$PROJECT_DIR$/../guns-admin/src/main/webapp/WEB-INF/view/class/class_student.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/../guns-admin/src/main/webapp/WEB-INF/view/vacation/vacation_edit_staff.html" afterPath="$PROJECT_DIR$/../guns-admin/src/main/webapp/WEB-INF/view/class/class_teacher_edit.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/../guns-admin/src/main/webapp/WEB-INF/view/vacation/vacation_staff.html" afterPath="$PROJECT_DIR$/../guns-admin/src/main/webapp/WEB-INF/view/class/class_teacher.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/../guns-admin/src/main/webapp/static/modular/checkTime/check_time_boss.js" afterPath="$PROJECT_DIR$/../guns-admin/src/main/webapp/static/modular/class/class_student.js" />
     </list>
     <ignored path="$PROJECT_DIR$/../guns-generator/target/" />
     <ignored path="$PROJECT_DIR$/../guns-core/target/" />
@@ -46,21 +44,50 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="class_teacher_add.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../guns-admin/src/main/webapp/static/modular/class/class_teacher_add.js">
+      <file leaf-file-name="ClassController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../guns-admin/src/main/java/com/stylefeng/guns/modular/classNo/controller/ClassController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="218">
-              <caret line="26" column="61" lean-forward="false" selection-start-line="26" selection-start-column="50" selection-end-line="26" selection-end-column="61" />
+            <state relative-caret-position="378">
+              <caret line="131" column="0" lean-forward="false" selection-start-line="131" selection-start-column="0" selection-end-line="131" selection-end-column="0" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ClassNoDao.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../guns-admin/src/main/java/com/stylefeng/guns/modular/classNo/dao/mapping/ClassNoDao.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="420">
+              <caret line="74" column="24" lean-forward="true" selection-start-line="74" selection-start-column="24" selection-end-line="74" selection-end-column="24" />
+              <folding>
+                <marker date="1542307047216" expanded="true" signature="592:794" ph="SELECT FROM class" />
+                <marker date="1542307047216" expanded="true" signature="886:1049" ph="SELECT FROM sys_user" />
+                <marker date="1542307047216" expanded="true" signature="1145:1302" ph="SELECT FROM class" />
+                <marker date="1542307047216" expanded="true" signature="1376:1571" ph="INSERT INTO folder... " />
+                <marker date="1542307047216" expanded="true" signature="1645:2117" ph="UPDATE folde... " />
+                <marker date="1542307047216" expanded="true" signature="2195:2245" ph="delete from " />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SQLErrorCodeSQLExceptionTranslator.java" pinned="false" current-in-tab="false">
+        <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-jdbc/4.3.13.RELEASE/spring-jdbc-4.3.13.RELEASE-sources.jar!/org/springframework/jdbc/support/SQLErrorCodeSQLExceptionTranslator.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="171">
+              <caret line="230" column="0" lean-forward="false" selection-start-line="230" selection-start-column="0" selection-end-line="230" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="class_teacher_add.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../guns-admin/src/main/webapp/WEB-INF/view/class/class_teacher_add.html">
+      <file leaf-file-name="ClassNoDao.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../guns-admin/src/main/java/com/stylefeng/guns/modular/classNo/dao/ClassNoDao.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="126">
-              <caret line="27" column="109" lean-forward="false" selection-start-line="27" selection-start-column="104" selection-end-line="27" selection-end-column="109" />
+            <state relative-caret-position="221">
+              <caret line="22" column="4" lean-forward="false" selection-start-line="22" selection-start-column="4" selection-end-line="22" selection-end-column="49" />
               <folding />
             </state>
           </provider>
@@ -69,8 +96,8 @@
       <file leaf-file-name="IClassNoService.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/../guns-admin/src/main/java/com/stylefeng/guns/modular/classNo/service/IClassNoService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="258">
-              <caret line="19" column="33" lean-forward="true" selection-start-line="19" selection-start-column="33" selection-end-line="19" selection-end-column="33" />
+            <state relative-caret-position="284">
+              <caret line="19" column="49" lean-forward="false" selection-start-line="19" selection-start-column="49" selection-end-line="19" selection-end-column="49" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -81,69 +108,31 @@
       <file leaf-file-name="ClassServiceImpl.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/../guns-admin/src/main/java/com/stylefeng/guns/modular/classNo/service/impl/ClassServiceImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="242">
-              <caret line="31" column="34" lean-forward="true" selection-start-line="31" selection-start-column="34" selection-end-line="31" selection-end-column="34" />
+            <state relative-caret-position="263">
+              <caret line="31" column="41" lean-forward="false" selection-start-line="31" selection-start-column="41" selection-end-line="31" selection-end-column="41" />
               <folding>
-                <element signature="e#840#841#0" expanded="true" />
-                <element signature="e#893#894#0" expanded="true" />
+                <element signature="e#965#966#0" expanded="true" />
+                <element signature="e#1018#1019#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ClassNoDao.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../guns-admin/src/main/java/com/stylefeng/guns/modular/classNo/dao/ClassNoDao.java">
+      <file leaf-file-name="class_teacher_edit.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../guns-admin/src/main/webapp/WEB-INF/view/class/class_teacher_edit.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
-              <caret line="22" column="23" lean-forward="false" selection-start-line="22" selection-start-column="12" selection-end-line="22" selection-end-column="23" />
+            <state relative-caret-position="447">
+              <caret line="24" column="54" lean-forward="false" selection-start-line="24" selection-start-column="54" selection-end-line="24" selection-end-column="54" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ClassNoDao.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../guns-admin/src/main/java/com/stylefeng/guns/modular/classNo/dao/mapping/ClassNoDao.xml">
+      <file leaf-file-name="class_teacher.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../guns-admin/src/main/webapp/static/modular/class/class_teacher.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
-              <caret line="24" column="13" lean-forward="true" selection-start-line="24" selection-start-column="13" selection-end-line="24" selection-end-column="13" />
-              <folding>
-                <marker date="1542300702880" expanded="true" signature="592:794" ph="SELECT FROM class" />
-                <marker date="1542300702880" expanded="true" signature="886:1049" ph="SELECT FROM sys_user" />
-                <marker date="1542300702880" expanded="true" signature="1123:1318" ph="INSERT INTO folder... " />
-                <marker date="1542300702880" expanded="true" signature="1392:1862" ph="UPDATE folde... " />
-                <marker date="1542300702880" expanded="true" signature="1940:1994" ph="delete from " />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ClassController.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../guns-admin/src/main/java/com/stylefeng/guns/modular/classNo/controller/ClassController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="247">
-              <caret line="112" column="41" lean-forward="false" selection-start-line="112" selection-start-column="30" selection-end-line="112" selection-end-column="41" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="quit_add_staff.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../guns-admin/src/main/webapp/static/modular/quit/quit_add_staff.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="travel_add_boss.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../guns-admin/src/main/webapp/static/modular/travel/travel_add_boss.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="420">
-              <caret line="29" column="21" lean-forward="true" selection-start-line="20" selection-start-column="7" selection-end-line="29" selection-end-column="21" />
+            <state relative-caret-position="231">
+              <caret line="45" column="77" lean-forward="true" selection-start-line="45" selection-start-column="77" selection-end-line="45" selection-end-column="77" />
               <folding />
             </state>
           </provider>
@@ -152,8 +141,18 @@
       <file leaf-file-name="class_teacher_edit.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/../guns-admin/src/main/webapp/static/modular/class/class_teacher_edit.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="168">
-              <caret line="8" column="24" lean-forward="true" selection-start-line="8" selection-start-column="24" selection-end-line="8" selection-end-column="24" />
+            <state relative-caret-position="340">
+              <caret line="17" column="22" lean-forward="false" selection-start-line="17" selection-start-column="22" selection-end-line="17" selection-end-column="22" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="class_teacher_add.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../guns-admin/src/main/webapp/static/modular/class/class_teacher_add.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="260">
+              <caret line="28" column="30" lean-forward="true" selection-start-line="28" selection-start-column="12" selection-end-line="28" selection-end-column="30" />
               <folding />
             </state>
           </provider>
@@ -163,8 +162,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>锦州天宇公司考勤管理系统的设计与实现</find>
-      <find>范广</find>
       <find>maguohao</find>
       <find>2018年5月17日</find>
       <find>2018年</find>
@@ -193,6 +190,8 @@
       <find>vacation</find>
       <find>insertClass</find>
       <find>vacation_add</find>
+      <find>content: Feng.ctxPath</find>
+      <find>class_edit</find>
     </findStrings>
     <replaceStrings>
       <replace>中小学大家来作业网的设计与实现</replace>
@@ -232,15 +231,15 @@
         <option value="$PROJECT_DIR$/../guns-admin/src/main/webapp/static/modular/message/message.js" />
         <option value="$PROJECT_DIR$/../guns-admin/src/main/webapp/WEB-INF/view/class/class_student.html" />
         <option value="$PROJECT_DIR$/../guns-admin/src/main/webapp/WEB-INF/view/class/class_teacher.html" />
+        <option value="$PROJECT_DIR$/../guns-admin/src/main/webapp/WEB-INF/view/class/class_teacher_add.html" />
+        <option value="$PROJECT_DIR$/../guns-admin/src/main/webapp/static/modular/class/class_teacher_add.js" />
+        <option value="$PROJECT_DIR$/../guns-admin/src/main/webapp/static/modular/class/class_teacher.js" />
         <option value="$PROJECT_DIR$/../guns-admin/src/main/java/com/stylefeng/guns/modular/classNo/dao/ClassNoDao.java" />
         <option value="$PROJECT_DIR$/../guns-admin/src/main/java/com/stylefeng/guns/modular/classNo/service/IClassNoService.java" />
         <option value="$PROJECT_DIR$/../guns-admin/src/main/java/com/stylefeng/guns/modular/classNo/service/impl/ClassServiceImpl.java" />
-        <option value="$PROJECT_DIR$/../guns-admin/src/main/webapp/static/modular/class/class_teacher.js" />
-        <option value="$PROJECT_DIR$/../guns-admin/src/main/webapp/WEB-INF/view/class/class_teacher_edit.html" />
-        <option value="$PROJECT_DIR$/../guns-admin/src/main/webapp/WEB-INF/view/class/class_teacher_add.html" />
-        <option value="$PROJECT_DIR$/../guns-admin/src/main/webapp/static/modular/class/class_teacher_add.js" />
-        <option value="$PROJECT_DIR$/../guns-admin/src/main/java/com/stylefeng/guns/modular/classNo/dao/mapping/ClassNoDao.xml" />
         <option value="$PROJECT_DIR$/../guns-admin/src/main/java/com/stylefeng/guns/modular/classNo/controller/ClassController.java" />
+        <option value="$PROJECT_DIR$/../guns-admin/src/main/webapp/WEB-INF/view/class/class_teacher_edit.html" />
+        <option value="$PROJECT_DIR$/../guns-admin/src/main/java/com/stylefeng/guns/modular/classNo/dao/mapping/ClassNoDao.xml" />
         <option value="$PROJECT_DIR$/../guns-admin/src/main/webapp/static/modular/class/class_teacher_edit.js" />
       </list>
     </option>
@@ -735,7 +734,7 @@
     <property name="nodejs_interpreter_path" value="C:/Program Files/nodejs/node" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/.." />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../../大连商会服务信息网的设计与实现/jfinal_cms/pom.xml" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
@@ -941,11 +940,18 @@
       <option name="project" value="LOCAL" />
       <updated>1542295002873</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="class">
+      <created>1542301073537</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1542301073537</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="13303000" />
+    <option name="totallyTimeSpent" value="16395000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1027,7 +1033,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="submit" />
     <MESSAGE value="新提交" />
-    <option name="LAST_COMMIT_MESSAGE" value="新提交" />
+    <MESSAGE value="class" />
+    <option name="LAST_COMMIT_MESSAGE" value="class" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1038,36 +1045,12 @@
           <properties />
           <option name="timeStamp" value="3" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/../guns-admin/src/main/java/com/stylefeng/guns/modular/classNo/controller/ClassController.java</url>
-          <line>99</line>
-          <properties />
-          <option name="timeStamp" value="5" />
-        </line-breakpoint>
       </breakpoints>
-      <option name="time" value="6" />
+      <option name="time" value="9" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/../guns-admin/src/main/webapp/WEB-INF/view/login.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="141">
-          <caret line="53" column="69" lean-forward="false" selection-start-line="53" selection-start-column="69" selection-end-line="53" selection-end-column="69" />
-          <folding>
-            <element signature="n#style#0;n#h2#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../guns-admin/sql/guns.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="65">
-          <caret line="66" column="33" lean-forward="true" selection-start-line="66" selection-start-column="33" selection-end-line="66" selection-end-column="33" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../guns-admin/src/main/webapp/WEB-INF/view/system/role/role.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
@@ -1287,7 +1270,7 @@
         <state relative-caret-position="210">
           <caret line="10" column="3" lean-forward="false" selection-start-line="10" selection-start-column="3" selection-end-line="10" selection-end-column="3" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1364,18 +1347,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../guns-admin/src/main/webapp/static/modular/class/class_teacher.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1575">
-          <caret line="75" column="46" lean-forward="false" selection-start-line="75" selection-start-column="36" selection-end-line="75" selection-end-column="46" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../guns-admin/src/main/webapp/WEB-INF/view/class/class_teacher_add.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="126">
           <caret line="27" column="109" lean-forward="false" selection-start-line="27" selection-start-column="104" selection-end-line="27" selection-end-column="109" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../guns-admin/src/main/java/com/stylefeng/guns/modular/quit/controller/QuitController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="163">
+          <caret line="58" column="27" lean-forward="false" selection-start-line="58" selection-start-column="27" selection-end-line="58" selection-end-column="27" />
           <folding />
         </state>
       </provider>
@@ -1388,39 +1371,34 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../guns-admin/src/main/webapp/WEB-INF/view/class/class_teacher_edit.html">
+    <entry file="file://$PROJECT_DIR$/../guns-admin/src/main/webapp/static/modular/travel/travel_add_boss.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="36" column="6" lean-forward="true" selection-start-line="36" selection-start-column="6" selection-end-line="36" selection-end-column="6" />
-          <folding>
-            <element signature="n#style#0;n#span#0;n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#span#1;n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#span#2;n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#span#3;n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../guns-admin/src/main/java/com/stylefeng/guns/modular/quit/controller/QuitController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="163">
-          <caret line="58" column="27" lean-forward="false" selection-start-line="58" selection-start-column="27" selection-end-line="58" selection-end-column="27" />
+        <state relative-caret-position="420">
+          <caret line="29" column="21" lean-forward="false" selection-start-line="20" selection-start-column="7" selection-end-line="29" selection-end-column="21" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../guns-admin/src/main/webapp/static/modular/travel/travel_add_boss.js">
+    <entry file="file://$PROJECT_DIR$/../guns-admin/src/main/webapp/static/js/plugins/layer/mobile/layer.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="29" column="21" lean-forward="true" selection-start-line="20" selection-start-column="7" selection-end-line="29" selection-end-column="21" />
+        <state relative-caret-position="21">
+          <caret line="1" column="2481" lean-forward="false" selection-start-line="1" selection-start-column="2481" selection-end-line="1" selection-end-column="2481" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../guns-admin/src/main/java/com/stylefeng/guns/modular/classNo/dao/ClassNoDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="22" column="4" lean-forward="false" selection-start-line="22" selection-start-column="4" selection-end-line="22" selection-end-column="49" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/../guns-admin/src/main/java/com/stylefeng/guns/modular/classNo/service/IClassNoService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="258">
-          <caret line="19" column="33" lean-forward="true" selection-start-line="19" selection-start-column="33" selection-end-line="19" selection-end-column="33" />
+        <state relative-caret-position="284">
+          <caret line="19" column="49" lean-forward="false" selection-start-line="19" selection-start-column="49" selection-end-line="19" selection-end-column="49" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1429,59 +1407,76 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/../guns-admin/src/main/java/com/stylefeng/guns/modular/classNo/service/impl/ClassServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="242">
-          <caret line="31" column="34" lean-forward="true" selection-start-line="31" selection-start-column="34" selection-end-line="31" selection-end-column="34" />
+        <state relative-caret-position="263">
+          <caret line="31" column="41" lean-forward="false" selection-start-line="31" selection-start-column="41" selection-end-line="31" selection-end-column="41" />
           <folding>
-            <element signature="e#840#841#0" expanded="true" />
-            <element signature="e#893#894#0" expanded="true" />
+            <element signature="e#965#966#0" expanded="true" />
+            <element signature="e#1018#1019#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../guns-admin/src/main/java/com/stylefeng/guns/modular/classNo/dao/ClassNoDao.java">
+    <entry file="file://$PROJECT_DIR$/../guns-admin/src/main/webapp/static/modular/class/class_teacher.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="22" column="23" lean-forward="false" selection-start-line="22" selection-start-column="12" selection-end-line="22" selection-end-column="23" />
+        <state relative-caret-position="231">
+          <caret line="45" column="77" lean-forward="true" selection-start-line="45" selection-start-column="77" selection-end-line="45" selection-end-column="77" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../guns-admin/src/main/java/com/stylefeng/guns/modular/classNo/dao/mapping/ClassNoDao.xml">
+    <entry file="file://$PROJECT_DIR$/../guns-admin/src/main/webapp/WEB-INF/view/class/class_teacher_edit.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="24" column="13" lean-forward="true" selection-start-line="24" selection-start-column="13" selection-end-line="24" selection-end-column="13" />
-          <folding>
-            <marker date="1542300702880" expanded="true" signature="592:794" ph="SELECT FROM class" />
-            <marker date="1542300702880" expanded="true" signature="886:1049" ph="SELECT FROM sys_user" />
-            <marker date="1542300702880" expanded="true" signature="1123:1318" ph="INSERT INTO folder... " />
-            <marker date="1542300702880" expanded="true" signature="1392:1862" ph="UPDATE folde... " />
-            <marker date="1542300702880" expanded="true" signature="1940:1994" ph="delete from " />
-          </folding>
+        <state relative-caret-position="447">
+          <caret line="24" column="54" lean-forward="false" selection-start-line="24" selection-start-column="54" selection-end-line="24" selection-end-column="54" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-jdbc/4.3.13.RELEASE/spring-jdbc-4.3.13.RELEASE-sources.jar!/org/springframework/jdbc/support/SQLErrorCodeSQLExceptionTranslator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="230" column="0" lean-forward="false" selection-start-line="230" selection-start-column="0" selection-end-line="230" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/../guns-admin/src/main/java/com/stylefeng/guns/modular/classNo/controller/ClassController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="247">
-          <caret line="112" column="41" lean-forward="false" selection-start-line="112" selection-start-column="30" selection-end-line="112" selection-end-column="41" />
+        <state relative-caret-position="378">
+          <caret line="131" column="0" lean-forward="false" selection-start-line="131" selection-start-column="0" selection-end-line="131" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/../guns-admin/src/main/java/com/stylefeng/guns/modular/classNo/dao/mapping/ClassNoDao.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="74" column="24" lean-forward="true" selection-start-line="74" selection-start-column="24" selection-end-line="74" selection-end-column="24" />
+          <folding>
+            <marker date="1542307047216" expanded="true" signature="592:794" ph="SELECT FROM class" />
+            <marker date="1542307047216" expanded="true" signature="886:1049" ph="SELECT FROM sys_user" />
+            <marker date="1542307047216" expanded="true" signature="1145:1302" ph="SELECT FROM class" />
+            <marker date="1542307047216" expanded="true" signature="1376:1571" ph="INSERT INTO folder... " />
+            <marker date="1542307047216" expanded="true" signature="1645:2117" ph="UPDATE folde... " />
+            <marker date="1542307047216" expanded="true" signature="2195:2245" ph="delete from " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/../guns-admin/src/main/webapp/static/modular/class/class_teacher_add.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="218">
-          <caret line="26" column="61" lean-forward="false" selection-start-line="26" selection-start-column="50" selection-end-line="26" selection-end-column="61" />
+        <state relative-caret-position="260">
+          <caret line="28" column="30" lean-forward="true" selection-start-line="28" selection-start-column="12" selection-end-line="28" selection-end-column="30" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/../guns-admin/src/main/webapp/static/modular/class/class_teacher_edit.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="168">
-          <caret line="8" column="24" lean-forward="true" selection-start-line="8" selection-start-column="24" selection-end-line="8" selection-end-column="24" />
+        <state relative-caret-position="340">
+          <caret line="17" column="22" lean-forward="false" selection-start-line="17" selection-start-column="22" selection-end-line="17" selection-end-column="22" />
           <folding />
         </state>
       </provider>

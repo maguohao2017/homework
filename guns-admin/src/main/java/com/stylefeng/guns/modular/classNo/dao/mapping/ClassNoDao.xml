@@ -33,6 +33,15 @@
         WHERE t1.id = #{userId}
     </select>
 
+    <select id="getClassEdit" resultType="map" parameterType="Integer">
+        SELECT
+        <include refid="Base_Column_List"/>
+        FROM class t
+        LEFT JOIN sys_user t1
+        ON t.user_id = t1.id
+        WHERE t.id = #{id}
+    </select>
+
     <insert id="insertClass" parameterType="Map">
         INSERT INTO class
         (class_no,class_grade,class_year,create_time,update_time,user_id
@@ -43,7 +52,7 @@
     </insert>
 
     <update id="updateClass" parameterType="Map">
-        UPDATE class
+        UPDATE class t
         <set>
             t.update_time = NOW(),
 
@@ -62,8 +71,8 @@
 
     <delete id="deleteClass" parameterType="Integer">
         delete from
-        class t
-        where t.id = #{id}
+        class
+        where id = #{id}
     </delete>
 
 
