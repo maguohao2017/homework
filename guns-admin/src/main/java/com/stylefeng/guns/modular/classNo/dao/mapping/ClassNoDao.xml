@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.stylefeng.guns.modular.classNo.dao.ClassNoDao">
+
+    <sql id="Base_Column_List">
+        t.id,
+        t.member_role_name as memberRoleName,
+        t.class_no as classNo,
+        t.class_grade as classGrade,
+        t.class_year as classYear,
+        t.create_time as createTime,
+        t.update_time as updateTime,
+        t.user_id as userId,
+        t1.name
+
+    </sql>
+
+    <select id="getClassList" resultType="map" parameterType="Integer">
+        SELECT
+        <include refid="Base_Column_List"/>
+        FROM class t
+        LEFT JOIN sys_user t1
+        ON t.user_id = t1.id
+        WHERE t.user_id = #{userId}
+        order by t.update_time desc
+    </select>
+
+    <insert id="insertClass" parameterType="Map">
+        INSERT INTO folder
+        (member_role_name,class_no,class_grade,class_year,create_time,update_time,user_id
+        )
+        VALUES (
+        #{memberRoleName},#{classNo},#{classGrade},#{classYear},NOW(),NOW(),#{userId}
+        )
+    </insert>
+
+    <update id="updateClass" parameterType="Map">
+        UPDATE folder
+        <set>
+            t.update_time = NOW(),
+
+            <if test="memberRoleName != null and memberRoleName !=''">
+                t.member_role_name = #{memberRoleName},
+            </if>
+            <if test="classNo != null and classNo !=''">
+                t.class_no = #{classNo},
+            </if>
+            <if test="classGrade != null and classGrade !=''">
+                t.class_grade = #{classGrade},
+            </if>
+            <if test="classYear != null and classYear !=''">
+                t.class_year = #{classYear},
+            </if>
+        </set>
+        WHERE id = #{id}
+    </update>
+
+    <delete id="deleteClass" parameterType="Integer">
+        delete from
+        class t
+        where t.id = #{id}
+    </delete>
+
+
+</mapper>
