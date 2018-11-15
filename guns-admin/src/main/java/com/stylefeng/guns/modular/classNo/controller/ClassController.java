@@ -45,6 +45,11 @@ public class ClassController extends BaseController {
         }
     }
 
+    @RequestMapping("/class_student")
+    public String class_student() {
+        return PREFIX + "class_student.html";
+    }
+
     @RequestMapping("/class_add")
     public String class_add() {
         return PREFIX + "class_teacher_add.html";
