@@ -3,7 +3,7 @@
 	<div class="col-sm-12">
 		<div class="ibox float-e-margins">
 			<div class="ibox-title">
-				<h5>出差通知</h5>
+				<h5>班级管理</h5>
 			</div>
 			<div class="ibox-content">
 				<div class="row row-lg">
@@ -24,11 +24,9 @@
 									</div>
 								</div>
 								<div class="hidden-xs" id="managerTableToolbar" role="group">
-									<#button name="添加" icon="fa-plus" clickFun="travel.add()"/>
-									<#button name="修改" icon="fa-edit" clickFun="travel.edit()" space="true"/>
-									<#button name="删除" icon="fa-remove" clickFun="travel.delete()" space="true"/>
+									<#button name="审批" icon="fa-plus" clickFun="vacation.edit()"/>
 								</div>
-								<#table id="travelTable"/>
+								<#table id="vacationTable"/>
 							</div>
 						</div>
 					</div>
@@ -38,5 +36,5 @@
 		</div>
 	</div>
 </div>
-<script src="${ctxPath}/static/modular/travel/travel_boss.js"></script>
+<script src="${ctxPath}/static/modular/vacation/vacation_boss.js"></script>
 @}

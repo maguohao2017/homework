@@ -15,6 +15,8 @@ public interface IClassNoService {
 
     List<Map<String, Object>> getClassList(Integer id);
 
+    Map<String, Object> getClass(Integer userId);
+
     Integer insertClass(Map map);
 
     Integer updateClass(Map map);

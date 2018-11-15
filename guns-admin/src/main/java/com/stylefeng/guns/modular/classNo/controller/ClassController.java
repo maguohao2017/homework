@@ -1,5 +1,7 @@
 package com.stylefeng.guns.modular.classNo.controller;
 
+import com.alibaba.fastjson.JSON;
+import com.alibaba.fastjson.JSONObject;
 import com.stylefeng.guns.core.base.controller.BaseController;
 import com.stylefeng.guns.core.shiro.ShiroKit;
 import com.stylefeng.guns.modular.classNo.service.IClassNoService;
@@ -10,6 +12,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 
 import javax.annotation.Resource;
+import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
@@ -30,17 +33,26 @@ public class ClassController extends BaseController {
     
     @RequestMapping("")
     public String index() {
-        return PREFIX + "class.html";
+
+        String roleId = ShiroKit.getUser().getRoleNames().get(0);
+
+        if(roleId == "6"){
+            return PREFIX + "class_teacher.html";
+        }else if(roleId == "7"){
+            return PREFIX + "class_student.html";
+        }else{
+            return PREFIX + "class_teacher.html";
+        }
     }
 
     @RequestMapping("/class_add")
     public String class_add() {
-        return PREFIX + "class_add.html";
+        return PREFIX + "class_teacher_add.html";
     }
 
     @RequestMapping("/class_edit")
     public String class_edit() {
-        return PREFIX + "class_edit.html";
+        return PREFIX + "class_teacher_edit.html";
     }
 
 
@@ -49,8 +61,11 @@ public class ClassController extends BaseController {
     public List<Map<String, Object>> getClassList() {
 
         List<Map<String, Object>> getClassList = null;
+        Integer userId = ShiroKit.getUser().getId();
+        String roleId = ShiroKit.getUser().getRoleNames().get(0);
+
         try {
-            getClassList = this.iclassNoService.getClassList(ShiroKit.getUser().getId());
+            getClassList = this.iclassNoService.getClassList(userId);
         }catch (Exception e){
             e.printStackTrace();
         }
@@ -58,10 +73,33 @@ public class ClassController extends BaseController {
         return getClassList;
     }
 
-    @RequestMapping(value = "/insertClass")
+    @RequestMapping(value = "/getClassMap")
     @ResponseBody
-    public Integer insertClass(@RequestBody Map map) {
+    public Map<String, Object> getClassMap() {
 
+        Map<String, Object> getClass = null;
+        Integer userId = null;
+        String roleId = ShiroKit.getUser().getRoleNames().get(0);
+
+        if(roleId == "7"){
+            userId = ShiroKit.getUser().getId();
+        }
+        try {
+            getClass = this.iclassNoService.getClass(userId);
+        }catch (Exception e){
+            e.printStackTrace();
+        }
+
+        return getClass;
+    }
+
+    @RequestMapping(value = "/insertClass/{params}")
+    @ResponseBody
+    public Integer insertClass(@PathVariable String params) {
+        JSONObject json = JSON.parseObject(params);
+        Map map = new HashMap<>(json);
+        Integer userId = ShiroKit.getUser().id;
+        map.put("userId",userId);
         Integer no = 0;
         try {
             no = this.iclassNoService.insertClass(map);
@@ -72,10 +110,11 @@ public class ClassController extends BaseController {
         return no;
     }
 
-    @RequestMapping(value = "/updateClass")
+    @RequestMapping(value = "/updateClass/{params}")
     @ResponseBody
-    public Integer updateClass(@RequestBody Map map) {
-
+    public Integer updateClass(@PathVariable String params) {
+        JSONObject json = JSON.parseObject(params);
+        Map map = new HashMap<>(json);
         Integer no = 0;
         try {
             no = this.iclassNoService.updateClass(map);

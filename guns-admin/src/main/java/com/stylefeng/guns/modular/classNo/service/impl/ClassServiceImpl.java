@@ -23,6 +23,11 @@ public class ClassServiceImpl implements IClassNoService {
     }
 
     @Override
+    public Map<String, Object> getClass(Integer userId){
+        return this.ClassDao.getClass(userId);
+    }
+
+    @Override
     public Integer insertClass(Map map){
         return this.ClassDao.insertClass(map);
     }

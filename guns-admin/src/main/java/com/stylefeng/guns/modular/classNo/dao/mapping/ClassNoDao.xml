@@ -4,14 +4,13 @@
 
     <sql id="Base_Column_List">
         t.id,
-        t.member_role_name as memberRoleName,
         t.class_no as classNo,
         t.class_grade as classGrade,
         t.class_year as classYear,
         t.create_time as createTime,
         t.update_time as updateTime,
         t.user_id as userId,
-        t1.name
+        t1.name as userName
 
     </sql>
 
@@ -25,23 +24,29 @@
         order by t.update_time desc
     </select>
 
+    <select id="getClass" resultType="map" parameterType="Integer">
+        SELECT
+        <include refid="Base_Column_List"/>
+        FROM sys_user t1
+        LEFT JOIN class t
+        ON t.id = t1.class_id
+        WHERE t1.id = #{userId}
+    </select>
+
     <insert id="insertClass" parameterType="Map">
-        INSERT INTO folder
-        (member_role_name,class_no,class_grade,class_year,create_time,update_time,user_id
+        INSERT INTO class
+        (class_no,class_grade,class_year,create_time,update_time,user_id
         )
         VALUES (
-        #{memberRoleName},#{classNo},#{classGrade},#{classYear},NOW(),NOW(),#{userId}
+        #{classNo},#{classGrade},#{classYear},NOW(),NOW(),#{userId}
         )
     </insert>
 
     <update id="updateClass" parameterType="Map">
-        UPDATE folder
+        UPDATE class
         <set>
             t.update_time = NOW(),
 
-            <if test="memberRoleName != null and memberRoleName !=''">
-                t.member_role_name = #{memberRoleName},
-            </if>
             <if test="classNo != null and classNo !=''">
                 t.class_no = #{classNo},
             </if>
