@@ -89,12 +89,8 @@ public class ClassController extends BaseController {
     public Map<String, Object> getClassMap() {
 
         Map<String, Object> getClass = null;
-        Integer userId = null;
-        String roleId = ShiroKit.getUser().getRoleNames().get(0);
+        Integer userId = ShiroKit.getUser().getId();
 
-        if(roleId == "学生"){
-            userId = ShiroKit.getUser().getId();
-        }
         try {
             getClass = this.iclassNoService.getClass(userId);
         }catch (Exception e){
