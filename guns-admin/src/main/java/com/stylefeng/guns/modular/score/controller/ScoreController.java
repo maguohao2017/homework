@@ -35,7 +35,7 @@ public class ScoreController extends BaseController {
         if(roleId == 6){
             return PREFIX + "score_teacher.html";
         }else if(roleId == 7){
-            return PREFIX + "score_student.html";
+            return PREFIX + "score_teacher.html";
         }else{
             return PREFIX + "score_teacher.html";
         }

@@ -36,7 +36,7 @@ public class FloderController extends BaseController {
         if(roleId == 6){
             return PREFIX + "folder_teacher.html";
         }else if(roleId == 7){
-            return PREFIX + "folder_student.html";
+            return PREFIX + "folder_teacher.html";
         }else{
             return PREFIX + "folder_teacher.html";
         }
