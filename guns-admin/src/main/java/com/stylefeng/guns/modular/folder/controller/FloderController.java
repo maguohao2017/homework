@@ -1,8 +1,10 @@
 package com.stylefeng.guns.modular.folder.controller;
 
 import com.stylefeng.guns.core.base.controller.BaseController;
+import com.stylefeng.guns.core.shiro.ShiroKit;
 import com.stylefeng.guns.modular.folder.service.IFolderService;
 import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -29,17 +31,51 @@ public class FloderController extends BaseController {
 
     @RequestMapping("")
     public String index() {
-        return PREFIX + "folder.html";
+        String roleId = ShiroKit.getUser().getRoleNames().get(0);
+
+        if(roleId == "6"){
+            return PREFIX + "folder_teacher.html";
+        }else if(roleId == "7"){
+            return PREFIX + "folder_student.html";
+        }else{
+            return PREFIX + "folder_teacher.html";
+        }
     }
 
     @RequestMapping("/folder_add")
     public String folder_add() {
-        return PREFIX + "folder_add.html";
+        return PREFIX + "folder_teacher_add.html";
     }
 
     @RequestMapping("/folder_edit")
     public String folder_edit() {
-        return PREFIX + "folder_edit.html";
+        return PREFIX + "folder_teacher_edit.html";
+    }
+
+    @RequestMapping("/goHomework")
+    public String goHomework() {
+        Integer roleId = ShiroKit.getUser().getRoleList().get(0);
+
+        if(roleId == 6){
+            return PREFIX + "homework_teacher.html";
+        }else if(roleId == 7){
+            return PREFIX + "homework_student.html";
+        }else{
+            return PREFIX + "homework_teacher.html";
+        }
+    }
+
+    @RequestMapping("/folder_edit/{id}")
+    public String class_edit(@PathVariable Integer id,Model model) {
+
+
+        Map map = iFolderService.getFolder(id);
+        model.addAttribute("id",map.get("folderName"));
+        model.addAttribute("folderType",map.get("folderType"));
+        model.addAttribute("folderName",map.get("folderName"));
+        model.addAttribute("classNo",map.get("classNo"));
+        model.addAttribute("remark",map.get("remark"));
+        return PREFIX + "folder_teacher_edit.html";
     }
 
 
@@ -55,6 +91,22 @@ public class FloderController extends BaseController {
         }
 
         return getFolderList;
+    }
+
+    @RequestMapping(value = "/getFolderMap")
+    @ResponseBody
+    public Map<String, Object> getFolderMap() {
+
+        Map<String, Object> getFolderMap = null;
+        Integer userId = ShiroKit.getUser().getId();
+
+        try {
+            getFolderMap = this.iFolderService.getFolder(userId);
+        }catch (Exception e){
+            e.printStackTrace();
+        }
+
+        return getFolderMap;
     }
 
     @RequestMapping(value = "/insertFolder")

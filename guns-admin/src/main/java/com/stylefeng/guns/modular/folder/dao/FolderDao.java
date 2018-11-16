@@ -18,6 +18,8 @@ public interface FolderDao {
 
     List<Map<String, Object>> getFolderList();
 
+    Map<String, Object> getFolder(Integer userId);
+
     Integer insertFolder(Map map);
 
     Integer updateFolder(Map map);

@@ -34,11 +34,11 @@ public class ClassController extends BaseController {
     @RequestMapping("")
     public String index() {
 
-        String roleId = ShiroKit.getUser().getRoleNames().get(0);
+        Integer roleId = ShiroKit.getUser().getRoleList().get(0);
 
-        if(roleId == "6"){
+        if(roleId == 6){
             return PREFIX + "class_teacher.html";
-        }else if(roleId == "7"){
+        }else if(roleId == 7){
             return PREFIX + "class_student.html";
         }else{
             return PREFIX + "class_teacher.html";
