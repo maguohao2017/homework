@@ -30,17 +30,25 @@ public class ScoreController extends BaseController {
 
     @RequestMapping("")
     public String index() {
-        return PREFIX + "score.html";
+        Integer roleId = ShiroKit.getUser().getRoleList().get(0);
+
+        if(roleId == 6){
+            return PREFIX + "score_teacher.html";
+        }else if(roleId == 7){
+            return PREFIX + "score_student.html";
+        }else{
+            return PREFIX + "score_teacher.html";
+        }
     }
 
     @RequestMapping("/score_add")
     public String score_add() {
-        return PREFIX + "score_add.html";
+        return PREFIX + "score_teacher_add.html";
     }
 
     @RequestMapping("/score_edit")
     public String score_edit() {
-        return PREFIX + "score_edit.html";
+        return PREFIX + "score_teacher_edit.html";
     }
 
 

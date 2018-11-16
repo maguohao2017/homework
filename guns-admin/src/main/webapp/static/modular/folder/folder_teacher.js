@@ -6,7 +6,7 @@ var folder = {
     init:function(){
         //初始化
         var defaultColunms = folder.initColumn();
-        var table = new BSTable(folder.id, "/class/getClassList", defaultColunms);
+        var table = new BSTable(folder.id, "/folder/getFolderList", defaultColunms);
         table.setPaginationType("client");
         table.init();
         folder.table = table;
@@ -37,9 +37,11 @@ var folder = {
 
     edit:function(){
         if (this.check()) {
+            Feng.success("正在做~~~~~~!");
+            return;
             var index = layer.open({
                 type: 2,
-                title: '编辑班级',
+                title: '编辑作业目录',
                 area: ['800px', '360px'], //宽高
                 fix: false, //不固定
                 maxmin: true,
@@ -51,6 +53,8 @@ var folder = {
 
     delete:function(){
         if (this.check()) {
+            Feng.success("正在做~~~~~~!");
+            return;
             var operation = function(){
                 var id = folder.seItem.id;
                 var ajax = new $ax(Feng.ctxPath + "/folder/deleteFolder/"+id, function () {
@@ -66,6 +70,22 @@ var folder = {
         }
     },
 
+    list:function(){
+        if (this.check()) {
+            Feng.success("正在做~~~~~~!");
+            return;
+            var id = folder.seItem.id;
+            alert(id);
+            var ajax = new $ax(Feng.ctxPath + "/folder/goHomework/"+id, function () {
+                Feng.success("进入作业列表");
+            }, function (data) {
+                Feng.error("进入作业列表失败!");
+            });
+            ajax.start();
+
+        }
+    },
+
     initColumn:function(){
         var columns = [
             {field: 'selectItem', radio: true},
@@ -74,7 +94,8 @@ var folder = {
             {title: '类型', field: 'folderType', align: 'center', valign: 'middle', sortable: true},
             {title: '备注', field: 'remark', align: 'center', valign: 'middle', sortable: true},
             {title: '创建时间', field: 'createTime', align: 'center', valign: 'middle', sortable: true},
-            {title: '班号', field: 'classNo', align: 'center', valign: 'middle', sortable: true}];
+            {title: '班号', field: 'classNo', align: 'center', valign: 'middle', sortable: true}
+            ];
         return columns;
     },
 };

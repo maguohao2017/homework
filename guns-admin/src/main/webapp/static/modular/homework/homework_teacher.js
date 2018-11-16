@@ -6,7 +6,7 @@ var homework = {
     init:function(){
         //初始化
         var defaultColunms = homework.initColumn();
-        var table = new BSTable(homework.id, "/class/getClassList", defaultColunms);
+        var table = new BSTable(homework.id, "/homework/getHomeworkList/"+$("#id").val(), defaultColunms);
         table.setPaginationType("client");
         table.init();
         homework.table = table;
@@ -24,6 +24,8 @@ var homework = {
     },
 
     add:function(){
+        Feng.success("正在做~~~~~~!");
+        return;
         var index = layer.open({
             type: 2,
             title: '添加作业',
@@ -37,6 +39,8 @@ var homework = {
 
     edit:function(){
         if (this.check()) {
+            Feng.success("正在做~~~~~~!");
+            return;
             var index = layer.open({
                 type: 2,
                 title: '编辑作业',
@@ -51,6 +55,8 @@ var homework = {
 
     delete:function(){
         if (this.check()) {
+            Feng.success("正在做~~~~~~!");
+            return;
             var operation = function(){
                 var id = homework.seItem.id;
                 var ajax = new $ax(Feng.ctxPath + "/homework/deletehomework/"+id, function () {

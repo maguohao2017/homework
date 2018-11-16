@@ -6,7 +6,7 @@ var score = {
     init:function(){
         //初始化
         var defaultColunms = score.initColumn();
-        var table = new BSTable(score.id, "/class/getClassList", defaultColunms);
+        var table = new BSTable(score.id, "/score/getScoreList", defaultColunms);
         table.setPaginationType("client");
         table.init();
         score.table = table;
@@ -24,9 +24,11 @@ var score = {
     },
 
     add:function(){
+        Feng.success("正在做~~~~~~!");
+        return;
         var index = layer.open({
             type: 2,
-            title: '添加作业',
+            title: '添加分數',
             area: ['800px', '360px'], //宽高
             fix: false, //不固定
             maxmin: true,
@@ -37,6 +39,8 @@ var score = {
 
     edit:function(){
         if (this.check()) {
+            Feng.success("正在做~~~~~~!");
+            return;
             var index = layer.open({
                 type: 2,
                 title: '编辑作业',
@@ -51,6 +55,8 @@ var score = {
 
     delete:function(){
         if (this.check()) {
+            Feng.success("正在做~~~~~~!");
+            return;
             var operation = function(){
                 var id = score.seItem.id;
                 var ajax = new $ax(Feng.ctxPath + "/score/deletescore/"+id, function () {

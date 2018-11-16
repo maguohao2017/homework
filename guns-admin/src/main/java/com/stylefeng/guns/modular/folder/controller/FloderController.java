@@ -31,11 +31,11 @@ public class FloderController extends BaseController {
 
     @RequestMapping("")
     public String index() {
-        String roleId = ShiroKit.getUser().getRoleNames().get(0);
+        Integer roleId = ShiroKit.getUser().getRoleList().get(0);
 
-        if(roleId == "6"){
+        if(roleId == 6){
             return PREFIX + "folder_teacher.html";
-        }else if(roleId == "7"){
+        }else if(roleId == 7){
             return PREFIX + "folder_student.html";
         }else{
             return PREFIX + "folder_teacher.html";
@@ -52,8 +52,10 @@ public class FloderController extends BaseController {
         return PREFIX + "folder_teacher_edit.html";
     }
 
-    @RequestMapping("/goHomework")
-    public String goHomework() {
+    @RequestMapping("/goHomework/{id}")
+    public String goHomework(@PathVariable Integer id,Model model) {
+
+        model.addAttribute("id",id);
         Integer roleId = ShiroKit.getUser().getRoleList().get(0);
 
         if(roleId == 6){

@@ -27,11 +27,6 @@
         ON t.id = t2.score_id
         LEFT JOIN sys_user t3
         ON t2.user_id = t3.id
-        <where>
-            <if test="userId!= null and userId !=  ''">
-                t3.id = #{userId}
-            </if>
-        </where>
         order by t.perusal_time desc
     </select>
 

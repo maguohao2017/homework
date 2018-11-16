@@ -6,6 +6,8 @@ var folder_edit = {
         });
     },
     editSubmit:function(){
+        Feng.success("正在做~~~~~~!");
+        return;
         var params = {};
         $("input").each(function(){
             var key = $(this).attr("id");
