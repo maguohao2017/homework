@@ -30,17 +30,25 @@ public class HomeworkController extends BaseController {
 
     @RequestMapping("")
     public String index() {
-        return PREFIX + "homework.html";
+        String roleId = ShiroKit.getUser().getRoleNames().get(0);
+
+        if(roleId == "6"){
+            return PREFIX + "homework_teacher.html";
+        }else if(roleId == "7"){
+            return PREFIX + "homework_student.html";
+        }else{
+            return PREFIX + "homework_teacher.html";
+        }
     }
 
     @RequestMapping("/homework_add")
     public String homework_add() {
-        return PREFIX + "homework_add.html";
+        return PREFIX + "homework_teacher_add.html";
     }
 
     @RequestMapping("/homework_edit")
     public String homework_edit() {
-        return PREFIX + "homework_edit.html";
+        return PREFIX + "homework_teacher_edit.html";
     }
 
 
@@ -96,7 +104,6 @@ public class HomeworkController extends BaseController {
         }catch (Exception e){
             e.printStackTrace();
         }
-
         return no;
     }
 }

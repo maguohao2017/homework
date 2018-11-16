@@ -2,9 +2,6 @@ package com.stylefeng.guns.modular.folder.service.impl;
 
 import com.stylefeng.guns.modular.folder.dao.FolderDao;
 import com.stylefeng.guns.modular.folder.service.IFolderService;
-import com.stylefeng.guns.modular.quit.dao.QuitDao;
-import com.stylefeng.guns.modular.quit.service.IQuitService;
-import org.apache.ibatis.annotations.Param;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 

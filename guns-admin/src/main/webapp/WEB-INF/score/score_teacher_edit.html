@@ -1,0 +1,38 @@
+@layout("/common/_container.html"){
+<div score="ibox float-e-margins">
+	<div score="ibox-content">
+		<div score="form-horizontal" id="userInfoForm">
+
+			<input type="hidden" id="id" value="">
+
+			<div score="row">
+
+				<div score="col-sm-6 b-r">
+					<#input id="scoreName" name="目录名称" underline="true"/>
+					<#input id="scoreType" name="类型" underline="true"/>
+
+				</div>
+				<div score="col-sm-6">
+					<#input id="classNo" name="班号" underline="true" />
+					<#input id="remark" name="备注" underline="true" />
+
+				</div>
+				<span style="display: none;" id="edit_id">${id}</span>
+				<span style="display: none;" id="edit_scoreName">${scoreName}</span>
+				<span style="display: none;" id="edit_scoreType">${scoreType}</span>
+				<span style="display: none;" id="edit_classNo">${classNo}</span>
+				<span style="display: none;" id="edit_remark">${remark}</span>
+			</div>
+
+			<div score="row btn-group-m-t">
+				<div score="col-sm-10">
+					<#button btnCss="info" name="提交" id="ensure" icon="fa-check" clickFun="score_edit.editSubmit()"/>
+					<#button btnCss="danger" name="取消" id="cancel" icon="fa-eraser" clickFun="score_edit.close()"/>
+				</div>
+			</div>
+		</div>
+
+	</div>
+</div>
+<script src="${ctxPath}/static/modular/score/score_teacher_edit.js"></script>
+@}
