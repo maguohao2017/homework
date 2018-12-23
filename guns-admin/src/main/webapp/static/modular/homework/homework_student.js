@@ -48,6 +48,7 @@ var homework = {
             {title: '作业状态', field: 'status', align: 'center', valign: 'middle', sortable: true},
             {title: '作业目录', field: 'folderName', align: 'center', valign: 'middle', sortable: true},
             {title: '创建时间', field: 'createTime', align: 'center', valign: 'middle', sortable: true}
+            ];
         return columns;
     },
 };

@@ -33,7 +33,7 @@
     },
     {
       "sourceType": "com.stylefeng.guns.core.mutidatasource.config.MutiDataSourceProperties",
-      "defaultValue": "jdbc:mysql:\/\/127.0.0.1:3306\/biz?autoReconnect=true&useUnicode=true&characterEncoding=utf8&zeroDateTimeBehavior=convertToNull",
+      "defaultValue": "jdbc:mysql:\/\/127.0.0.1:3306\/homework?autoReconnect=true&useUnicode=true&characterEncoding=utf8&zeroDateTimeBehavior=convertToNull",
       "name": "guns.muti-datasource.url",
       "type": "java.lang.String"
     },
@@ -135,7 +135,7 @@
     },
     {
       "sourceType": "com.stylefeng.guns.core.datasource.DruidProperties",
-      "defaultValue": "jdbc:mysql:\/\/127.0.0.1:3306\/guns?autoReconnect=true&useUnicode=true&characterEncoding=utf8&zeroDateTimeBehavior=convertToNull",
+      "defaultValue": "jdbc:mysql:\/\/127.0.0.1:3306\/homework?autoReconnect=true&useUnicode=true&characterEncoding=utf8&zeroDateTimeBehavior=convertToNull",
       "name": "spring.datasource.url",
       "type": "java.lang.String"
     },

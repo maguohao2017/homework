@@ -14,7 +14,7 @@ guns:
 
 ###################  项目启动端口  ###################
 server:
-  port: 8090
+  port: 80
 
 ###################  beetl配置  ###################
 beetl:
@@ -77,7 +77,7 @@ mybatis-plus:
 spring:
   profiles: dev
   datasource:
-    url: jdbc:mysql://localhost:3306/guns?autoReconnect=true&useUnicode=true&characterEncoding=utf8&zeroDateTimeBehavior=convertToNull
+    url: jdbc:mysql://localhost:3306/homework?autoReconnect=true&useUnicode=true&characterEncoding=utf8&zeroDateTimeBehavior=convertToNull
     username: root
     password: root
     filters: log4j,wall,mergeStat
