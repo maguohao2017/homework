@@ -80,18 +80,25 @@
                     </label>
                 </div>
             </div>
-            <button type="submit" class="btn btn-danger block full-width m-b">登 录</button>
+                <div><button type="submit" class="btn btn-danger block full-width m-b">登 录</button></div>
             </p>
         </form>
+            <div><button id="register" class="btn btn-info block full-width m-b"><a href="register.html">注 册</a></button></div>
         </div>
     </div>
 </div>
 
 <script>
     $(function () {
+        $("#register").on('click', function () {
+            window.location = "./register.html";
+            return;
+        });
         $("#kaptcha").on('click', function () {
             $("#kaptcha").attr('src', '${ctxPath}/kaptcha?' + Math.floor(Math.random() * 100)).fadeIn();
         });
+
+
     });
 </script>
 

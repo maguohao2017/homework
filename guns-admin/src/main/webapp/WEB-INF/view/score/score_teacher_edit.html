@@ -8,20 +8,40 @@
 			<div score="row">
 
 				<div score="col-sm-6 b-r">
-					<#input id="scoreName" name="目录名称" underline="true"/>
-					<#input id="scoreType" name="类型" underline="true"/>
+					<#select id="userId" name="姓名" underline="true">
+						<option value="46">小雨</option>
+					</#select>
+					<#input id="score" name="成绩" underline="true"/>
+					<#select id="status" name="状态" underline="true">
+						<option value="优">优</option>
+						<option value="良">良</option>
+						<option value="中">中</option>
+						<option value="及格">及格</option>
+						<option value="不及格">不及格</option>
+					</#select>
 
 				</div>
 				<div score="col-sm-6">
-					<#input id="classNo" name="班号" underline="true" />
+					<#input id="perusalTime" name="批改时间" underline="true" type="date"
+							clickFun="laydate({istime: false, format: 'YYYY-MM-DD'})"/>
+					<#select id="homeworkId" name="作业名称" underline="true">
+						<option value="1">语文作业</option>
+						<option value="2">语文作业</option>
+						<option value="3">英语作业</option>
+						<option value="4">物理作业</option>
+						<option value="5">化学作业</option>
+						<option value="6">生物作业</option>
+					</#select>
 					<#input id="remark" name="备注" underline="true" />
 
 				</div>
 				<span style="display: none;" id="edit_id">${id}</span>
-				<span style="display: none;" id="edit_scoreName">${scoreName}</span>
-				<span style="display: none;" id="edit_scoreType">${scoreType}</span>
-				<span style="display: none;" id="edit_classNo">${classNo}</span>
+				<span style="display: none;" id="edit_score">${score}</span>
+				<span style="display: none;" id="edit_userId">${userId}</span>
+				<span style="display: none;" id="edit_status">${status}</span>
 				<span style="display: none;" id="edit_remark">${remark}</span>
+				<span style="display: none;" id="edit_perusalTime">${perusalTime}</span>
+				<span style="display: none;" id="edit_homeworkId">${homeworkId}</span>
 			</div>
 
 			<div score="row btn-group-m-t">

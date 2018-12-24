@@ -37,8 +37,6 @@ var folder = {
 
     edit:function(){
         if (this.check()) {
-            Feng.success("正在做~~~~~~!");
-            return;
             var index = layer.open({
                 type: 2,
                 title: '编辑作业目录',
@@ -53,8 +51,6 @@ var folder = {
 
     delete:function(){
         if (this.check()) {
-            Feng.success("正在做~~~~~~!");
-            return;
             var operation = function(){
                 var id = folder.seItem.id;
                 var ajax = new $ax(Feng.ctxPath + "/folder/deleteFolder/"+id, function () {
@@ -72,8 +68,6 @@ var folder = {
 
     list:function(){
         if (this.check()) {
-            Feng.success("正在做~~~~~~!");
-            return;
             var id = folder.seItem.id;
             alert(id);
             var ajax = new $ax(Feng.ctxPath + "/folder/goHomework/"+id, function () {

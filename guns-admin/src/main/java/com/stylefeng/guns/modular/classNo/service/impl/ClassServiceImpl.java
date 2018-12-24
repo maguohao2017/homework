@@ -1,6 +1,5 @@
 package com.stylefeng.guns.modular.classNo.service.impl;
 
-import com.stylefeng.guns.modular.classNo.dao.*;
 import com.stylefeng.guns.modular.classNo.service.IClassNoService;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;

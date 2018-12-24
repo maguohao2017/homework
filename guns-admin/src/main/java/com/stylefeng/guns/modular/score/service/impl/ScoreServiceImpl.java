@@ -25,6 +25,11 @@ public class ScoreServiceImpl implements IScoreService {
     }
 
     @Override
+    public Map<String, Object> getScore(Integer id){
+        return this.ScoreDao.getScore(id);
+    }
+
+    @Override
     public Integer insertScore(Map map){
         return this.ScoreDao.insertScore(map);
     }

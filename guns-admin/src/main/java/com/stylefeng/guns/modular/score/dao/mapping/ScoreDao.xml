@@ -7,7 +7,7 @@
         t.score,
         t.status,
         t.create_time as createTime,
-        t.perusal_time as perusalime,
+        t.perusal_time as perusalTime,
         t.remark,
         t.homework_id as homeworkId,
         t1.homework_name as homeworkName,
@@ -27,6 +27,20 @@
         ON t.id = t2.score_id
         LEFT JOIN sys_user t3
         ON t2.user_id = t3.id
+        order by t.perusal_time desc
+    </select>
+
+    <select id="getScore" resultType="map" parameterType="Integer">
+        SELECT
+        <include refid="Base_Column_List"/>
+        FROM score t
+        LEFT JOIN homework t1
+        ON t.homework_id = t1.id
+        LEFT JOIN user_score_rela t2
+        ON t.id = t2.score_id
+        LEFT JOIN sys_user t3
+        ON t2.user_id = t3.id
+        where t.id = #{id}
         order by t.perusal_time desc
     </select>
 
@@ -59,8 +73,8 @@
 
     <delete id="deleteScore" parameterType="Integer">
         delete from
-        score t
-        where t.id = #{id}
+        score
+        where id = #{id}
     </delete>
 
 

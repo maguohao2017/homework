@@ -10,7 +10,7 @@ var score_add = {
         });
         console.log(params)
         //提交信息
-        var ajax = new $ax(Feng.ctxPath + "/score/insertscore/"+JSON.stringify(params), function (data) {
+        var ajax = new $ax(Feng.ctxPath + "/score/insertScore/"+JSON.stringify(params), function (data) {
             Feng.success("添加成功!");
             score_add.close();
             window.parent.score.table.refresh();

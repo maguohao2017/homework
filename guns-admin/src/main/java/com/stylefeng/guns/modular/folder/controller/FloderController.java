@@ -1,5 +1,7 @@
 package com.stylefeng.guns.modular.folder.controller;
 
+import com.alibaba.fastjson.JSON;
+import com.alibaba.fastjson.JSONObject;
 import com.stylefeng.guns.core.base.controller.BaseController;
 import com.stylefeng.guns.core.shiro.ShiroKit;
 import com.stylefeng.guns.modular.folder.service.IFolderService;
@@ -11,6 +13,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 
 import javax.annotation.Resource;
+import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
@@ -59,7 +62,7 @@ public class FloderController extends BaseController {
         Integer roleId = ShiroKit.getUser().getRoleList().get(0);
 
         if(roleId == 6){
-            return PREFIX + "homework_teacher.html";
+            return PREFIX + "teacher.html";
         }else if(roleId == 7){
             return PREFIX + "homework_student.html";
         }else{
@@ -111,10 +114,11 @@ public class FloderController extends BaseController {
         return getFolderMap;
     }
 
-    @RequestMapping(value = "/insertFolder")
+    @RequestMapping(value = "/insertFolder/{params}")
     @ResponseBody
-    public Integer insertFolder(@RequestBody Map map) {
-
+    public Integer insertFolder(@PathVariable String params) {
+        JSONObject json = JSON.parseObject(params);
+        Map map = new HashMap<>(json);
         Integer no = 0;
         try {
             no = this.iFolderService.insertFolder(map);
@@ -125,10 +129,11 @@ public class FloderController extends BaseController {
         return no;
     }
 
-    @RequestMapping(value = "/updateFolder")
+    @RequestMapping(value = "/updateFolder/{params}")
     @ResponseBody
-    public Integer updateFolder(@RequestBody Map map) {
-
+    public Integer updateFolder(@PathVariable String params) {
+        JSONObject json = JSON.parseObject(params);
+        Map map = new HashMap<>(json);
         Integer no = 0;
         try {
             no = this.iFolderService.updateFolder(map);

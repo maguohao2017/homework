@@ -24,8 +24,6 @@ var score = {
     },
 
     add:function(){
-        Feng.success("正在做~~~~~~!");
-        return;
         var index = layer.open({
             type: 2,
             title: '添加分數',
@@ -39,11 +37,9 @@ var score = {
 
     edit:function(){
         if (this.check()) {
-            Feng.success("正在做~~~~~~!");
-            return;
             var index = layer.open({
                 type: 2,
-                title: '编辑作业',
+                title: '编辑分数',
                 area: ['800px', '360px'], //宽高
                 fix: false, //不固定
                 maxmin: true,
@@ -55,11 +51,9 @@ var score = {
 
     delete:function(){
         if (this.check()) {
-            Feng.success("正在做~~~~~~!");
-            return;
             var operation = function(){
                 var id = score.seItem.id;
-                var ajax = new $ax(Feng.ctxPath + "/score/deletescore/"+id, function () {
+                var ajax = new $ax(Feng.ctxPath + "/score/deleteScore/"+id, function () {
                     Feng.success("删除成功!");
                     score.table.refresh();
                 }, function (data) {
@@ -79,7 +73,7 @@ var score = {
             {title: '姓名', field: 'name', align: 'center', valign: 'middle', sortable: true},
             {title: '成绩分数', field: 'score', align: 'center', valign: 'middle', sortable: true},
             {title: '状态', field: 'status', align: 'center', valign: 'middle', sortable: true},
-            {title: '批改时间', field: 'perusalime', align: 'center', valign: 'middle', sortable: true},
+            {title: '批改时间', field: 'perusalTime', align: 'center', valign: 'middle', sortable: true},
             {title: '作业名称', field: 'homeworkName', align: 'center', valign: 'middle', sortable: true},
             {title: '备注', field: 'remark', align: 'center', valign: 'middle', sortable: true}
             ];

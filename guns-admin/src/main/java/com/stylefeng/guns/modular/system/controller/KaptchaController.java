@@ -90,6 +90,11 @@ public class KaptchaController {
         }
     }
 
+    @RequestMapping("/register")
+    public String register() {
+        return "/class/" + "class_student.html";
+    }
+
     /**
      * 返回图片
      *

@@ -23,8 +23,8 @@ public class FolderServiceImpl implements IFolderService {
     }
 
     @Override
-    public Map<String, Object> getFolder(Integer userId){
-        return this.folderDao.getFolder(userId);
+    public Map<String, Object> getFolder(Integer id){
+        return this.folderDao.getFolder(id);
     }
 
     @Override

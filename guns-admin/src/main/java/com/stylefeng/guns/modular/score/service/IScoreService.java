@@ -13,6 +13,8 @@ public interface IScoreService {
 
     List<Map<String, Object>> getScoreList(Integer userId);
 
+    Map<String, Object> getScore(Integer id);
+
     Integer insertScore(Map map);
 
     Integer updateScore(Map map);

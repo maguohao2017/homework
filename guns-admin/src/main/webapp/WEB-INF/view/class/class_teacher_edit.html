@@ -8,21 +8,32 @@
 			<div class="row">
 
 				<div class="col-sm-6 b-r">
-					<#input id="classNo" name="班号" underline="true"/>
-					<#input id="classGrade" name="年级" underline="true"/>
+					<#select id="classNo" name="班号" underline="true">
+					<option value="班级1">班级1</option>
+					<option value="班级2">班级2</option>
+					<option value="班级3">班级3</option>
+					<option value="班级4">班级4</option>
+					<option value="班级5">班级5</option>
+					<option value="班级6">班级6</option>
+					</#select>
+					<#select id="classGrade" name="年级" underline="true">
+					<option value="一年级">一年级</option>
+					<option value="二年级">二年级</option>
+					<option value="三年级">三年级</option>
+					<option value="四年级">四年级</option>
+					<option value="五年级">五年级</option>
+					<option value="六年级">六年级</option>
+					</#select>
 
 				</div>
 				<div class="col-sm-6">
 					<#input id="classYear" name="入学日期" underline="true" type="date"
-							clickFun="laydate({istime: false, format: 'YYYY-MM-DD'})"/>
-					<#input id="createTime" name="创建时间" underline="true" type="date"
 							clickFun="laydate({istime: false, format: 'YYYY-MM-DD'})"/>
 
 				</div>
 				<span style="display: none;" id="edit_id">${id}</span>
 				<span style="display: none;" id="edit_classNo">${classNo}</span>
 				<span style="display: none;" id="edit_classGrade">${classGrade}</span>
-				<span style="display: none;" id="edit_classYear">${classYear}</span>
 			</div>
 
 			<div class="row btn-group-m-t">

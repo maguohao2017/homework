@@ -73,6 +73,15 @@ public class UserMgrController extends BaseController {
     }
 
     /**
+     * 注册
+     * @return
+     */
+    @RequestMapping("/register")
+    public String register() {
+        return "register.html";
+    }
+
+    /**
      * 跳转到角色分配页面
      */
     //@RequiresPermissions("/mgr/role_assign")  //利用shiro自带的权限检查

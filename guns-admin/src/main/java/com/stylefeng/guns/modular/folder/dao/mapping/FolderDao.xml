@@ -20,13 +20,14 @@
         WHERE 1=1
     </select>
 
-    <select id="getClass" resultType="map" parameterType="Integer">
+    <select id="getFolder" resultType="map" parameterType="Integer">
         SELECT
         <include refid="Base_Column_List"/>
-        FROM sys_user s left join class t1 on s.class_id = t1.id
-        left join folder t ON t.class_id = t1.id
+        FROM folder t
+        LEFT JOIN class t1
+        ON t.class_id = t1.id
         WHERE 1=1
-           and s.id = #{userId}
+           and t.id = #{id}
     </select>
 
     <insert id="insertFolder" parameterType="Map">
@@ -59,8 +60,8 @@
 
     <delete id="deleteFolder" parameterType="Integer">
         delete from
-        folder t
-        where t.id = #{id}
+        folder
+        where id = #{id}
     </delete>
 
 

@@ -3,8 +3,6 @@ var folder_add = {
 
     },
     addSubmit:function(){
-        Feng.success("正在做~~~~~~!");
-        return;
         var params = {};
         $("input").each(function(){
             var key = $(this).attr("id");
@@ -12,7 +10,7 @@ var folder_add = {
         });
         console.log(params)
         //提交信息
-        var ajax = new $ax(Feng.ctxPath + "/folder/insertfolder/"+JSON.stringify(params), function (data) {
+        var ajax = new $ax(Feng.ctxPath + "/folder/insertFolder/"+JSON.stringify(params), function (data) {
             Feng.success("添加成功!");
             folder_add.close();
             window.parent.folder.table.refresh();

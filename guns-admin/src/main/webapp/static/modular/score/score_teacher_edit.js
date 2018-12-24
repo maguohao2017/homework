@@ -13,7 +13,7 @@ var score_edit = {
         });
         console.log(params);
         //提交信息
-        var ajax = new $ax(Feng.ctxPath + "/score/updatescore/"+JSON.stringify(params), function (data) {
+        var ajax = new $ax(Feng.ctxPath + "/score/updateScore/"+JSON.stringify(params), function (data) {
             Feng.success("修改成功!");
             score_edit.close();
             window.parent.score.table.refresh();

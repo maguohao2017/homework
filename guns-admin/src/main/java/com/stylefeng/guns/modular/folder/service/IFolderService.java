@@ -15,7 +15,7 @@ public interface IFolderService {
 
     List<Map<String, Object>> getFolderList();
 
-    Map<String, Object> getFolder(Integer userId);
+    Map<String, Object> getFolder(Integer id);
 
     Integer insertFolder(Map map);
 
