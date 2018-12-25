@@ -24,7 +24,8 @@
 									</div>
 								</div>
 								<div class="hidden-xs" id="managerTableToolbar" role="group">
-									<#button name="作业列表" icon="fa-remove" clickFun="folder.delete()" space="true"/>
+									<#button name="作业列表" icon="fa-tasks" clickFun="homework.list()" space="true"/>
+									<#button name="上传作业" icon="fa-file" clickFun="homework.upload()" space="true"/>
 								</div>
 								<#table id="folderTable"/>
 							</div>

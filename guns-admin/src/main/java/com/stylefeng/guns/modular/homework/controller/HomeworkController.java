@@ -4,6 +4,7 @@ import com.stylefeng.guns.core.base.controller.BaseController;
 import com.stylefeng.guns.core.shiro.ShiroKit;
 import com.stylefeng.guns.modular.homework.service.IHomeworkService;
 import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -41,6 +42,22 @@ public class HomeworkController extends BaseController {
         }
     }
 
+    @RequestMapping("/list/{id}")
+    public String list(@PathVariable String id, Model model) {
+        model.addAttribute("id",id);
+        return PREFIX + "homework_list.html";
+    }
+
+    @RequestMapping("/upload")
+    public String upload() {
+        return PREFIX + "homework_upload.html";
+    }
+
+    @RequestMapping("/download")
+    public String download() {
+        return PREFIX + "homework_download.html";
+    }
+
     @RequestMapping("/homework_add")
     public String homework_add() {
         return PREFIX + "homework_teacher_add.html";
@@ -52,13 +69,13 @@ public class HomeworkController extends BaseController {
     }
 
 
-    @RequestMapping(value = "/getHomeworkList")
+    @RequestMapping(value = "/getHomeworkList/{id}")
     @ResponseBody
-    public List<Map<String, Object>> getHomeworkList(@PathVariable Integer folderId) {
+    public List<Map<String, Object>> getHomeworkList(@PathVariable String id) {
 
         List<Map<String, Object>> getHomeworkList = null;
         try {
-            getHomeworkList = this.iHomeworkService.getHomeworkList(folderId);
+            getHomeworkList = this.iHomeworkService.getHomeworkList(Integer.parseInt(id));
         }catch (Exception e){
             e.printStackTrace();
         }

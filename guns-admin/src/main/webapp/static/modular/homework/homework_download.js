@@ -55,8 +55,6 @@ var homework = {
 
     delete:function(){
         if (this.check()) {
-            Feng.success("正在做~~~~~~!");
-            return;
             var operation = function(){
                 var id = homework.seItem.id;
                 var ajax = new $ax(Feng.ctxPath + "/homework/deletehomework/"+id, function () {
