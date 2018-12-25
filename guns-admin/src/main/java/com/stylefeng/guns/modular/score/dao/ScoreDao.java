@@ -16,7 +16,9 @@ import java.util.Map;
 public interface ScoreDao {
 
 
-    List<Map<String, Object>> getScoreList(Integer userId);
+    List<Map<String, Object>> getScoreList();
+
+    List<Map<String, Object>> getScoreStudentList(Integer userId);
 
     Map<String, Object> getScore(Integer id);
 

@@ -45,6 +45,11 @@ public class ScoreController extends BaseController {
         }
     }
 
+    @RequestMapping("/score_student")
+    public String score_student() {
+        return PREFIX + "score_student.html";
+    }
+
     @RequestMapping("/score_add")
     public String score_add() {
         return PREFIX + "score_teacher_add.html";
@@ -70,7 +75,21 @@ public class ScoreController extends BaseController {
 
         List<Map<String, Object>> getScoreList = null;
         try {
-            getScoreList = this.iScoreService.getScoreList(ShiroKit.getUser().getId());
+            getScoreList = this.iScoreService.getScoreList();
+        }catch (Exception e){
+            e.printStackTrace();
+        }
+
+        return getScoreList;
+    }
+
+    @RequestMapping(value = "/getScoreStudentList")
+    @ResponseBody
+    public List<Map<String, Object>> getScoreStudentList() {
+
+        List<Map<String, Object>> getScoreList = null;
+        try {
+            getScoreList = this.iScoreService.getScoreStudentList(ShiroKit.getUser().getId());
         }catch (Exception e){
             e.printStackTrace();
         }

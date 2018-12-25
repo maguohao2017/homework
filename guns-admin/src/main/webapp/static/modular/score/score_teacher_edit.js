@@ -1,13 +1,13 @@
 var score_edit = {
     init:function(){
-        $("input").each(function(){
+        $("input,select").each(function(){
             var key = $(this).attr("id");
             $(this).val($("#edit_"+key).text());
         });
     },
     editSubmit:function(){
         var params = {};
-        $("input").each(function(){
+        $("input,select").each(function(){
             var key = $(this).attr("id");
             params[key] = $(this).val();
         });

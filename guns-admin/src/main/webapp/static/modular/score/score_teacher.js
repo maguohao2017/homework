@@ -27,7 +27,7 @@ var score = {
         var index = layer.open({
             type: 2,
             title: '添加分數',
-            area: ['800px', '360px'], //宽高
+            area: ['800px', '500px'], //宽高
             fix: false, //不固定
             maxmin: true,
             content: Feng.ctxPath + '/score/score_add'
@@ -40,7 +40,7 @@ var score = {
             var index = layer.open({
                 type: 2,
                 title: '编辑分数',
-                area: ['800px', '360px'], //宽高
+                area: ['800px', '500px'], //宽高
                 fix: false, //不固定
                 maxmin: true,
                 content: Feng.ctxPath + '/score/score_edit/' + this.seItem.id

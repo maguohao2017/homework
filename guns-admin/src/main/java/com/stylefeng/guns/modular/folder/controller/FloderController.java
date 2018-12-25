@@ -45,6 +45,11 @@ public class FloderController extends BaseController {
         }
     }
 
+    @RequestMapping("/folder_student")
+    public String folder_student() {
+        return PREFIX + "folder_student.html";
+    }
+
     @RequestMapping("/folder_add")
     public String folder_add() {
         return PREFIX + "folder_teacher_add.html";

@@ -20,8 +20,13 @@ public class ScoreServiceImpl implements IScoreService {
     ScoreDao ScoreDao;
 
     @Override
-    public List<Map<String, Object>> getScoreList(Integer userId){
-        return this.ScoreDao.getScoreList(userId);
+    public List<Map<String, Object>> getScoreList(){
+        return this.ScoreDao.getScoreList();
+    }
+
+    @Override
+    public List<Map<String, Object>> getScoreStudentList(Integer userId){
+        return this.ScoreDao.getScoreStudentList(userId);
     }
 
     @Override

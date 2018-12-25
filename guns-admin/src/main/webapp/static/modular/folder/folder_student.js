@@ -6,7 +6,7 @@ var folder = {
     init:function(){
         //初始化
         var defaultColunms = folder.initColumn();
-        var table = new BSTable(folder.id, "/class/getClassList", defaultColunms);
+        var table = new BSTable(folder.id, "/folder/getFolderList", defaultColunms);
         table.setPaginationType("client");
         table.init();
         folder.table = table;
@@ -23,16 +23,16 @@ var folder = {
         }
     },
 
-    delete:function(){
+    list:function(){
         if (this.check()) {
-            var operation = function(){
-                var id = folder.seItem.id;
-                var ajax = new $ax(Feng.ctxPath + "/folder/goHomework/"+id, function () {
-                }, function (data) {
-                    Feng.error("查询失败!");
-                });
-                ajax.start();
-            };
+            var id = folder.seItem.id;
+            alert(id);
+            var ajax = new $ax(Feng.ctxPath + "/folder/goHomework/"+id, function () {
+                Feng.success("进入作业列表");
+            }, function (data) {
+                Feng.error("进入作业列表失败!");
+            });
+            ajax.start();
 
         }
     },
@@ -45,7 +45,8 @@ var folder = {
             {title: '类型', field: 'folderType', align: 'center', valign: 'middle', sortable: true},
             {title: '备注', field: 'remark', align: 'center', valign: 'middle', sortable: true},
             {title: '创建时间', field: 'createTime', align: 'center', valign: 'middle', sortable: true},
-            {title: '班号', field: 'classNo', align: 'center', valign: 'middle', sortable: true}];
+            {title: '班号', field: 'classNo', align: 'center', valign: 'middle', sortable: true}
+        ];
         return columns;
     },
 };

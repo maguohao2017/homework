@@ -10,46 +10,60 @@
         t.perusal_time as perusalTime,
         t.remark,
         t.homework_id as homeworkId,
-        t1.homework_name as homeworkName,
-        t3.name
-
-
+        t.user_id as userId
 
     </sql>
 
-    <select id="getScoreList" resultType="map" parameterType="Integer">
+    <select id="getScoreList" resultType="map" >
         SELECT
         <include refid="Base_Column_List"/>
+        ,t3.name,t1.homework_name as homeworkName
         FROM score t
         LEFT JOIN homework t1
         ON t.homework_id = t1.id
-        LEFT JOIN user_score_rela t2
-        ON t.id = t2.score_id
+        <!--LEFT JOIN user_score_rela t2
+        ON t.id = t2.score_id-->
         LEFT JOIN sys_user t3
-        ON t2.user_id = t3.id
+        ON t.user_id = t3.id
         order by t.perusal_time desc
     </select>
+
+    <select id="getScoreStudentList" resultType="map" parameterType="Integer">
+        SELECT
+        <include refid="Base_Column_List"/>
+        ,t3.name,t1.homework_name as homeworkName
+        FROM score t
+        LEFT JOIN homework t1
+        ON t.homework_id = t1.id
+        <!--LEFT JOIN user_score_rela t2
+        ON t.id = t2.score_id-->
+        LEFT JOIN sys_user t3
+        ON t.user_id = t3.id
+        where t.user_id = #{userId}
+        order by t.perusal_time desc
+    </select>
+
 
     <select id="getScore" resultType="map" parameterType="Integer">
         SELECT
         <include refid="Base_Column_List"/>
         FROM score t
-        LEFT JOIN homework t1
+        <!--LEFT JOIN homework t1
         ON t.homework_id = t1.id
         LEFT JOIN user_score_rela t2
         ON t.id = t2.score_id
         LEFT JOIN sys_user t3
-        ON t2.user_id = t3.id
+        ON t2.user_id = t3.id-->
         where t.id = #{id}
         order by t.perusal_time desc
     </select>
 
     <insert id="insertScore" parameterType="Map">
         INSERT INTO score
-        (score,status,create_time,perusal_time,remark,homework_id
+        (score,status,create_time,perusal_time,remark,homework_id,user_id
         )
         VALUES (
-        #{score},#{status},NOW(),NOW(),#{remark},#{homeworkId}
+        #{score},#{status},NOW(),NOW(),#{remark},#{homeworkId},#{userId}
         )
     </insert>
 
@@ -65,7 +79,7 @@
                 t.status = #{status},
             </if>
             <if test="remark != null and remark !=''">
-                t.remark = #{remark},
+                t.remark = #{remark}
             </if>
         </set>
         WHERE id = #{id}

@@ -7,7 +7,7 @@ var folder_edit = {
     },
     editSubmit:function(){
         var params = {};
-        $("input").each(function(){
+        $("input,select").each(function(){
             var key = $(this).attr("id");
             params[key] = $(this).val();
         });

@@ -4,7 +4,7 @@ var class_add = {
     },
     addSubmit:function(){
         var params = {};
-        $("input").each(function(){
+        $("input,select").each(function(){
             var key = $(this).attr("id");
             params[key] = $(this).val();
         });

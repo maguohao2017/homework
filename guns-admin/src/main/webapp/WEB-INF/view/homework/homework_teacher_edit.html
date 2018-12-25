@@ -1,18 +1,18 @@
 @layout("/common/_container.html"){
-<div homework="ibox float-e-margins">
-	<div homework="ibox-content">
-		<div homework="form-horizontal" id="userInfoForm">
+<div class="ibox float-e-margins">
+	<div class="ibox-content">
+		<div class="form-horizontal" id="userInfoForm">
 
 			<input type="hidden" id="id" value="">
 
-			<div homework="row">
+			<div class="row">
 
-				<div homework="col-sm-6 b-r">
+				<div class="col-sm-6 b-r">
 					<#input id="homeworkName" name="目录名称" underline="true"/>
 					<#input id="homeworkType" name="类型" underline="true"/>
 
 				</div>
-				<div homework="col-sm-6">
+				<div class="col-sm-6">
 					<#input id="classNo" name="班号" underline="true" />
 					<#input id="remark" name="备注" underline="true" />
 
@@ -24,8 +24,8 @@
 				<span style="display: none;" id="edit_remark">${remark}</span>
 			</div>
 
-			<div homework="row btn-group-m-t">
-				<div homework="col-sm-10">
+			<div class="row btn-group-m-t">
+				<div class="col-sm-10">
 					<#button btnCss="info" name="提交" id="ensure" icon="fa-check" clickFun="homework_edit.editSubmit()"/>
 					<#button btnCss="danger" name="取消" id="cancel" icon="fa-eraser" clickFun="homework_edit.close()"/>
 				</div>
