@@ -13,7 +13,7 @@ import java.util.Map;
  */
 public interface IHomeworkService {
 
-    List<Map<String, Object>> getHomeworkList(Integer folderId);
+    List<Map<String, Object>> getHomeworkList(@Param("folderId") String folderId);
 
     Integer insertHomework(Map map);
 

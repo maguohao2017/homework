@@ -17,7 +17,7 @@
 
     </sql>
 
-    <select id="getHomeworkList" resultType="map" parameterType="Integer">
+    <select id="getHomeworkList" resultType="map" parameterType="String">
         SELECT
         <include refid="Base_Column_List"/>
         FROM homework t
@@ -33,10 +33,10 @@
 
     <insert id="insertHomework" parameterType="Map">
         INSERT INTO homework
-        (homework_name,file_path,file_size,file_type,create_time,update_time,status,folder_id
+        (homework_name,file_path,file_size,file_type,create_time,update_time,status,folder_id,user_id
         )
         VALUES (
-        #{homeworkName},#{filePath},#{fileSize},#{fileType},NOW(),NOW(),#{status},#{folderId}
+        #{homeworkName},#{filePath},#{fileSize},#{fileType},NOW(),NOW(),#{status},#{folderId},#{userId}
         )
     </insert>
 

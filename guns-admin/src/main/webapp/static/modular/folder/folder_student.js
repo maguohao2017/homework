@@ -32,22 +32,11 @@ var folder = {
                 area: ['1000px', '600px'], //宽高
                 fix: false, //不固定
                 maxmin: true,
-                content: Feng.ctxPath + '/homework/list/' + this.seItem.id
+                content: Feng.ctxPath + '/homework/student_list/' + this.seItem.id
             });
             this.layerIndex = index;
         }
-    },
-
-    upload:function(){
-        var index = layer.open({
-            type: 2,
-            title: '上传作业',
-            area: ['1000px', '600px'], //宽高
-            fix: false, //不固定
-            maxmin: true,
-            content: Feng.ctxPath + '/homework/upload'
-        });
-        this.layerIndex = index;
+        folder.table.refresh();
     },
 
     initColumn:function(){

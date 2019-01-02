@@ -20,7 +20,7 @@ public class HomeworkServiceImpl implements IHomeworkService {
     HomeworkDao homeworkDao;
 
     @Override
-    public List<Map<String, Object>> getHomeworkList(Integer folderId){
+    public List<Map<String, Object>> getHomeworkList(String folderId){
         return this.homeworkDao.getHomeworkList(folderId);
     }
 

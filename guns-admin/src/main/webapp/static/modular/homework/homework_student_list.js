@@ -23,50 +23,20 @@ var homework = {
         }
     },
 
-    add:function(folderId){
-        var index = layer.open({
-            type: 2,
-            title: '上传作业',
-            area: ['800px', '360px'], //宽高
-            fix: false, //不固定
-            maxmin: true,
-            content: Feng.ctxPath + '/homework/homework_add/' + folderId
-        });
-        this.layerIndex = index;
-    },
-
-    edit:function(){
+    download:function(folderId){
         if (this.check()) {
-            Feng.success("正在做~~~~~~!");
-            return;
-            var index = layer.open({
-                type: 2,
-                title: '编辑作业',
-                area: ['800px', '360px'], //宽高
-                fix: false, //不固定
-                maxmin: true,
-                content: Feng.ctxPath + '/homework/homework_edit/' + this.seItem.id
+            var ajax = new $ax(Feng.ctxPath + "/homework/downLoadFile", function (data) {
+                console.log("data",data);
+                Feng.success("下载成功!");
+                homework.table.refresh();
+            }, function (data) {
+                Feng.success("下载成功!");
+                homework.table.refresh();
             });
-            this.layerIndex = index;
+            ajax.start();
         }
     },
 
-    delete:function(){
-        if (this.check()) {
-            var operation = function(){
-                var id = homework.seItem.id;
-                var ajax = new $ax(Feng.ctxPath + "/homework/deletehomework/"+id, function () {
-                    Feng.success("删除成功!");
-                    homework.table.refresh();
-                }, function (data) {
-                    Feng.error("删除失败!");
-                });
-                ajax.start();
-            };
-
-            Feng.confirm("是否删除?",operation);
-        }
-    },
 
     initColumn:function(){
         var columns = [

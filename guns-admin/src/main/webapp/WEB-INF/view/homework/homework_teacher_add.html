@@ -3,31 +3,19 @@
 	<div class="ibox-content">
 		<div class="form-horizontal" id="userInfoForm">
 
-			<input type="hidden" id="id" value="">
-
-			<div class="row">
-				<div class="col-sm-6 b-r">
-					<#input id="homeworkName" name="目录名称" underline="true"/>
-					<#input id="homeworkType" name="类型" underline="true"/>
-
-				</div>
-				<div class="col-sm-6">
-					<#input id="homeworkNo" name="班号" underline="true" />
-					<#input id="remark" name="备注" underline="true" />
-
-				</div>
-
-
-			</div>
-
-			<div class="row btn-group-m-t">
-				<div class="col-sm-10">
-					<#button btnCss="info" name="提交" id="ensure" icon="fa-check" clickFun="homework_add.addSubmit()"/>
-					<#button btnCss="danger" name="取消" id="cancel" icon="fa-eraser" clickFun="homework_add.close()"/>
-				</div>
-			</div>
+			<h1>文件上传</h1>
+			<form action="/homework/fileUpload" method="post" enctype="multipart/form-data">
+				<p>选择文件: <input type="file" name="fileName"/></p>
+				<p><input type="submit" value="提交"/></p>
+				<input type="hidden" id="folderId" value="${folderId}" name="folderId"/>
+			</form>
+			<!--<div class="row btn-group-m-t">-->
+				<!--<div class="col-sm-10">-->
+					<!--<#button btnCss="info" name="提交" id="ensure" icon="fa-check" clickFun="homework_add.addSubmit()"/>-->
+					<!--<#button btnCss="danger" name="取消" id="cancel" icon="fa-eraser" clickFun="homework_add.close()"/>-->
+				<!--</div>-->
+			<!--</div>-->
 		</div>
-
 	</div>
 </div>
 <script src="${ctxPath}/static/modular/homework/homework_teacher_add.js"></script>

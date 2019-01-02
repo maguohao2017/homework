@@ -79,6 +79,7 @@ var folder = {
             });
             this.layerIndex = index;
         }
+        folder.table.refresh();
     },
 
     download:function(){

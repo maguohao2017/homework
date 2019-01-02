@@ -16,7 +16,7 @@ import java.util.Map;
 public interface HomeworkDao {
 
 
-    List<Map<String, Object>> getHomeworkList(Integer folderId);
+    List<Map<String, Object>> getHomeworkList(@Param("folderId") String folderId);
 
     Integer insertHomework(Map map);
 
