@@ -6,7 +6,7 @@ var homework = {
     init:function(){
         //初始化
         var defaultColunms = homework.initColumn();
-        var table = new BSTable(homework.id, "/homework/getHomeworkList/"+$("#id").val(), defaultColunms);
+        var table = new BSTable(homework.id, "/homework/getHomeworkList_student/"+$("#id").val(), defaultColunms);
         table.setPaginationType("client");
         table.init();
         homework.table = table;
@@ -23,14 +23,14 @@ var homework = {
         }
     },
 
-    add:function(id){
+    upload:function(folderId){
         var index = layer.open({
             type: 2,
             title: '上传作业',
             area: ['800px', '360px'], //宽高
             fix: false, //不固定
             maxmin: true,
-            content: Feng.ctxPath + '/homework/homework_add/' + $("#folderId").val()
+            content: Feng.ctxPath + '/homework/homework_student_add/' + folderId
         });
         this.layerIndex = index;
     },

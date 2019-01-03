@@ -23,20 +23,6 @@ var homework = {
         }
     },
 
-    download:function(folderId){
-        if (this.check()) {
-            var ajax = new $ax(Feng.ctxPath + "/homework/downLoadFile", function (data) {
-                console.log("data",data);
-                Feng.success("下载成功!");
-                homework.table.refresh();
-            }, function (data) {
-                Feng.success("下载成功!");
-                homework.table.refresh();
-            });
-            ajax.start();
-        }
-    },
-
 
     initColumn:function(){
         var columns = [

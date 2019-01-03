@@ -89,7 +89,7 @@ var folder = {
             area: ['1000px', '600px'], //宽高
             fix: false, //不固定
             maxmin: true,
-            content: Feng.ctxPath + '/homework/download'
+            content: Feng.ctxPath + '/homework/download_student'
         });
         this.layerIndex = index;
     },

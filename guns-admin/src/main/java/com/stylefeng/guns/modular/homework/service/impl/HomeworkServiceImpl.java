@@ -25,18 +25,18 @@ public class HomeworkServiceImpl implements IHomeworkService {
     }
 
     @Override
+    public List<Map<String, Object>> getHomeworkList_student(String folderId){
+        return this.homeworkDao.getHomeworkList_student(folderId);
+    }
+
+    @Override
     public Integer insertHomework(Map map){
         return this.homeworkDao.insertHomework(map);
     }
 
     @Override
-    public Integer updateHomework(Map map){
-        return this.homeworkDao.updateHomework(map);
-    }
-
-    @Override
-    public Integer deleteHomework(Integer id){
-        return this.homeworkDao.deleteHomework(id);
+    public Integer insertHomework_student(Map map){
+        return this.homeworkDao.insertHomework_student(map);
     }
 
 }

@@ -31,6 +31,20 @@
         order by t.update_time desc
     </select>
 
+    <select id="getHomeworkList_student" resultType="map" parameterType="String">
+        SELECT
+        <include refid="Base_Column_List"/>
+        FROM homework_student t
+        LEFT JOIN folder t1
+        ON t.folder_id = t1.id
+        <where>
+            <if test="folderId!= null and folderId !=  ''">
+                t.folder_id = #{folderId}
+            </if>
+        </where>
+        order by t.update_time desc
+    </select>
+
     <insert id="insertHomework" parameterType="Map">
         INSERT INTO homework
         (homework_name,file_path,file_size,file_type,create_time,update_time,status,folder_id,user_id
@@ -40,29 +54,14 @@
         )
     </insert>
 
-    <update id="updateHomework" parameterType="Map">
-        UPDATE homework
-        <set>
-            t.update_time = NOW(),
-
-            <if test="homeworkName != null and homeworkName !=''">
-                t.homework_name = #{homeworkName},
-            </if>
-            <if test="filePath != null and filePath !=''">
-                t.file_path = #{filePath},
-            </if>
-            <if test="fileSize != null and fileSize !=''">
-                t.file_size = #{fileSize},
-            </if>
-            <if test="fileType != null and fileType !=''">
-                t.file_type = #{fileType},
-            </if>
-            <if test="status != null and status !=''">
-                t.status = #{status}
-            </if>
-        </set>
-        WHERE id = #{id}
-    </update>
+    <insert id="insertHomework_student" parameterType="Map">
+        INSERT INTO homework_student
+        (homework_name,file_path,file_size,file_type,create_time,update_time,status,folder_id,user_id
+        )
+        VALUES (
+        #{homeworkName},#{filePath},#{fileSize},#{fileType},NOW(),NOW(),#{status},#{folderId},#{userId}
+        )
+    </insert>
 
     <delete id="deleteHomework" parameterType="Integer">
         delete from

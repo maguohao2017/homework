@@ -36,7 +36,21 @@ var folder = {
             });
             this.layerIndex = index;
         }
-        folder.table.refresh();
+    },
+
+    upload:function(){
+        if (this.check()) {
+            var id = folder.seItem.id;
+            var index = layer.open({
+                type: 2,
+                title: '上传作业',
+                area: ['1000px', '600px'], //宽高
+                fix: false, //不固定
+                maxmin: true,
+                content: Feng.ctxPath + '/homework/upload_student_list/' + this.seItem.id
+            });
+            this.layerIndex = index;
+        }
     },
 
     initColumn:function(){

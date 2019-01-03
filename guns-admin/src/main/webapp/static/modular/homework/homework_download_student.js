@@ -23,19 +23,6 @@ var homework = {
         }
     },
 
-    add:function(id){
-        var index = layer.open({
-            type: 2,
-            title: '上传作业',
-            area: ['800px', '360px'], //宽高
-            fix: false, //不固定
-            maxmin: true,
-            content: Feng.ctxPath + '/homework/homework_add/' + $("#folderId").val()
-        });
-        this.layerIndex = index;
-    },
-
-
     initColumn:function(){
         var columns = [
             {field: 'selectItem', radio: true},
