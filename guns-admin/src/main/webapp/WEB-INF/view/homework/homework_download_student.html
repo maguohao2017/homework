@@ -10,7 +10,7 @@
 					<div class="col-sm-12">
 						<div class="row">
 							<div class="hidden-xs" id="managerTableToolbar" role="group">
-								<#button name="下载" icon="fa-plus" clickFun="homework.download(id)"/>
+								<#button name="下载" icon="fa-plus" clickFun="homework.download()"/>
 							</div>
 							<#table id="homeworkTable"/>
 						</div>
@@ -21,6 +21,5 @@
 		</div>
 	</div>
 </div>
-<input type="hidden" value='${id}' id="id"/>
 <script src="${ctxPath}/static/modular/homework/homework_download_student.js"></script>
 @}

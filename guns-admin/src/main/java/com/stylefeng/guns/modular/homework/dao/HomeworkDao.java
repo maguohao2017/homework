@@ -18,7 +18,7 @@ public interface HomeworkDao {
 
     List<Map<String, Object>> getHomeworkList(@Param("folderId") String folderId);
 
-    List<Map<String, Object>> getHomeworkList_student(@Param("folderId") String folderId);
+    List<Map<String, Object>> getHomeworkList_student();
 
     Integer insertHomework(Map map);
 

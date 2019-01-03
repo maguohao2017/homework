@@ -6,7 +6,7 @@ var homework = {
     init:function(){
         //初始化
         var defaultColunms = homework.initColumn();
-        var table = new BSTable(homework.id, "/homework/getHomeworkList/"+$("#id").val(), defaultColunms);
+        var table = new BSTable(homework.id, "/homework/getHomeworkList_student/"+$("#id").val(), defaultColunms);
         table.setPaginationType("client");
         table.init();
         homework.table = table;
@@ -23,34 +23,18 @@ var homework = {
         }
     },
 
-    add:function(folderId){
+    upload:function(folderId){
         var index = layer.open({
             type: 2,
             title: '上传作业',
             area: ['800px', '360px'], //宽高
             fix: false, //不固定
             maxmin: true,
-            content: Feng.ctxPath + '/homework/homework_add/' + folderId
+            content: Feng.ctxPath + '/homework/homework_student_add/' + folderId
         });
         this.layerIndex = index;
     },
 
-    delete:function(){
-        if (this.check()) {
-            var operation = function(){
-                var id = homework.seItem.id;
-                var ajax = new $ax(Feng.ctxPath + "/homework/deletehomework/"+id, function () {
-                    Feng.success("删除成功!");
-                    homework.table.refresh();
-                }, function (data) {
-                    Feng.error("删除失败!");
-                });
-                ajax.start();
-            };
-
-            Feng.confirm("是否删除?",operation);
-        }
-    },
 
     initColumn:function(){
         var columns = [

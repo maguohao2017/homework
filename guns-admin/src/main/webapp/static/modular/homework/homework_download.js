@@ -23,51 +23,13 @@ var homework = {
         }
     },
 
-    add:function(){
-        Feng.success("正在做~~~~~~!");
-        return;
-        var index = layer.open({
-            type: 2,
-            title: '添加作业',
-            area: ['800px', '360px'], //宽高
-            fix: false, //不固定
-            maxmin: true,
-            content: Feng.ctxPath + '/homework/homework_add'
+    download:function () {
+        var ajax = new $ax(Feng.ctxPath + "/homework/downLoadFile", function (data) {
+            Feng.success("下载成功!");
+        }, function (data) {
+            Feng.success("下载成功!");
         });
-        this.layerIndex = index;
-    },
-
-    edit:function(){
-        if (this.check()) {
-            Feng.success("正在做~~~~~~!");
-            return;
-            var index = layer.open({
-                type: 2,
-                title: '编辑作业',
-                area: ['800px', '360px'], //宽高
-                fix: false, //不固定
-                maxmin: true,
-                content: Feng.ctxPath + '/homework/homework_edit/' + this.seItem.id
-            });
-            this.layerIndex = index;
-        }
-    },
-
-    delete:function(){
-        if (this.check()) {
-            var operation = function(){
-                var id = homework.seItem.id;
-                var ajax = new $ax(Feng.ctxPath + "/homework/deletehomework/"+id, function () {
-                    Feng.success("删除成功!");
-                    homework.table.refresh();
-                }, function (data) {
-                    Feng.error("删除失败!");
-                });
-                ajax.start();
-            };
-
-            Feng.confirm("是否删除?",operation);
-        }
+        ajax.start();
     },
 
     initColumn:function(){

@@ -6,7 +6,7 @@ var homework = {
     init:function(){
         //初始化
         var defaultColunms = homework.initColumn();
-        var table = new BSTable(homework.id, "/homework/getHomeworkList/"+$("#id").val(), defaultColunms);
+        var table = new BSTable(homework.id, "/homework/getHomeworkList_student", defaultColunms);
         table.setPaginationType("client");
         table.init();
         homework.table = table;
@@ -21,6 +21,15 @@ var homework = {
             homework.seItem = selected[0];
             return true;
         }
+    },
+
+    download:function () {
+        var ajax = new $ax(Feng.ctxPath + "/homework/student_downLoadFile", function (data) {
+            Feng.success("下载成功!");
+        }, function (data) {
+            Feng.success("下载成功!");
+        });
+        ajax.start();
     },
 
     initColumn:function(){

@@ -25,8 +25,8 @@ public class HomeworkServiceImpl implements IHomeworkService {
     }
 
     @Override
-    public List<Map<String, Object>> getHomeworkList_student(String folderId){
-        return this.homeworkDao.getHomeworkList_student(folderId);
+    public List<Map<String, Object>> getHomeworkList_student(){
+        return this.homeworkDao.getHomeworkList_student();
     }
 
     @Override

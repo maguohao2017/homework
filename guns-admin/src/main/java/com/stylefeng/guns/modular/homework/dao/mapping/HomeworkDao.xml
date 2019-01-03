@@ -37,11 +37,6 @@
         FROM homework_student t
         LEFT JOIN folder t1
         ON t.folder_id = t1.id
-        <where>
-            <if test="folderId!= null and folderId !=  ''">
-                t.folder_id = #{folderId}
-            </if>
-        </where>
         order by t.update_time desc
     </select>
 

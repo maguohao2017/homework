@@ -110,13 +110,13 @@ public class HomeworkController extends BaseController {
         return getHomeworkList;
     }
 
-    @RequestMapping(value = "/getHomeworkList_student/{id}")
+    @RequestMapping(value = "/getHomeworkList_student")
     @ResponseBody
-    public List<Map<String, Object>> getHomeworkList_student(@PathVariable String id) {
+    public List<Map<String, Object>> getHomeworkList_student() {
 
         List<Map<String, Object>> getHomeworkList = null;
         try {
-            getHomeworkList = this.iHomeworkService.getHomeworkList_student(id);
+            getHomeworkList = this.iHomeworkService.getHomeworkList_student();
         }catch (Exception e){
             e.printStackTrace();
         }
