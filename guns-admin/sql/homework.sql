@@ -10,7 +10,7 @@ Target Server Type    : MYSQL
 Target Server Version : 50717
 File Encoding         : 65001
 
-Date: 2018-12-27 08:01:09
+Date: 2019-01-03 08:44:04
 */
 
 SET FOREIGN_KEY_CHECKS=0;
@@ -28,7 +28,7 @@ CREATE TABLE `class` (
   `update_time` datetime DEFAULT NULL COMMENT '修改时间',
   `user_id` int(11) DEFAULT NULL COMMENT '创建人id',
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8;
 
 -- ----------------------------
 -- Records of class
@@ -64,7 +64,7 @@ CREATE TABLE `folder` (
   `create_time` datetime DEFAULT NULL COMMENT '创建时间',
   `class_id` int(11) DEFAULT NULL COMMENT '班级id',
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8 COMMENT='作业存放目录表';
+) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8 COMMENT='作业存放目录表';
 
 -- ----------------------------
 -- Records of folder
@@ -85,18 +85,44 @@ CREATE TABLE `homework` (
   `file_type` varchar(20) DEFAULT NULL COMMENT '文件类型',
   `create_time` datetime DEFAULT NULL COMMENT '创建时间',
   `update_time` datetime DEFAULT NULL COMMENT '修改时间',
-  `status` int(1) DEFAULT NULL COMMENT '状态',
+  `status` varchar(20) DEFAULT NULL COMMENT '状态',
   `user_id` int(11) DEFAULT NULL COMMENT '用户id',
   `folder_id` int(11) DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8 COMMENT='作业表';
+) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8 COMMENT='作业表';
 
 -- ----------------------------
 -- Records of homework
 -- ----------------------------
-INSERT INTO `homework` VALUES ('1', '数学作业', '/homework', '600KB', 'word', '2018-11-23 10:18:16', '2018-11-30 10:18:21', '1', '45', '1');
-INSERT INTO `homework` VALUES ('2', '英语作业', '/homework', '1MB', 'word', '2018-11-17 10:21:47', '2018-11-17 10:21:51', '1', '45', '2');
-INSERT INTO `homework` VALUES ('3', '语文作业', '/hoomework', '1.5MB', 'PDF', '2018-11-17 11:30:31', '2018-11-17 11:30:35', '1', '45', '3');
+INSERT INTO `homework` VALUES ('1', '数学作业', '/homework', '600KB', 'word', '2018-11-23 10:18:16', '2018-11-30 10:18:21', '上传成功', '45', '1');
+INSERT INTO `homework` VALUES ('2', '英语作业', '/homework', '1MB', 'word', '2018-11-17 10:21:47', '2018-11-17 10:21:51', '上传成功', '45', '2');
+INSERT INTO `homework` VALUES ('3', '语文作业', '/hoomework', '1.5MB', 'PDF', '2018-11-17 11:30:31', '2018-11-17 11:30:35', '上传成功', '45', '3');
+
+-- ----------------------------
+-- Table structure for `homework_student`
+-- ----------------------------
+DROP TABLE IF EXISTS `homework_student`;
+CREATE TABLE `homework_student` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `homework_name` varchar(50) NOT NULL COMMENT '作业名称',
+  `file_path` varchar(50) DEFAULT NULL COMMENT '文件路径',
+  `file_size` varchar(20) DEFAULT NULL COMMENT '文件大小',
+  `file_type` varchar(20) DEFAULT NULL COMMENT '文件类型',
+  `create_time` datetime DEFAULT NULL COMMENT '创建时间',
+  `update_time` datetime DEFAULT NULL COMMENT '修改时间',
+  `status` varchar(20) DEFAULT NULL COMMENT '状态',
+  `user_id` int(11) DEFAULT NULL COMMENT '用户id',
+  `folder_id` int(11) DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=8 DEFAULT CHARSET=utf8 COMMENT='作业表';
+
+-- ----------------------------
+-- Records of homework_student
+-- ----------------------------
+INSERT INTO `homework_student` VALUES ('1', '数学作业', '/homework', '600KB', 'word', '2018-11-23 10:18:16', '2018-11-30 10:18:21', '上传成功', '45', '1');
+INSERT INTO `homework_student` VALUES ('2', '英语作业', '/homework', '1MB', 'word', '2018-11-17 10:21:47', '2018-11-17 10:21:51', '上传成功', '45', '2');
+INSERT INTO `homework_student` VALUES ('3', '语文作业', '/hoomework', '1.5MB', 'PDF', '2018-11-17 11:30:31', '2018-11-17 11:30:35', '上传成功', '45', '3');
+INSERT INTO `homework_student` VALUES ('7', '数学作业_学生.doc', 'E:/test', '600KB', 'word', '2019-01-03 08:16:04', '2019-01-03 08:16:04', '上传成功', '45', '1');
 
 -- ----------------------------
 -- Table structure for `score`
@@ -112,7 +138,7 @@ CREATE TABLE `score` (
   `homework_id` int(11) DEFAULT NULL COMMENT '作业id',
   `user_id` int(11) DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=8 DEFAULT CHARSET=utf8 COMMENT='分数表';
+) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8 COMMENT='分数表';
 
 -- ----------------------------
 -- Records of score
@@ -203,7 +229,7 @@ CREATE TABLE `sys_login_log` (
   `message` text COMMENT '具体消息',
   `ip` varchar(255) DEFAULT NULL COMMENT '登录ip',
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=817 DEFAULT CHARSET=utf8 COMMENT='登录记录';
+) ENGINE=InnoDB AUTO_INCREMENT=843 DEFAULT CHARSET=utf8 COMMENT='登录记录';
 
 -- ----------------------------
 -- Records of sys_login_log
@@ -809,6 +835,32 @@ INSERT INTO `sys_login_log` VALUES ('813', '登录日志', '45', '2018-12-25 23:
 INSERT INTO `sys_login_log` VALUES ('814', '登录日志', '46', '2018-12-26 00:23:07', '成功', null, '127.0.0.1');
 INSERT INTO `sys_login_log` VALUES ('815', '登录日志', '45', '2018-12-26 01:00:59', '成功', null, '127.0.0.1');
 INSERT INTO `sys_login_log` VALUES ('816', '登录日志', '45', '2018-12-26 01:26:08', '成功', null, '127.0.0.1');
+INSERT INTO `sys_login_log` VALUES ('817', '登录日志', '1', '2019-01-02 22:17:48', '成功', null, '127.0.0.1');
+INSERT INTO `sys_login_log` VALUES ('818', '退出日志', '1', '2019-01-02 22:17:52', '成功', null, '127.0.0.1');
+INSERT INTO `sys_login_log` VALUES ('819', '登录日志', '45', '2019-01-02 22:18:01', '成功', null, '127.0.0.1');
+INSERT INTO `sys_login_log` VALUES ('820', '登录日志', '45', '2019-01-02 23:38:58', '成功', null, '127.0.0.1');
+INSERT INTO `sys_login_log` VALUES ('821', '登录日志', '45', '2019-01-02 23:50:09', '成功', null, '127.0.0.1');
+INSERT INTO `sys_login_log` VALUES ('822', '登录日志', '45', '2019-01-02 23:57:34', '成功', null, '127.0.0.1');
+INSERT INTO `sys_login_log` VALUES ('823', '登录失败日志', null, '2019-01-03 00:01:45', '成功', '账号:test,账号密码错误', '127.0.0.1');
+INSERT INTO `sys_login_log` VALUES ('824', '登录日志', '45', '2019-01-03 00:02:07', '成功', null, '127.0.0.1');
+INSERT INTO `sys_login_log` VALUES ('825', '登录日志', '45', '2019-01-03 00:45:24', '成功', null, '127.0.0.1');
+INSERT INTO `sys_login_log` VALUES ('826', '登录日志', '45', '2019-01-03 00:47:44', '成功', null, '127.0.0.1');
+INSERT INTO `sys_login_log` VALUES ('827', '登录日志', '45', '2019-01-03 00:49:57', '成功', null, '127.0.0.1');
+INSERT INTO `sys_login_log` VALUES ('828', '登录日志', '45', '2019-01-03 00:58:35', '成功', null, '127.0.0.1');
+INSERT INTO `sys_login_log` VALUES ('829', '登录日志', '45', '2019-01-03 01:05:11', '成功', null, '127.0.0.1');
+INSERT INTO `sys_login_log` VALUES ('830', '退出日志', '45', '2019-01-03 01:07:13', '成功', null, '127.0.0.1');
+INSERT INTO `sys_login_log` VALUES ('831', '登录日志', '46', '2019-01-03 01:07:21', '成功', null, '127.0.0.1');
+INSERT INTO `sys_login_log` VALUES ('832', '登录日志', '46', '2019-01-03 01:10:54', '成功', null, '127.0.0.1');
+INSERT INTO `sys_login_log` VALUES ('833', '登录日志', '46', '2019-01-03 01:18:11', '成功', null, '127.0.0.1');
+INSERT INTO `sys_login_log` VALUES ('834', '登录日志', '46', '2019-01-03 01:21:08', '成功', null, '127.0.0.1');
+INSERT INTO `sys_login_log` VALUES ('835', '登录日志', '46', '2019-01-03 01:24:41', '成功', null, '127.0.0.1');
+INSERT INTO `sys_login_log` VALUES ('836', '登录日志', '46', '2019-01-03 01:29:54', '成功', null, '127.0.0.1');
+INSERT INTO `sys_login_log` VALUES ('837', '退出日志', '46', '2019-01-03 08:18:38', '成功', null, '127.0.0.1');
+INSERT INTO `sys_login_log` VALUES ('838', '登录日志', '45', '2019-01-03 08:18:51', '成功', null, '127.0.0.1');
+INSERT INTO `sys_login_log` VALUES ('839', '登录日志', '45', '2019-01-03 08:32:46', '成功', null, '127.0.0.1');
+INSERT INTO `sys_login_log` VALUES ('840', '登录日志', '45', '2019-01-03 08:37:48', '成功', null, '127.0.0.1');
+INSERT INTO `sys_login_log` VALUES ('841', '登录日志', '45', '2019-01-03 08:40:33', '成功', null, '127.0.0.1');
+INSERT INTO `sys_login_log` VALUES ('842', '退出日志', '45', '2019-01-03 08:41:52', '成功', null, '127.0.0.1');
 
 -- ----------------------------
 -- Table structure for `sys_menu`
@@ -931,7 +983,7 @@ CREATE TABLE `sys_operation_log` (
   `succeed` varchar(255) DEFAULT NULL COMMENT '是否成功',
   `message` text COMMENT '备注',
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=865 DEFAULT CHARSET=utf8 COMMENT='操作日志';
+) ENGINE=InnoDB AUTO_INCREMENT=866 DEFAULT CHARSET=utf8 COMMENT='操作日志';
 
 -- ----------------------------
 -- Records of sys_operation_log
@@ -1251,6 +1303,7 @@ INSERT INTO `sys_operation_log` VALUES ('861', '业务日志', '修改菜单', '
 INSERT INTO `sys_operation_log` VALUES ('862', '业务日志', '修改菜单', '1', 'com.stylefeng.guns.modular.system.controller.MenuController', 'edit', '2018-12-25 23:31:21', '成功', '菜单名称=分数查看;;;字段名称:null,旧值:0,新值:1');
 INSERT INTO `sys_operation_log` VALUES ('863', '业务日志', '修改菜单', '1', 'com.stylefeng.guns.modular.system.controller.MenuController', 'edit', '2018-12-25 23:31:52', '成功', '菜单名称=作业列表;;;字段名称:菜单编号,旧值:/homework,新值:/folder/folder_student;;;字段名称:url地址,旧值:/homework,新值:/folder/folder_student');
 INSERT INTO `sys_operation_log` VALUES ('864', '业务日志', '配置权限', '1', 'com.stylefeng.guns.modular.system.controller.RoleController', 'setAuthority', '2018-12-25 23:32:53', '成功', '角色名称=学生,资源名称=作业通知,修改通知,个人信息,班级信息,作业列表,分数查看');
+INSERT INTO `sys_operation_log` VALUES ('865', '异常日志', '', '46', null, null, '2019-01-03 08:08:03', '失败', 'org.springframework.jdbc.UncategorizedSQLException: \r\n### Error updating database.  Cause: java.sql.SQLException: Incorrect integer value: \'undefined\' for column \'folder_id\' at row 1\r\n### The error may involve com.stylefeng.guns.modular.homework.dao.HomeworkDao.insertHomework_student-Inline\r\n### The error occurred while setting parameters\r\n### SQL: INSERT INTO homework_student         (homework_name,file_path,file_size,file_type,create_time,update_time,status,folder_id,user_id         )         VALUES (         ?,?,?,?,NOW(),NOW(),?,?,?         )\r\n### Cause: java.sql.SQLException: Incorrect integer value: \'undefined\' for column \'folder_id\' at row 1\n; uncategorized SQLException for SQL []; SQL state [HY000]; error code [1366]; Incorrect integer value: \'undefined\' for column \'folder_id\' at row 1; nested exception is java.sql.SQLException: Incorrect integer value: \'undefined\' for column \'folder_id\' at row 1\r\n	at org.springframework.jdbc.support.AbstractFallbackSQLExceptionTranslator.translate(AbstractFallbackSQLExceptionTranslator.java:90)\r\n	at org.springframework.jdbc.support.AbstractFallbackSQLExceptionTranslator.translate(AbstractFallbackSQLExceptionTranslator.java:82)\r\n	at org.springframework.jdbc.support.AbstractFallbackSQLExceptionTranslator.translate(AbstractFallbackSQLExceptionTranslator.java:82)\r\n	at org.mybatis.spring.MyBatisExceptionTranslator.translateExceptionIfPossible(MyBatisExceptionTranslator.java:73)\r\n	at org.mybatis.spring.SqlSessionTemplateTSqlSessionInterceptor.invoke(SqlSessionTemplate.java:446)\r\n	at com.sun.proxy.TProxy99.insert(Unknown Source)\r\n	at org.mybatis.spring.SqlSessionTemplate.insert(SqlSessionTemplate.java:278)\r\n	at org.apache.ibatis.binding.MapperMethod.execute(MapperMethod.java:57)\r\n	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:59)\r\n	at com.sun.proxy.TProxy116.insertHomework_student(Unknown Source)\r\n	at com.stylefeng.guns.modular.homework.service.impl.HomeworkServiceImpl.insertHomework_student(HomeworkServiceImpl.java:39)\r\n	at com.stylefeng.guns.modular.homework.service.impl.HomeworkServiceImplTTFastClassBySpringCGLIBTTdc47a461.invoke(<generated>)\r\n	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:204)\r\n	at org.springframework.aop.framework.CglibAopProxyTCglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:738)\r\n	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:157)\r\n	at com.alibaba.druid.support.spring.stat.DruidStatInterceptor.invoke(DruidStatInterceptor.java:72)\r\n	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)\r\n	at org.springframework.transaction.interceptor.TransactionInterceptorT1.proceedWithInvocation(TransactionInterceptor.java:99)\r\n	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:282)\r\n	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:96)\r\n	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)\r\n	at org.springframework.aop.framework.CglibAopProxyTDynamicAdvisedInterceptor.intercept(CglibAopProxy.java:673)\r\n	at com.stylefeng.guns.modular.homework.service.impl.HomeworkServiceImplTTEnhancerBySpringCGLIBTT7ab06845.insertHomework_student(<generated>)\r\n	at com.stylefeng.guns.modular.homework.controller.HomeworkController.student_fileUpload(HomeworkController.java:268)\r\n	at com.stylefeng.guns.modular.homework.controller.HomeworkControllerTTFastClassBySpringCGLIBTTda06752d.invoke(<generated>)\r\n	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:204)\r\n	at org.springframework.aop.framework.CglibAopProxyTCglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:738)\r\n	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:157)\r\n	at org.springframework.aop.aspectj.MethodInvocationProceedingJoinPoint.proceed(MethodInvocationProceedingJoinPoint.java:85)\r\n	at com.stylefeng.guns.core.intercept.SessionHolderInterceptor.sessionKit(SessionHolderInterceptor.java:29)\r\n	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\r\n	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\r\n	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\r\n	at java.lang.reflect.Method.invoke(Method.java:498)\r\n	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethodWithGivenArgs(AbstractAspectJAdvice.java:629)\r\n	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethod(AbstractAspectJAdvice.java:618)\r\n	at org.springframework.aop.aspectj.AspectJAroundAdvice.invoke(AspectJAroundAdvice.java:70)\r\n	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)\r\n	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:92)\r\n	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)\r\n	at org.springframework.aop.framework.CglibAopProxyTDynamicAdvisedInterceptor.intercept(CglibAopProxy.java:673)\r\n	at com.stylefeng.guns.modular.homework.controller.HomeworkControllerTTEnhancerBySpringCGLIBTT72258abe.student_fileUpload(<generated>)\r\n	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\r\n	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\r\n	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\r\n	at java.lang.reflect.Method.invoke(Method.java:498)\r\n	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)\r\n	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:133)\r\n	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:97)\r\n	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:827)\r\n	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:738)\r\n	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:85)\r\n	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:967)\r\n	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:901)\r\n	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:970)\r\n	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:872)\r\n	at javax.servlet.http.HttpServlet.service(HttpServlet.java:661)\r\n	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:846)\r\n	at javax.servlet.http.HttpServlet.service(HttpServlet.java:742)\r\n	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)\r\n	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)\r\n	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)\r\n	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)\r\n	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)\r\n	at org.apache.shiro.web.servlet.ProxiedFilterChain.doFilter(ProxiedFilterChain.java:61)\r\n	at org.apache.shiro.web.servlet.AdviceFilter.executeChain(AdviceFilter.java:108)\r\n	at org.apache.shiro.web.servlet.AdviceFilter.doFilterInternal(AdviceFilter.java:137)\r\n	at org.apache.shiro.web.servlet.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:125)\r\n	at org.apache.shiro.web.servlet.ProxiedFilterChain.doFilter(ProxiedFilterChain.java:66)\r\n	at org.apache.shiro.web.servlet.AbstractShiroFilter.executeChain(AbstractShiroFilter.java:449)\r\n	at org.apache.shiro.web.servlet.AbstractShiroFilterT1.call(AbstractShiroFilter.java:365)\r\n	at org.apache.shiro.subject.support.SubjectCallable.doCall(SubjectCallable.java:90)\r\n	at org.apache.shiro.subject.support.SubjectCallable.call(SubjectCallable.java:83)\r\n	at org.apache.shiro.subject.support.DelegatingSubject.execute(DelegatingSubject.java:387)\r\n	at org.apache.shiro.web.servlet.AbstractShiroFilter.doFilterInternal(AbstractShiroFilter.java:362)\r\n	at org.apache.shiro.web.servlet.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:125)\r\n	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)\r\n	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)\r\n	at com.stylefeng.guns.core.xss.XssFilter.doFilter(XssFilter.java:31)\r\n	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)\r\n	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)\r\n	at com.alibaba.druid.support.http.WebStatFilter.doFilter(WebStatFilter.java:123)\r\n	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)\r\n	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)\r\n	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)\r\n	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)\r\n	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)\r\n	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)\r\n	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:108)\r\n	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)\r\n	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)\r\n	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)\r\n	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:81)\r\n	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)\r\n	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)\r\n	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)\r\n	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:197)\r\n	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)\r\n	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)\r\n	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)\r\n	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:199)\r\n	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)\r\n	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:478)\r\n	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140)\r\n	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:81)\r\n	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)\r\n	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)\r\n	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:803)\r\n	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)\r\n	at org.apache.coyote.AbstractProtocolTConnectionHandler.process(AbstractProtocol.java:868)\r\n	at org.apache.tomcat.util.net.NioEndpointTSocketProcessor.doRun(NioEndpoint.java:1459)\r\n	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)\r\n	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)\r\n	at java.util.concurrent.ThreadPoolExecutorTWorker.run(ThreadPoolExecutor.java:624)\r\n	at org.apache.tomcat.util.threads.TaskThreadTWrappingRunnable.run(TaskThread.java:61)\r\n	at java.lang.Thread.run(Thread.java:748)\r\nCaused by: java.sql.SQLException: Incorrect integer value: \'undefined\' for column \'folder_id\' at row 1\r\n	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:957)\r\n	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3878)\r\n	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3814)\r\n	at com.mysql.jdbc.MysqlIO.sendCommand(MysqlIO.java:2478)\r\n	at com.mysql.jdbc.MysqlIO.sqlQueryDirect(MysqlIO.java:2625)\r\n	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2551)\r\n	at com.mysql.jdbc.PreparedStatement.executeInternal(PreparedStatement.java:1861)\r\n	at com.mysql.jdbc.PreparedStatement.execute(PreparedStatement.java:1192)\r\n	at com.alibaba.druid.filter.FilterChainImpl.preparedStatement_execute(FilterChainImpl.java:3051)\r\n	at com.alibaba.druid.filter.FilterEventAdapter.preparedStatement_execute(FilterEventAdapter.java:440)\r\n	at com.alibaba.druid.filter.FilterChainImpl.preparedStatement_execute(FilterChainImpl.java:3049)\r\n	at com.alibaba.druid.wall.WallFilter.preparedStatement_execute(WallFilter.java:619)\r\n	at com.alibaba.druid.filter.FilterChainImpl.preparedStatement_execute(FilterChainImpl.java:3049)\r\n	at com.alibaba.druid.filter.FilterEventAdapter.preparedStatement_execute(FilterEventAdapter.java:440)\r\n	at com.alibaba.druid.filter.FilterChainImpl.preparedStatement_execute(FilterChainImpl.java:3049)\r\n	at com.alibaba.druid.proxy.jdbc.PreparedStatementProxyImpl.execute(PreparedStatementProxyImpl.java:167)\r\n	at com.alibaba.druid.pool.DruidPooledPreparedStatement.execute(DruidPooledPreparedStatement.java:498)\r\n	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\r\n	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\r\n	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\r\n	at java.lang.reflect.Method.invoke(Method.java:498)\r\n	at org.apache.ibatis.logging.jdbc.PreparedStatementLogger.invoke(PreparedStatementLogger.java:59)\r\n	at com.sun.proxy.TProxy134.execute(Unknown Source)\r\n	at org.apache.ibatis.executor.statement.PreparedStatementHandler.update(PreparedStatementHandler.java:46)\r\n	at org.apache.ibatis.executor.statement.RoutingStatementHandler.update(RoutingStatementHandler.java:74)\r\n	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\r\n	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\r\n	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\r\n	at java.lang.reflect.Method.invoke(Method.java:498)\r\n	at org.apache.ibatis.plugin.Plugin.invoke(Plugin.java:63)\r\n	at com.sun.proxy.TProxy132.update(Unknown Source)\r\n	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\r\n	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\r\n	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\r\n	at java.lang.reflect.Method.invoke(Method.java:498)\r\n	at org.apache.ibatis.plugin.Plugin.invoke(Plugin.java:63)\r\n	at com.sun.proxy.TProxy132.update(Unknown Source)\r\n	at org.apache.ibatis.executor.SimpleExecutor.doUpdate(SimpleExecutor.java:50)\r\n	at org.apache.ibatis.executor.BaseExecutor.update(BaseExecutor.java:117)\r\n	at org.apache.ibatis.executor.CachingExecutor.update(CachingExecutor.java:76)\r\n	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\r\n	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\r\n	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\r\n	at java.lang.reflect.Method.invoke(Method.java:498)\r\n	at org.apache.ibatis.plugin.Invocation.proceed(Invocation.java:49)\r\n	at com.baomidou.mybatisplus.plugins.OptimisticLockerInterceptor.intercept(OptimisticLockerInterceptor.java:72)\r\n	at org.apache.ibatis.plugin.Plugin.invoke(Plugin.java:61)\r\n	at com.sun.proxy.TProxy131.update(Unknown Source)\r\n	at org.apache.ibatis.session.defaults.DefaultSqlSession.update(DefaultSqlSession.java:198)\r\n	at org.apache.ibatis.session.defaults.DefaultSqlSession.insert(DefaultSqlSession.java:185)\r\n	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\r\n	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\r\n	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\r\n	at java.lang.reflect.Method.invoke(Method.java:498)\r\n	at org.mybatis.spring.SqlSessionTemplateTSqlSessionInterceptor.invoke(SqlSessionTemplate.java:433)\r\n	... 111 more\r\n');
 
 -- ----------------------------
 -- Table structure for `sys_relation`
@@ -1358,7 +1411,7 @@ CREATE TABLE `sys_user` (
   `version` int(11) DEFAULT NULL COMMENT '保留字段',
   `class_id` int(11) DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=48 DEFAULT CHARSET=utf8 COMMENT='管理员表';
+) ENGINE=InnoDB AUTO_INCREMENT=47 DEFAULT CHARSET=utf8 COMMENT='管理员表';
 
 -- ----------------------------
 -- Records of sys_user
