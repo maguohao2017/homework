@@ -10,7 +10,7 @@ Target Server Type    : MYSQL
 Target Server Version : 50717
 File Encoding         : 65001
 
-Date: 2019-01-03 08:44:04
+Date: 2019-01-05 01:09:23
 */
 
 SET FOREIGN_KEY_CHECKS=0;
@@ -89,7 +89,7 @@ CREATE TABLE `homework` (
   `user_id` int(11) DEFAULT NULL COMMENT '用户id',
   `folder_id` int(11) DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8 COMMENT='作业表';
+) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=utf8 COMMENT='作业表';
 
 -- ----------------------------
 -- Records of homework
@@ -97,6 +97,7 @@ CREATE TABLE `homework` (
 INSERT INTO `homework` VALUES ('1', '数学作业', '/homework', '600KB', 'word', '2018-11-23 10:18:16', '2018-11-30 10:18:21', '上传成功', '45', '1');
 INSERT INTO `homework` VALUES ('2', '英语作业', '/homework', '1MB', 'word', '2018-11-17 10:21:47', '2018-11-17 10:21:51', '上传成功', '45', '2');
 INSERT INTO `homework` VALUES ('3', '语文作业', '/hoomework', '1.5MB', 'PDF', '2018-11-17 11:30:31', '2018-11-17 11:30:35', '上传成功', '45', '3');
+INSERT INTO `homework` VALUES ('6', '数学作业_学生.doc', 'D:/test', '9216', 'word', '2019-01-05 00:59:14', '2019-01-05 00:59:14', '上传成功', '45', '1');
 
 -- ----------------------------
 -- Table structure for `homework_student`
@@ -119,10 +120,10 @@ CREATE TABLE `homework_student` (
 -- ----------------------------
 -- Records of homework_student
 -- ----------------------------
-INSERT INTO `homework_student` VALUES ('1', '数学作业', '/homework', '600KB', 'word', '2018-11-23 10:18:16', '2018-11-30 10:18:21', '上传成功', '45', '1');
-INSERT INTO `homework_student` VALUES ('2', '英语作业', '/homework', '1MB', 'word', '2018-11-17 10:21:47', '2018-11-17 10:21:51', '上传成功', '45', '2');
-INSERT INTO `homework_student` VALUES ('3', '语文作业', '/hoomework', '1.5MB', 'PDF', '2018-11-17 11:30:31', '2018-11-17 11:30:35', '上传成功', '45', '3');
-INSERT INTO `homework_student` VALUES ('7', '数学作业_学生.doc', 'E:/test', '600KB', 'word', '2019-01-03 08:16:04', '2019-01-03 08:16:04', '上传成功', '45', '1');
+INSERT INTO `homework_student` VALUES ('1', '数学作业', '/homework', '600KB', 'word', '2018-11-23 10:18:16', '2018-11-30 10:18:21', '上传成功', '46', '1');
+INSERT INTO `homework_student` VALUES ('2', '英语作业', '/homework', '1MB', 'word', '2018-11-17 10:21:47', '2018-11-17 10:21:51', '上传成功', '46', '2');
+INSERT INTO `homework_student` VALUES ('3', '语文作业', '/hoomework', '1.5MB', 'PDF', '2018-11-17 11:30:31', '2018-11-17 11:30:35', '上传成功', '46', '3');
+INSERT INTO `homework_student` VALUES ('7', '数学作业_学生.doc', 'E:/test', '600KB', 'word', '2019-01-03 08:16:04', '2019-01-03 08:16:04', '上传成功', '46', '1');
 
 -- ----------------------------
 -- Table structure for `score`
@@ -229,7 +230,7 @@ CREATE TABLE `sys_login_log` (
   `message` text COMMENT '具体消息',
   `ip` varchar(255) DEFAULT NULL COMMENT '登录ip',
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=843 DEFAULT CHARSET=utf8 COMMENT='登录记录';
+) ENGINE=InnoDB AUTO_INCREMENT=847 DEFAULT CHARSET=utf8 COMMENT='登录记录';
 
 -- ----------------------------
 -- Records of sys_login_log
@@ -861,6 +862,10 @@ INSERT INTO `sys_login_log` VALUES ('839', '登录日志', '45', '2019-01-03 08:
 INSERT INTO `sys_login_log` VALUES ('840', '登录日志', '45', '2019-01-03 08:37:48', '成功', null, '127.0.0.1');
 INSERT INTO `sys_login_log` VALUES ('841', '登录日志', '45', '2019-01-03 08:40:33', '成功', null, '127.0.0.1');
 INSERT INTO `sys_login_log` VALUES ('842', '退出日志', '45', '2019-01-03 08:41:52', '成功', null, '127.0.0.1');
+INSERT INTO `sys_login_log` VALUES ('843', '登录日志', '45', '2019-01-05 00:57:42', '成功', null, '127.0.0.1');
+INSERT INTO `sys_login_log` VALUES ('844', '退出日志', '45', '2019-01-05 01:00:46', '成功', null, '127.0.0.1');
+INSERT INTO `sys_login_log` VALUES ('845', '登录日志', '46', '2019-01-05 01:00:52', '成功', null, '127.0.0.1');
+INSERT INTO `sys_login_log` VALUES ('846', '登录日志', '46', '2019-01-05 01:07:22', '成功', null, '127.0.0.1');
 
 -- ----------------------------
 -- Table structure for `sys_menu`

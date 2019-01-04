@@ -15,7 +15,7 @@ public interface IHomeworkService {
 
     List<Map<String, Object>> getHomeworkList(@Param("folderId") String folderId);
 
-    List<Map<String, Object>> getHomeworkList_student();
+    List<Map<String, Object>> getHomeworkList_student(Map map);
 
     Integer insertHomework(Map map);
 

@@ -110,13 +110,18 @@ public class HomeworkController extends BaseController {
         return getHomeworkList;
     }
 
-    @RequestMapping(value = "/getHomeworkList_student")
+    @RequestMapping(value = "/getHomeworkList_student/{id}")
     @ResponseBody
-    public List<Map<String, Object>> getHomeworkList_student() {
+    public List<Map<String, Object>> getHomeworkList_student(@PathVariable String id) {
 
         List<Map<String, Object>> getHomeworkList = null;
+
+        Integer userId = ShiroKit.getUser().getId();
+        Map map = new HashMap();
+        map.put("id",id);
+        map.put("userId",userId);
         try {
-            getHomeworkList = this.iHomeworkService.getHomeworkList_student();
+            getHomeworkList = this.iHomeworkService.getHomeworkList_student(map);
         }catch (Exception e){
             e.printStackTrace();
         }
@@ -151,7 +156,7 @@ public class HomeworkController extends BaseController {
         int size = (int) file.getSize();
         System.out.println(fileName + "-->" + size);
 
-        String path = "E:/test" ;
+        String path = "D:/test" ;
         File dest = new File(path + "/" + fileName);
         if(!dest.getParentFile().exists()){ //判断文件父目录是否存在
             dest.getParentFile().mkdir();
@@ -160,7 +165,7 @@ public class HomeworkController extends BaseController {
         map.put("folderId",folderId);
         map.put("homeworkName",fileName);
         map.put("filePath",path);
-        map.put("fileSize","600KB");
+        map.put("fileSize",size);
         map.put("fileType","word");
         map.put("status","上传成功");
         map.put("userId","45");
@@ -180,7 +185,7 @@ public class HomeworkController extends BaseController {
     @RequestMapping("downLoadFile")
     public void  downLoadFile(HttpServletResponse response)throws Exception{
 //        String filename="数学作业.doc";
-//        String filePath = "E:/test" ;
+//        String filePath = "D:/test" ;
 //        File file = new File(filePath + "/" + filename);
 //        if(file.exists()){ //判断文件父目录是否存在
 //            response.setContentType("application/force-download");
@@ -214,7 +219,7 @@ public class HomeworkController extends BaseController {
 //        }
 //        return null;
 
-        String path = "E:/test" ;
+        String path = "D:/test" ;
         try {
             // 取得文件名。
             String filename = "数学作业.doc";
@@ -255,7 +260,7 @@ public class HomeworkController extends BaseController {
         int size = (int) file.getSize();
         System.out.println(fileName + "-->" + size);
 
-        String path = "E:/student_test" ;
+        String path = "D:/student_test" ;
         File dest = new File(path + "/" + fileName);
         if(!dest.getParentFile().exists()){ //判断文件父目录是否存在
             dest.getParentFile().mkdir();
@@ -264,10 +269,10 @@ public class HomeworkController extends BaseController {
         map.put("folderId",folderId);
         map.put("homeworkName",fileName);
         map.put("filePath",path);
-        map.put("fileSize","600KB");
+        map.put("fileSize",size);
         map.put("fileType","word");
         map.put("status","上传成功");
-        map.put("userId","45");
+        map.put("userId","46");
         try {
             file.transferTo(dest); //保存文件
             this.iHomeworkService.insertHomework_student(map);
@@ -284,7 +289,7 @@ public class HomeworkController extends BaseController {
     @RequestMapping("student_downLoadFile")
     public void  student_downLoadFile(HttpServletResponse response)throws Exception{
 //        String filename="数学作业.doc";
-//        String filePath = "E:/test" ;
+//        String filePath = "D:/test" ;
 //        File file = new File(filePath + "/" + filename);
 //        if(file.exists()){ //判断文件父目录是否存在
 //            response.setContentType("application/force-download");
@@ -318,7 +323,7 @@ public class HomeworkController extends BaseController {
 //        }
 //        return null;
 
-        String path = "E:/student_test" ;
+        String path = "D:/student_test" ;
         try {
             // 取得文件名。
             String filename = "数学作业.doc";

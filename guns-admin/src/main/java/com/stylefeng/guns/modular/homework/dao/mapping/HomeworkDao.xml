@@ -31,12 +31,14 @@
         order by t.update_time desc
     </select>
 
-    <select id="getHomeworkList_student" resultType="map" parameterType="String">
+    <select id="getHomeworkList_student" resultType="map" parameterType="Map">
         SELECT
         <include refid="Base_Column_List"/>
         FROM homework_student t
         LEFT JOIN folder t1
         ON t.folder_id = t1.id
+        where t.id = #{id}
+        and t.user_id = #{userId}
         order by t.update_time desc
     </select>
 

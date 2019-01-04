@@ -24,12 +24,14 @@ var homework = {
     },
 
     download:function () {
-        var ajax = new $ax(Feng.ctxPath + "/homework/downLoadFile", function (data) {
-            Feng.success("下载成功!");
-        }, function (data) {
-            Feng.success("下载成功!");
-        });
-        ajax.start();
+        if (this.check()) {
+            var ajax = new $ax(Feng.ctxPath + "/homework/downLoadFile", function (data) {
+                Feng.success("下载成功!");
+            }, function (data) {
+                Feng.success("下载成功!");
+            });
+            ajax.start();
+        }
     },
 
     initColumn:function(){
